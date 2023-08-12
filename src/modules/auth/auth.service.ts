@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common';
+import { BadRequestException, HttpException, HttpStatus, Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { MerchantService } from 'src/modules/merchant/merchant.service';
 import * as bcrypt from 'bcrypt';
@@ -7,21 +7,49 @@ import { encrypt, hashStringWithSalt } from 'src/common/utils/encryption';
 import { InjectModel } from '@nestjs/mongoose';
 import { AuthorizationKey, AuthorizationKeyModel } from './schemas/authorization.schema';
 import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
-import { ResponseErrorMessage, ResponseMessage } from 'src/common/enums/responseMessage';
+import { Message, ErrorMessage, ErrorCode } from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
+import { UserService } from '../users/user.service';
 
 @Injectable()
 export class AuthService {
     constructor(
         private merchantService: MerchantService,
+        private userService: UserService,
         private jwtService: JwtService,
         @InjectModel(AuthorizationKey.name) private authorizationKeyModel: AuthorizationKeyModel
     ) {}
 
     async loginUser({ username, password }: any) {
+        const user = await this.userService.findByUsername(username);
+
+        if (!user) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.NOT_FOUND);
+        if (!bcrypt.compareSync(password, user.password)) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.UNAUTHORIZED);
+
+            
+        const userObj = user.toObject();
+        delete userObj.password;
+
+        const payload = {
+            merchant: userObj,
+            sub: userObj._id,
+            iat: moment().valueOf(),
+            exp: moment().add(1, 'days').valueOf()
+        };
+
+        const accessToken = this.jwtService.sign(payload, {});
+
+        return {
+            //merchant: merchantObj,
+            //refreshToken,
+            accessToken
+        };
+    }
+    /*
+    async loginUser({ username, password }: any) {
         const merchant = await this.merchantService.findBy({ username });
 
-        if (!merchant) throw new UnauthorizedException('Username is incorrect.');
+        if (!merchant) throw new HttpException('Username is incorrect.', HttpStatus.NOT_FOUND);
 
         if (!bcrypt.compareSync(password, merchant.password))
             throw new UnauthorizedException('Password is incorrect.');
@@ -39,16 +67,17 @@ export class AuthService {
         const accessToken = this.jwtService.sign(payload, {});
 
         return {
-            merchant: merchantObj,
+            //merchant: merchantObj,
+            //refreshToken,
             accessToken
         };
     }
-
+    */
     async changeUserPassword(userId: string, body: ChangePasswordBodyDto) {
         const merchant = await this.merchantService.findOne(userId);
         const isMatchedCurrentPassword = bcrypt.compareSync(body.currentPassword, merchant.password);
         if (!isMatchedCurrentPassword)
-            throw new BadRequestException(ResponseErrorMessage.oldPasswordDoestNotMatched);
+            throw new HttpException({ errorCode: ErrorCode.OLD_PASSWORD_NOT_MATCH, errorMessage: ErrorMessage.OLD_PASSWORD_NOT_MATCH }, HttpStatus.BAD_REQUEST);
 
         const newPasswordHash = hashStringWithSalt(body.newPassword, 10);
         merchant.password = newPasswordHash;
@@ -57,14 +86,10 @@ export class AuthService {
         return 'success';
     }
 
-    async checkAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
+    async validateAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
         const hash= encrypt(headerKey, 'sha256');
-        const record = await this.authorizationKeyModel
-            .findOne({ key: hash, type: type })
-            .populate('merchant');
-
+        const record = await this.authorizationKeyModel.findOne({ key: hash, type: type }).populate('merchant');
         if (!record) return { valid: false, user: null };
-
-        return { valid: true, user: record.merchant };
+        return { valid: true, merchant: record.merchant };
     }
 }

@@ -6,6 +6,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { WebsocketModule } from './modules/websocket/websocket.module';
+import { UserModule } from './modules/users/user.module';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
 const MongoDBModule = MongooseModule.forRootAsync({
@@ -21,6 +22,7 @@ const MongoDBModule = MongooseModule.forRootAsync({
         MongoDBModule,
         ScheduleModule.forRoot(),
         AuthModule,
+        UserModule,
         ClientApiAuthModules,
         WebsocketModule
     ]

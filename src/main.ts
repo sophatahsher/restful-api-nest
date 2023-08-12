@@ -10,7 +10,7 @@ import { HttpResponseInterceptor } from 'src/common/interceptors/httpResponse';
 import { MQChannel } from 'src/common/enums/mqChannel';
 import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
-
+import { UserModule } from './modules/users/user.module';
 
 const port = process.env.PORT || 3000;
 
@@ -50,21 +50,22 @@ const configSwagger = (app: INestApplication) => {
         .setTitle('NestJS API Documents')
         .setVersion('1.0')
         .addBearerAuth()
-        .addApiKey(
-            {
-                type: 'apiKey',
-                name: 'Authorization',
-                in: 'header'
-            },
-            'apiKey'
-        )
+        // .addApiKey(
+        //     {
+        //         type: 'apiKey',
+        //         name: 'Authorization',
+        //         in: 'header'
+        //     },
+        //     'apiKey'
+        // )
         .build();
 
     app.setGlobalPrefix('api');
 
     const document = SwaggerModule.createDocument(app, apiDocs, {
         include: [
-            AuthModule
+            AuthModule,
+            UserModule
         ]
     });
 

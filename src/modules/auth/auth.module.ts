@@ -5,9 +5,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthorizationKey, AuthorizationKeySchema } from './schemas/authorization.schema';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import { JwtAuthStrategy } from './strategies/jwt-auth.strategy';
-import { HeaderStrategy } from './strategies/authorization.strategy';
+import { AccessTokenStrategy } from './strategies/jwt-auth.strategy';
+import { RefreshTokenStrategy } from './strategies/jwt-refresh-token.strategy';
+//import { HeaderStrategy } from './strategies/authorization.strategy';
 import { MerchantModule } from '../merchant/merchant.module';
+import { UserModule } from './../users/user.module';
 import { ClientApiKeyStrategy } from './strategies/client-api-key.strategy';
 
 const JwtModuleRegistered = JwtModule.registerAsync({
@@ -22,14 +24,20 @@ const DBSchemaModule = MongooseModule.forFeature([
 ]);
 
 @Module({
-    imports: [DBSchemaModule, JwtModuleRegistered, MerchantModule],
+    imports: [
+        DBSchemaModule, 
+        JwtModuleRegistered, 
+        MerchantModule, 
+        UserModule
+    ],
     exports: [AuthService, DBSchemaModule],
     controllers: [AuthController],
     providers: [
         AuthService,
+        AccessTokenStrategy,
+        RefreshTokenStrategy,
         ConfigService,
-        JwtAuthStrategy,
-        HeaderStrategy,
+        //HeaderStrategy,
         ClientApiKeyStrategy
     ]
 })

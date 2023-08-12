@@ -3,19 +3,20 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as moment from 'moment';
-import { MerchantService } from 'src/modules/merchant/merchant.service';
-import { ResponseMessage } from 'src/common/enums/responseMessage';
-
+//import { MerchantService } from 'src/modules/merchant/merchant.service';
+import { UserService } from 'src/modules/users/user.service';
+import { ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
 @Injectable()
-export class JwtAuthStrategy extends PassportStrategy(Strategy) {
-    constructor(private config: ConfigService, private merchantService: MerchantService) {
+export class AccessTokenStrategy extends PassportStrategy(Strategy) {
+    //constructor(private config: ConfigService, private merchantService: MerchantService) {
+    constructor(private config: ConfigService, private userService: UserService) {
         super({
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
             ignoreExpiration: false,
             secretOrKey: config.get('JWT_SECRET')
         });
     }
-
+    /*
     async validate(payload: any) {
         const isExpired = moment().isAfter(moment(payload.exp));
         if (isExpired) throw new UnauthorizedException();
@@ -24,6 +25,19 @@ export class JwtAuthStrategy extends PassportStrategy(Strategy) {
         //
         if (!merchant.status)
             throw new UnauthorizedException(ResponseMessage.DISABLED);
+
+        return payload;
+    }
+    */
+    async validate(payload: any) {
+        console.log('payload=======', payload);
+        const isExpired = moment().isAfter(moment(payload.exp));
+        if (isExpired) throw new UnauthorizedException();
+        const user = await this.userService.findOne(payload._id);
+        console.log('user=======', user);
+        //
+        if (!user.status)
+            throw new UnauthorizedException(ErrorMessage.ACCOUNT_DISABLED);
 
         return payload;
     }

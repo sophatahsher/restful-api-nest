@@ -4,7 +4,6 @@ import { CommandModule } from 'nestjs-command';
 import { Merchant, MerchantSchema } from './schemas/merchant.schema';
 import { MerchantService } from './merchant.service';
 import { MerchantController } from './merchant.controller';
-//import { WebsocketModule } from '../websocket/websocket.module';
 
 const DBSchemaModule = MongooseModule.forFeature([{ name: Merchant.name, schema: MerchantSchema }]);
 

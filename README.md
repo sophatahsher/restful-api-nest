@@ -55,7 +55,7 @@ cp .env.example .env
 ## Run the development server:
 
 ```bash
-npm run dev
+npm run start:dev
 ```
 
 ## Run production

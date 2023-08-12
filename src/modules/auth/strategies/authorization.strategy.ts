@@ -7,7 +7,7 @@ import { AuthService } from '../auth.service';
 export class HeaderStrategy extends PassportStrategy(HeaderAPIKeyStrategy, 'access_api_server') {
     constructor(private authService: AuthService) {
         super({ header: 'Authorization', prefix: '' }, false, async (apiKey, done) => {
-            const { valid, user } = await authService.checkAuthorizationKey(
+            const { valid, user } = await authService.validateAuthorizationKey(
                 apiKey,
                 APIAccessKeyType.ACCESS_APP_SERVER
             );

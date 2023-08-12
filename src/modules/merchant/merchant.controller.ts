@@ -3,11 +3,11 @@ import { Controller, Get, UseGuards } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from './../../common/http/response';
 import { Auth } from 'src/common/decorators/authGuard.decorator';
-import { JwtAuthGuard } from 'src/common/guards/auth.guard';
+import { TokenAuthGuard } from 'src/common/guards/auth.guard';
 import { MerchantService } from './merchant.service';
 
 @ApiTags('merchants')
-@UseGuards(JwtAuthGuard)
+@UseGuards(TokenAuthGuard)
 @Controller('merchants')
 export class MerchantController {
     constructor(private service: MerchantService) {}

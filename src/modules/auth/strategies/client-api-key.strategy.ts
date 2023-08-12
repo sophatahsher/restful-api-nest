@@ -1,8 +1,7 @@
 import { HeaderAPIKeyStrategy } from 'passport-headerapikey';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
-//import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
-import { APIAccessKeyType } from 'src/common/enums';
+import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
 import { AuthService } from 'src/modules/auth/auth.service';
 import { ResponseMessage } from 'src/common/enums/responseMessage';
 @Injectable()

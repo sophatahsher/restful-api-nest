@@ -6,8 +6,7 @@ import * as moment from 'moment';
 import { encrypt, hashStringWithSalt } from 'src/common/utils/encryption';
 import { InjectModel } from '@nestjs/mongoose';
 import { AuthorizationKey, AuthorizationKeyModel } from './schemas/authorization.schema';
-//import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
-import { APIAccessKeyType } from 'src/common/enums';
+import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
 import { ResponseErrorMessage, ResponseMessage } from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
 
@@ -60,8 +59,6 @@ export class AuthService {
 
     async checkAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
         const hash= encrypt(headerKey, 'sha256');
-        console.log('headerKey============', headerKey);
-        console.log('hash============', hash);
         const record = await this.authorizationKeyModel
             .findOne({ key: hash, type: type })
             .populate('merchant');

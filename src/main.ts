@@ -18,7 +18,7 @@ async function bootstrap() {
     const app = await NestFactory.create(MainModule);
 
     // Inject Global Filter Exception
-    //app.useGlobalFilters(new HttpExceptionFilter());
+    app.useGlobalFilters(new HttpExceptionFilter());
 
     const configService = app.get<ConfigService>(ConfigService);
 

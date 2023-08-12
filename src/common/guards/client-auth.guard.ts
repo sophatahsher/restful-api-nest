@@ -14,9 +14,7 @@ export class ClientAuthGuard extends AuthGuard('client_api_key') {
                 apiKey = context.switchToWs().getClient().handshake?.headers?.authorization;
                 break;
         }
-        console.log('request apiKey: ',apiKey);
         if (!apiKey) throw new UnauthorizedException('Unauthorized');
-        console.log('return  context: ',context);
         return super.canActivate(context);
     }
 

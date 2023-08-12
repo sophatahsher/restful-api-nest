@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Nest integration with Swagger",
     "author": "CHHAY, Sophat",
-    "private": false,
+    "private": true,
     "license": "UNLICENSED",
     "scripts": {
       "prebuild": "rimraf dist",

@@ -12,10 +12,23 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { UserModule } from './modules/users/user.module';
 
+//import * as cors from 'cors';
+//import { WsAdapter } from '@nestjs/platform-ws';
+
 const port = process.env.PORT || 3000;
+
+// let corsOptions = {
+//     origin: '*',
+//     credentials: true
+// }
 
 async function bootstrap() {
     const app = await NestFactory.create(MainModule);
+
+    // WebsocketAdapter not support namespace
+    //app.useWebSocketAdapter(new WsAdapter(app));
+    //app.useWebSocketAdapter(new WsAdapter(8001));
+    //app.use(cors(corsOptions));
 
     // Inject Global Filter Exception
     app.useGlobalFilters(new HttpExceptionFilter());
@@ -50,14 +63,6 @@ const configSwagger = (app: INestApplication) => {
         .setTitle('NestJS API Documents')
         .setVersion('1.0')
         .addBearerAuth()
-        // .addApiKey(
-        //     {
-        //         type: 'apiKey',
-        //         name: 'Authorization',
-        //         in: 'header'
-        //     },
-        //     'apiKey'
-        // )
         .build();
 
     app.setGlobalPrefix('api');

@@ -5,12 +5,14 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthorizationKey, AuthorizationKeySchema } from './schemas/authorization.schema';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import { AccessTokenStrategy } from './strategies/jwt-auth.strategy';
+import { AccessTokenStrategy } from './strategies/jwt.strategy';
 import { RefreshTokenStrategy } from './strategies/jwt-refresh-token.strategy';
 //import { HeaderStrategy } from './strategies/authorization.strategy';
 import { MerchantModule } from '../merchant/merchant.module';
 import { UserModule } from './../users/user.module';
 import { ClientApiKeyStrategy } from './strategies/client-api-key.strategy';
+import { IRedisModule } from '../redis/redis.module';
+import { IRedisService } from '../redis/redis.service';
 
 const JwtModuleRegistered = JwtModule.registerAsync({
     useFactory: (configService: ConfigService) => ({
@@ -28,7 +30,8 @@ const DBSchemaModule = MongooseModule.forFeature([
         DBSchemaModule, 
         JwtModuleRegistered, 
         MerchantModule, 
-        UserModule
+        UserModule,
+        IRedisModule
     ],
     exports: [AuthService, DBSchemaModule],
     controllers: [AuthController],
@@ -38,7 +41,8 @@ const DBSchemaModule = MongooseModule.forFeature([
         RefreshTokenStrategy,
         ConfigService,
         //HeaderStrategy,
-        ClientApiKeyStrategy
+        ClientApiKeyStrategy,
+        IRedisService
     ]
 })
 export class AuthModule {}

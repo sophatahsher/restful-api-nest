@@ -12,13 +12,7 @@ export class Merchant {
     password: string;
 
     @Prop()
-    name: string;
-
-    @Prop()
-    email: string;
-
-    @Prop()
-    description: string;
+    loginType: string;
     
     @Prop({ default: true })
     status: boolean;

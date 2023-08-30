@@ -8,12 +8,14 @@ export class TokenAuthGuard extends AuthGuard('jwt') {
     constructor(private reflector: Reflector) {
         super();
     }
+
     canActivate(context: ExecutionContext) {
-        const isAllowedAccess = this.reflector.getAllAndOverride<boolean>(PUBLIC, [
-            context.getHandler(),
-            context.getClass()
-        ]);
-        if (isAllowedAccess) return true;
+        // const isAllowedAccess = this.reflector.getAllAndOverride<boolean>(PUBLIC, [
+        //     context.getHandler(),
+        //     context.getClass()
+        // ]);
+        console.log('context=======', context);
+        //if (isAllowedAccess) return true;
 
         return super.canActivate(context);
     }

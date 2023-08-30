@@ -10,25 +10,14 @@ import { ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
 export class AccessTokenStrategy extends PassportStrategy(Strategy) {
     //constructor(private config: ConfigService, private merchantService: MerchantService) {
     constructor(private config: ConfigService, private userService: UserService) {
+        console.log('JWT_SECRET=======', config.get('JWT_SECRET'));
         super({
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
             ignoreExpiration: false,
             secretOrKey: config.get('JWT_SECRET')
         });
     }
-    /*
-    async validate(payload: any) {
-        const isExpired = moment().isAfter(moment(payload.exp));
-        if (isExpired) throw new UnauthorizedException();
-        const merchant = await this.merchantService.findOne(payload.merchant._id);
-
-        //
-        if (!merchant.status)
-            throw new UnauthorizedException(ResponseMessage.DISABLED);
-
-        return payload;
-    }
-    */
+    
     async validate(payload: any) {
         console.log('payload=======', payload);
         const isExpired = moment().isAfter(moment(payload.exp));

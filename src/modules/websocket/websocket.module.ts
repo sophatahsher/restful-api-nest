@@ -3,10 +3,11 @@ import { WebsocketGateway } from './websocket.gateway';
 import { WebsocketService } from './websocket.service';
 import { MongooseModule } from '@nestjs/mongoose';
 //import { AuthModule } from '../auth/auth.module';
-import { Chat, ChatSchema } from '../chat/schemas/chat.schema';
+import { ChatMessage, ChatMessageSchema } from '../chat/schemas/message.schema';
+
 @Module({
     imports: [
-        MongooseModule.forFeature([{ name: Chat.name, schema: ChatSchema }]),
+        MongooseModule.forFeature([{ name: ChatMessage.name, schema: ChatMessageSchema }]),
         //forwardRef(() => AuthModule),
     ],
     providers: [WebsocketGateway, WebsocketService],

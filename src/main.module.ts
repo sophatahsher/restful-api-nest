@@ -7,6 +7,13 @@ import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { WebsocketModule } from './modules/websocket/websocket.module';
 import { UserModule } from './modules/users/user.module';
+import { IRedisModule } from './modules/redis/redis.module';
+
+//import { RedisModule, RedisService } from 'nestjs-redis';
+import { RedisModule } from '@liaoliaots/nestjs-redis';
+import { NotificationModule } from './modules/notifications/notification.module';
+import { LiveChatModule } from './modules/chat/chat.module';
+//import { redisConfig } from './modules/redis/redis-client.factory';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
 const MongoDBModule = MongooseModule.forRootAsync({
@@ -16,15 +23,28 @@ const MongoDBModule = MongooseModule.forRootAsync({
     })
 });
 
+// Redis
+const RedisDBModule = RedisModule.forRoot({
+    config: {
+      host: 'localhost',
+      port: 6379,
+      password: ''
+    }
+});
+
 @Module({
     imports: [
         EnvironmentModule,
         MongoDBModule,
+        RedisDBModule,
         ScheduleModule.forRoot(),
         AuthModule,
         UserModule,
         ClientApiAuthModules,
-        WebsocketModule
+        WebsocketModule,
+        IRedisModule,
+        NotificationModule,
+        LiveChatModule
     ]
 })
 export class MainModule implements NestModule {

@@ -11,6 +11,7 @@ import { MQChannel } from 'src/common/enums/mqChannel';
 import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { UserModule } from './modules/users/user.module';
+import { LiveChatModule } from './modules/chat/chat.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -70,15 +71,18 @@ const configSwagger = (app: INestApplication) => {
     const document = SwaggerModule.createDocument(app, apiDocs, {
         include: [
             AuthModule,
-            UserModule
+            UserModule,
+            LiveChatModule
         ]
     });
 
-    SwaggerModule.setup('/docs', app, document, {
-        swaggerOptions: {
-            persistAuthorization: true
-        }
-    });
+    if(process.env.NODE_ENV !== 'production') {
+        SwaggerModule.setup('/docs', app, document, {
+            swaggerOptions: {
+                persistAuthorization: true
+            }
+        });
+    }
 
     if (process.env.NODE_ENV === 'production') {
         app.setGlobalPrefix('/');

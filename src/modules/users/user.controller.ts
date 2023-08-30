@@ -9,9 +9,10 @@ import {
     Patch,
     Param,
     Delete, 
-    UseGuards 
+    UseGuards, 
+    Put
 } from '@nestjs/common';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from './../../common/http/response';
 import { Auth } from 'src/common/decorators/authGuard.decorator';
 import { TokenAuthGuard } from 'src/common/guards/auth.guard';
@@ -22,7 +23,8 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 
 @ApiTags('users')
-//@UseGuards(TokenAuthGuard)
+@ApiBearerAuth()
+@UseGuards(TokenAuthGuard)
 @Controller('users')
 export class UserController {
     constructor(private userService: UserService) {}
@@ -42,7 +44,7 @@ export class UserController {
         return this.userService.findById(id);
     }
 
-    @Patch(':id')
+    @Put(':id')
     update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
         return this.userService.update(id, updateUserDto);
     }

@@ -1,15 +1,18 @@
 import { Module, forwardRef } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-//import { AuthModule } from '../auth/auth.module';
-//import { Chat, ChatSchema } from '../chat/schemas/chat.schema';
 import { WebsocketGateway } from '../websocket/websocket.gateway';
+import { ChatController } from './chat.controller';
+import { ChatMessage, ChatMessageSchema } from './schemas/message.schema';
+import { AuthModule } from '../auth/auth.module';
+import { ChatService } from './chat.service';
 
 @Module({
     imports: [
-        //MongooseModule.forFeature([{ name: Chat.name, schema: ChatSchema }]),
-        //forwardRef(() => AuthModule),
+        MongooseModule.forFeature([{ name: ChatMessage.name, schema: ChatMessageSchema }]),
+        forwardRef(() => AuthModule),
     ],
-    providers: [WebsocketGateway],
-    exports: [WebsocketGateway]
+    controllers: [ChatController],
+    providers: [ChatService],
+    exports: [ChatService]
 })
 export class LiveChatModule {}

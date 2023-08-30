@@ -10,6 +10,8 @@ import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
 import { Message, ErrorMessage, ErrorCode } from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
 import { UserService } from '../users/user.service';
+import { IRedisService } from '../redis/redis.service';
+//import { DemoRedisService } from '../redis/redis.service';
 
 @Injectable()
 export class AuthService {
@@ -17,6 +19,7 @@ export class AuthService {
         private merchantService: MerchantService,
         private userService: UserService,
         private jwtService: JwtService,
+        //private redisClient: IRedisService,
         @InjectModel(AuthorizationKey.name) private authorizationKeyModel: AuthorizationKeyModel
     ) {}
 
@@ -29,7 +32,7 @@ export class AuthService {
             
         const userObj = user.toObject();
         delete userObj.password;
-
+        console.log('user========', user);
         const payload = {
             merchant: userObj,
             sub: userObj._id,
@@ -39,9 +42,12 @@ export class AuthService {
 
         const accessToken = this.jwtService.sign(payload, {});
 
+        // RedisStore
+        //this.redisClient.set('access_token', accessToken, 500);
+        //const redisSessionUser = await this.redisClient.get('access_token');
+        console.log('========', accessToken);
+
         return {
-            //merchant: merchantObj,
-            //refreshToken,
             accessToken
         };
     }
@@ -87,6 +93,7 @@ export class AuthService {
     }
 
     async validateAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
+        console.log('validateAuthorizationKey=========', headerKey);
         const hash= encrypt(headerKey, 'sha256');
         const record = await this.authorizationKeyModel.findOne({ key: hash, type: type }).populate('merchant');
         if (!record) return { valid: false, user: null };

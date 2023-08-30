@@ -10,7 +10,7 @@ import { Socket } from 'socket.io';
 import { WebsocketResponseInterceptor } from 'src/common/interceptors/websocketResponse';
 import { ClientAuthGuard } from 'src/common/guards/client-auth.guard';
 import { Server } from 'socket.io';
-import { Chat } from '../chat/schemas/chat.schema';
+//import { Chat } from '../chat/schemas/chat.schema';
 import { WebsocketService } from './websocket.service';
 //import { AuthService } from '../auth/auth.service';
 //@UsePipes(new ValidationPipe())
@@ -29,7 +29,7 @@ export class WebsocketGateway {
     constructor(private websocketService: WebsocketService) {}
 
     @SubscribeMessage('sendMessage')
-    async handleSendMessage(client: Socket, payload: Chat): Promise<void> {
+    async handleSendMessage(client: Socket, payload: any): Promise<void> {
         //console.log('payload=======', payload);
         await this.websocketService.createMessage(payload);
         this.server.emit('sendMessage', {status: 'success' });

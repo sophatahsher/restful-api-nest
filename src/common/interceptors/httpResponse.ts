@@ -18,10 +18,12 @@ export class HttpResponseInterceptor<T> implements NestInterceptor<T, Response<T
         const now = Date.now();
         
         Logger.log(`${method} ${url} ${Date.now() - now}ms`, context.getClass().name,);
-
+        
         return next.handle().pipe(
-            map((data) => {
-                    return data;
+            map((httpResponse: any) => {
+                    if( typeof typeof httpResponse.data === 'string' )
+                        return { status: 'OK', code: 0 };
+                    return httpResponse;
                 }),
             );
 

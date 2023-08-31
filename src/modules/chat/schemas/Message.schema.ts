@@ -15,10 +15,23 @@ export class ChatMessage {
     @PrimaryGeneratedColumn('uuid')
     id: number;
     
+    @Prop()
+    userId: string; // Message Owner
+
+    @Prop()
     roomId: string;
 
     @Prop()
-    type: string;
+    groupId: string;
+
+    @Prop()
+    threadId: string;
+
+    @Prop()
+    replyId: string; // replyToMessageId
+
+    @Prop()
+    messageType: string;
 
     @Prop()
     mimeType: string;

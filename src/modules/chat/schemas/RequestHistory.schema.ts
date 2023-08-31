@@ -10,7 +10,7 @@ import {
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
     
-@Schema({ collection: 'chat_requests', timestamps: true })
+@Schema({ collection: 'chat_request_histories', timestamps: true })
 export class ChatRequestHistory {
     @PrimaryGeneratedColumn('uuid')
     id: number;
@@ -18,14 +18,14 @@ export class ChatRequestHistory {
     @Prop()
     requestId: string;
 
-    @Prop()
-    type: string;
-
-    @Prop()
+    @Prop({ default: null })
     senderId: string;
 
-    @Prop()
-    receiverId: string;
+    @Prop({ default: null })
+    threadId: string;
+
+    @Prop({ default: null })
+    recipientId: string;
 
     @Prop()
     roomId: string;
@@ -37,10 +37,10 @@ export class ChatRequestHistory {
     isAccepted: boolean;
 
     @Prop()
-    status: Date;
+    status: boolean;
 
     @Prop()
-    createdAt: Date;
+    requestedAt: Date;
 
     @Prop()
     expiredAt: Date;

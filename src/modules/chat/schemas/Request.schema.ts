@@ -16,25 +16,28 @@ export class ChatRequest {
     id: number;
     
     @Prop()
-    type: string;
+    type: string; // thread, friend, private_chat, group
 
-    @Prop()
+    @Prop({ default: null })
     senderId: string;
 
-    @Prop()
-    receiverId: string;
+    @Prop({ default: null })
+    threadId: string;
 
-    @Prop()
-    roomId: string;
+    @Prop({ default: null })
+    recipientId: string;
 
-    @Prop()
-    groupId: string;
+    @Prop({ default: null })
+    roomId: string; // request join a room
+
+    @Prop({ default: null })
+    groupId: string; // request join a group
     
     @Prop({ default: false })
     isAccepted: boolean;
 
-    @Prop()
-    status: Date;
+    @Prop({ default: false })
+    status: boolean;
 
     @Prop()
     createdAt: Date;

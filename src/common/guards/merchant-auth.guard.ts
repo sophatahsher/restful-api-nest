@@ -3,7 +3,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 
 @Injectable()
-export class ClientAuthGuard extends AuthGuard('client_api_key') {
+export class MerchantAuthGuard extends AuthGuard('merchant_api_key') {
     canActivate(context: ExecutionContext) {
         let apiKey: any = null;
         switch (context.getType()) {
@@ -14,6 +14,7 @@ export class ClientAuthGuard extends AuthGuard('client_api_key') {
                 apiKey = context.switchToWs().getClient().handshake?.headers?.authorization;
                 break;
         }
+
         if (!apiKey) throw new UnauthorizedException('Unauthorized');
         return super.canActivate(context);
     }
@@ -33,9 +34,6 @@ export class ClientAuthGuard extends AuthGuard('client_api_key') {
 
     handleRequest(err, user) {
         if (err) throw err;
-
-        console.log('ClientAuthGuard >> handleRequest : ', user);
-
         return { merchant: user } as any;
     }
 }

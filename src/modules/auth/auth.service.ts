@@ -25,7 +25,7 @@ export class AuthService {
 
     async loginUser({ username, password }: any) {
         const user = await this.userService.findByUsername(username);
-
+        console.log('user======', user);
         if (!user) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.NOT_FOUND);
         if (!bcrypt.compareSync(password, user.password)) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.UNAUTHORIZED);
 
@@ -93,7 +93,6 @@ export class AuthService {
     }
 
     async validateAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
-        console.log('validateAuthorizationKey=========', headerKey);
         const hash= encrypt(headerKey, 'sha256');
         const record = await this.authorizationKeyModel.findOne({ key: hash, type: type }).populate('merchant');
         if (!record) return { valid: false, user: null };

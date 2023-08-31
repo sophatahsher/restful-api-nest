@@ -13,6 +13,7 @@ import { IRedisModule } from './modules/redis/redis.module';
 import { RedisModule } from '@liaoliaots/nestjs-redis';
 import { NotificationModule } from './modules/notifications/notification.module';
 import { LiveChatModule } from './modules/chat/chat.module';
+import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
 //import { redisConfig } from './modules/redis/redis-client.factory';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
@@ -44,7 +45,9 @@ const RedisDBModule = RedisModule.forRoot({
         WebsocketModule,
         IRedisModule,
         NotificationModule,
-        LiveChatModule
+        LiveChatModule,
+        //
+        MerchantSDKModules
     ]
 })
 export class MainModule implements NestModule {

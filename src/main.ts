@@ -12,6 +12,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { UserModule } from './modules/users/user.module';
 import { LiveChatModule } from './modules/chat/chat.module';
+import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -104,11 +105,19 @@ const configClientSwagger = (app: INestApplication) => {
         )
         .build();
     const swaggerClientDocs = SwaggerModule.createDocument(app, apiClientDocs, {
-        include: [ClientApiAuthModules],
+        include: [
+            //ClientApiAuthModules,
+            MerchantSDKModules
+        ],
         deepScanRoutes: true
     });
 
-    SwaggerModule.setup('/client-api-docs', app, swaggerClientDocs, {
+    // SwaggerModule.setup('/client-api-docs', app, swaggerClientDocs, {
+    //     swaggerOptions: {
+    //         persistAuthorization: true
+    //     }
+    // });
+    SwaggerModule.setup('/merchant-api-docs', app, swaggerClientDocs, {
         swaggerOptions: {
             persistAuthorization: true
         }

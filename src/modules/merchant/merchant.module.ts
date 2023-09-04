@@ -5,7 +5,9 @@ import { Merchant, MerchantSchema } from './schemas/merchant.schema';
 import { MerchantService } from './merchant.service';
 import { MerchantController } from './merchant.controller';
 
-const DBSchemaModule = MongooseModule.forFeature([{ name: Merchant.name, schema: MerchantSchema }]);
+const DBSchemaModule = MongooseModule.forFeature([
+    { name: Merchant.name, schema: MerchantSchema }
+]);
 
 @Module({
     imports: [DBSchemaModule, CommandModule],

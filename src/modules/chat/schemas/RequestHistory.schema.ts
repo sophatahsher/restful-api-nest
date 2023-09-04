@@ -4,17 +4,17 @@ import {
     Entity,
     Column,
     PrimaryGeneratedColumn,
-    CreateDateColumn,
-   } from 'typeorm';
+    CreateDateColumn
+} from 'typeorm';
 
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
-    
+
 @Schema({ collection: 'chat_request_histories', timestamps: true })
 export class ChatRequestHistory {
     @PrimaryGeneratedColumn('uuid')
     id: number;
-    
+
     @Prop()
     requestId: string;
 
@@ -32,7 +32,7 @@ export class ChatRequestHistory {
 
     @Prop()
     groupId: string;
-    
+
     @Prop({ default: false })
     isAccepted: boolean;
 
@@ -48,5 +48,11 @@ export class ChatRequestHistory {
 
 type ChatRequestHistoryDocument = HydratedDocument<ChatRequestHistory>;
 type ChatRequestHistoryModel = SoftDeleteModel<ChatRequestHistoryDocument>;
-const ChatRequestHistorySchema = SchemaFactory.createForClass(ChatRequestHistory).plugin(mongooseDelete, { overrideMethods: true });
-export { ChatRequestHistoryDocument, ChatRequestHistorySchema, ChatRequestHistoryModel}
+const ChatRequestHistorySchema = SchemaFactory.createForClass(
+    ChatRequestHistory
+).plugin(mongooseDelete, { overrideMethods: true });
+export {
+    ChatRequestHistoryDocument,
+    ChatRequestHistorySchema,
+    ChatRequestHistoryModel
+};

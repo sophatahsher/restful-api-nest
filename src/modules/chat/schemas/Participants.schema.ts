@@ -4,12 +4,12 @@ import {
     Entity,
     Column,
     PrimaryGeneratedColumn,
-    CreateDateColumn,
-   } from 'typeorm';
+    CreateDateColumn
+} from 'typeorm';
 
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
-    
+
 @Schema({ collection: 'chat_participants', timestamps: true })
 // Room Members
 export class ChatParticipants {
@@ -21,7 +21,7 @@ export class ChatParticipants {
 
     @Prop()
     threadId: string; // Thread
-    
+
     @Prop()
     roomId: string;
 
@@ -40,7 +40,7 @@ export class ChatParticipants {
     @Prop()
     lastAttachments: string;
 
-    @Prop({ type: Object})
+    @Prop({ type: Object })
     lastAttachmentDetails: any;
 
     @Prop()
@@ -58,5 +58,11 @@ export class ChatParticipants {
 
 type ChatParticipantsDocument = HydratedDocument<ChatParticipants>;
 type ChatParticipantsModel = SoftDeleteModel<ChatParticipantsDocument>;
-const ChatParticipantsSchema = SchemaFactory.createForClass(ChatParticipants).plugin(mongooseDelete, { overrideMethods: true });
-export { ChatParticipantsDocument, ChatParticipantsSchema, ChatParticipantsModel}
+const ChatParticipantsSchema = SchemaFactory.createForClass(
+    ChatParticipants
+).plugin(mongooseDelete, { overrideMethods: true });
+export {
+    ChatParticipantsDocument,
+    ChatParticipantsSchema,
+    ChatParticipantsModel
+};

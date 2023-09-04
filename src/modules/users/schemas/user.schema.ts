@@ -13,12 +13,14 @@ export class User {
 
     @Prop()
     email: string;
-    
+
     @Prop({ default: true })
     status: boolean;
 }
 
 type UserDocument = HydratedDocument<User>;
 type UserModel = SoftDeleteModel<UserDocument>;
-const UserSchema = SchemaFactory.createForClass(User).plugin(mongooseDelete, { overrideMethods: true });
-export { UserDocument, UserSchema, UserModel}
+const UserSchema = SchemaFactory.createForClass(User).plugin(mongooseDelete, {
+    overrideMethods: true
+});
+export { UserDocument, UserSchema, UserModel };

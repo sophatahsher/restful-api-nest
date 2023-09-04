@@ -13,8 +13,8 @@ export interface Message {
 export interface ServerToClientEvents {
     chat: (e: Message) => void;
 }
-  
-  // Interface for when clients emit events to the server.
-  export interface ClientToServerEvents {
+
+// Interface for when clients emit events to the server.
+export interface ClientToServerEvents {
     chat: (e: Message) => void;
 }

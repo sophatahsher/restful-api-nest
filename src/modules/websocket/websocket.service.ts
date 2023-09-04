@@ -3,9 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 //import { Chat, ChatModel } from '../chat/schemas/chat.schema';
 @Injectable()
 export class WebsocketService {
-    constructor(
-        //@InjectModel(Chat.name) private chatModel: ChatModel
-    ) {}
+    constructor() {} //@InjectModel(Chat.name) private chatModel: ChatModel
 
     async handshake(socketId: string) {
         console.log('handshake=======', socketId);
@@ -22,7 +20,7 @@ export class WebsocketService {
         return await payload;
         //return await this.chatModel.create(chat);
     }
-      
+
     // async getMessages() {
     //     return await this.chatModel.find();
     // }

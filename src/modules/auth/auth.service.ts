@@ -1,13 +1,26 @@
-import { BadRequestException, HttpException, HttpStatus, Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+    BadRequestException,
+    HttpException,
+    HttpStatus,
+    Injectable,
+    UnauthorizedException
+} from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { MerchantService } from 'src/modules/merchant/merchant.service';
 import * as bcrypt from 'bcrypt';
 import * as moment from 'moment';
 import { encrypt, hashStringWithSalt } from 'src/common/utils/encryption';
 import { InjectModel } from '@nestjs/mongoose';
-import { AuthorizationKey, AuthorizationKeyModel } from './schemas/authorization.schema';
+import {
+    AuthorizationKey,
+    AuthorizationKeyModel
+} from './schemas/authorization.schema';
 import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
-import { Message, ErrorMessage, ErrorCode } from 'src/common/enums/responseMessage';
+import {
+    Message,
+    ErrorMessage,
+    ErrorCode
+} from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
 import { UserService } from '../users/user.service';
 import { IRedisService } from '../redis/redis.service';
@@ -20,21 +33,33 @@ export class AuthService {
         private userService: UserService,
         private jwtService: JwtService,
         //private redisClient: IRedisService,
-        @InjectModel(AuthorizationKey.name) private authorizationKeyModel: AuthorizationKeyModel
+        @InjectModel(AuthorizationKey.name)
+        private authorizationKeyModel: AuthorizationKeyModel
     ) {}
 
     async loginUser({ username, password }: any) {
         const user = await this.userService.findByUsername(username);
-        console.log('user======', user);
-        if (!user) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.NOT_FOUND);
-        if (!bcrypt.compareSync(password, user.password)) throw new HttpException({ errorCode: ErrorCode.INVALID_USERNAME, errorMessage: ErrorMessage.INVALID_USERNAME }, HttpStatus.UNAUTHORIZED);
+        if (!user)
+            throw new HttpException(
+                {
+                    errorCode: ErrorCode.INVALID_USERNAME,
+                    errorMessage: ErrorMessage.INVALID_USERNAME
+                },
+                HttpStatus.NOT_FOUND
+            );
+        if (!bcrypt.compareSync(password, user.password))
+            throw new HttpException(
+                {
+                    errorCode: ErrorCode.INVALID_USERNAME,
+                    errorMessage: ErrorMessage.INVALID_USERNAME
+                },
+                HttpStatus.UNAUTHORIZED
+            );
 
-            
         const userObj = user.toObject();
         delete userObj.password;
-        console.log('user========', user);
         const payload = {
-            merchant: userObj,
+            auth: userObj,
             sub: userObj._id,
             iat: moment().valueOf(),
             exp: moment().add(1, 'days').valueOf()
@@ -45,7 +70,6 @@ export class AuthService {
         // RedisStore
         //this.redisClient.set('access_token', accessToken, 500);
         //const redisSessionUser = await this.redisClient.get('access_token');
-        console.log('========', accessToken);
 
         return {
             accessToken
@@ -81,9 +105,18 @@ export class AuthService {
     */
     async changeUserPassword(userId: string, body: ChangePasswordBodyDto) {
         const merchant = await this.merchantService.findOne(userId);
-        const isMatchedCurrentPassword = bcrypt.compareSync(body.currentPassword, merchant.password);
+        const isMatchedCurrentPassword = bcrypt.compareSync(
+            body.currentPassword,
+            merchant.password
+        );
         if (!isMatchedCurrentPassword)
-            throw new HttpException({ errorCode: ErrorCode.OLD_PASSWORD_NOT_MATCH, errorMessage: ErrorMessage.OLD_PASSWORD_NOT_MATCH }, HttpStatus.BAD_REQUEST);
+            throw new HttpException(
+                {
+                    errorCode: ErrorCode.OLD_PASSWORD_NOT_MATCH,
+                    errorMessage: ErrorMessage.OLD_PASSWORD_NOT_MATCH
+                },
+                HttpStatus.BAD_REQUEST
+            );
 
         const newPasswordHash = hashStringWithSalt(body.newPassword, 10);
         merchant.password = newPasswordHash;
@@ -92,10 +125,21 @@ export class AuthService {
         return 'success';
     }
 
-    async validateAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
-        const hash= encrypt(headerKey, 'sha256');
-        const record = await this.authorizationKeyModel.findOne({ key: hash, type: type }).populate('merchant');
+    async validateAuthorization(headerKey: string, type: APIAccessKeyType) {
+        const hash = encrypt(headerKey, 'sha256');
+        const record = await this.authorizationKeyModel
+            .findOne({ key: hash, type: type })
+            .populate('merchant');
         if (!record) return { valid: false, user: null };
-        return { valid: true, merchant: record.merchant };
+        return { valid: true, auth: record.merchant }; 
+    }
+
+    async validateAuthorizationKey(headerKey: string, type: APIAccessKeyType) {
+        const hash = encrypt(headerKey, 'sha256');
+        const record = await this.authorizationKeyModel
+            .findOne({ key: hash, type: type })
+            .populate('merchant');
+        if (!record) return { valid: false, user: null };
+        return { valid: true, merchant: record.merchant }; //return { valid: true, merchant: record.merchant };
     }
 }

@@ -5,26 +5,37 @@ import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
 import { AuthService } from 'src/modules/auth/auth.service';
 import { ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
 @Injectable()
-export class MerchantApiKeyStrategy extends PassportStrategy(HeaderAPIKeyStrategy,'merchant_api_key') {
+export class MerchantApiKeyStrategy extends PassportStrategy(
+    HeaderAPIKeyStrategy,
+    'merchant_api_key'
+) {
     constructor(private authService: AuthService) {
-        super({ header: 'Authorization', prefix: '' }, false, async (apiKey, done) => {
-            const { valid, merchant } = await authService.validateAuthorizationKey(
-                apiKey,
-                APIAccessKeyType.ACCESS_APP_CLIENT
-            ); 
+        super(
+            { header: 'Authorization', prefix: '' },
+            false,
+            async (apiKey, done) => {
+                const { valid, merchant } =
+                    await authService.validateAuthorizationKey(
+                        apiKey,
+                        APIAccessKeyType.ACCESS_APP_CLIENT
+                    );
 
-            if (!valid) return done(new UnauthorizedException());
+                if (!valid) return done(new UnauthorizedException());
 
-            if (!merchant) return done(new UnauthorizedException('ABC'));
+                if (!merchant) return done(new UnauthorizedException('ABC'));
 
-            if (!merchant.status)
-                return done(new UnauthorizedException(ErrorMessage.ACCOUNT_DISABLED));
+                if (!merchant.status)
+                    return done(
+                        new UnauthorizedException(ErrorMessage.ACCOUNT_DISABLED)
+                    );
 
-            return done(null, merchant);
-        });
+                return done(null, merchant);
+            }
+        );
     }
 
     async validate(payload: any) {
+        console.log('MerchantApiKeyStrategy >> payload : ', payload);
         return payload;
     }
 }

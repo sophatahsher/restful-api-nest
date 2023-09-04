@@ -4,7 +4,6 @@ import MongooseDelete, { SoftDeleteModel } from 'mongoose-delete';
 
 @Schema({ collection: 'notifications', timestamps: true })
 export class Notifications {
-
     @Prop({ required: true, unique: true })
     subject: string;
 
@@ -22,7 +21,7 @@ export class Notifications {
 
     @Prop()
     sentToUser: String;
-    
+
     @Prop()
     sentFromUser: Date;
 
@@ -31,5 +30,5 @@ export class Notifications {
 }
 type NotificationsDocument = HydratedDocument<Notifications>;
 type NotificationsModel = SoftDeleteModel<NotificationsDocument>;
-const NotificationsSchema = SchemaFactory.createForClass(Notifications);//.plugin(MongooseDelete, { overrideMethods: true });
-export { NotificationsDocument, NotificationsSchema, NotificationsModel}
+const NotificationsSchema = SchemaFactory.createForClass(Notifications); //.plugin(MongooseDelete, { overrideMethods: true });
+export { NotificationsDocument, NotificationsSchema, NotificationsModel };

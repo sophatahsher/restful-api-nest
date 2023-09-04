@@ -1,12 +1,12 @@
-import { 
+import {
     Controller,
     Get,
     Post,
     Body,
     Patch,
     Param,
-    Delete, 
-    UseGuards, 
+    Delete,
+    UseGuards,
     Put
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
@@ -33,7 +33,7 @@ export class UserController {
 
     @Get()
     async findAll() {
-        return { data: await this.userService.findAll() }
+        return { data: await this.userService.findAll() };
     }
 
     @Get(':id')

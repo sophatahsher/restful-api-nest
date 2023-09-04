@@ -2,7 +2,7 @@
 // import { createClient } from 'redis';
 // import { RedisClient, REDIS_CLIENT } from './redis.constants';
 
-import { RedisModuleOptions } from "nestjs-redis"
+import { RedisModuleOptions } from 'nestjs-redis';
 
 // export const redisClientFactory: FactoryProvider<Promise<RedisClient>> = {
 //     provide: REDIS_CLIENT,
@@ -19,6 +19,5 @@ export const redisConfig: RedisModuleOptions = {
     port: parseInt(process.env.REDIS_PORT),
     db: parseInt(process.env.REDIS_DB),
     password: process.env.REDIS_PASSWORD,
-    keyPrefix: process.env.REDIS_PRIFIX,
-}
-
+    keyPrefix: process.env.REDIS_PRIFIX
+};

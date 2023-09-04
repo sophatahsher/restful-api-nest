@@ -1,4 +1,8 @@
-import { ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+    ExecutionContext,
+    Injectable,
+    UnauthorizedException
+} from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 
@@ -8,10 +12,13 @@ export class ClientAuthGuard extends AuthGuard('client_api_key') {
         let apiKey: any = null;
         switch (context.getType()) {
             case 'http':
-                apiKey = context.switchToHttp().getRequest<Request>().headers['authorization'];
+                apiKey = context.switchToHttp().getRequest<Request>().headers[
+                    'authorization'
+                ];
                 break;
             case 'ws':
-                apiKey = context.switchToWs().getClient().handshake?.headers?.authorization;
+                apiKey = context.switchToWs().getClient().handshake
+                    ?.headers?.authorization;
                 break;
         }
         if (!apiKey) throw new UnauthorizedException('Unauthorized');
@@ -25,7 +32,8 @@ export class ClientAuthGuard extends AuthGuard('client_api_key') {
             case 'ws':
                 return {
                     headers: {
-                        authorization: context.switchToWs().getClient().handshake?.headers?.authorization 
+                        authorization: context.switchToWs().getClient()
+                            .handshake?.headers?.authorization
                     }
                 };
         }

@@ -4,11 +4,12 @@ import { Merchant, MerchantModel } from './schemas/merchant.schema';
 
 @Injectable()
 export class MerchantService {
-    constructor(@InjectModel(Merchant.name) private merchantModel: MerchantModel) {}
+    constructor(
+        @InjectModel(Merchant.name) private merchantModel: MerchantModel
+    ) {}
 
     async create(data: any) {
         return this.merchantModel.create(data);
-
     }
 
     async findOne(id: string) {

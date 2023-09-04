@@ -47,9 +47,4 @@ const sortArrayObject = (o: any) => {
     return sorted;
 };
 
-export {
-    encrypt,
-    hashStringWithSalt,
-    generatePages,
-    sortArrayObject
-};
+export { encrypt, hashStringWithSalt, generatePages, sortArrayObject };

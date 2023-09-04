@@ -1,4 +1,9 @@
-import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
+import {
+    MiddlewareConsumer,
+    Module,
+    NestModule,
+    RequestMethod
+} from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { LoggerMiddleware } from 'src/common/middleware/Logger.middleware';
@@ -14,6 +19,7 @@ import { RedisModule } from '@liaoliaots/nestjs-redis';
 import { NotificationModule } from './modules/notifications/notification.module';
 import { LiveChatModule } from './modules/chat/chat.module';
 import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
+import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module';
 //import { redisConfig } from './modules/redis/redis-client.factory';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
@@ -27,9 +33,9 @@ const MongoDBModule = MongooseModule.forRootAsync({
 // Redis
 const RedisDBModule = RedisModule.forRoot({
     config: {
-      host: 'localhost',
-      port: 6379,
-      password: ''
+        host: 'localhost',
+        port: 6379,
+        password: ''
     }
 });
 
@@ -47,11 +53,15 @@ const RedisDBModule = RedisModule.forRoot({
         NotificationModule,
         LiveChatModule,
         //
-        MerchantSDKModules
+        MerchantSDKModules,
+        //
+        AnonymousSDKModules
     ]
 })
 export class MainModule implements NestModule {
     configure(consumer: MiddlewareConsumer) {
-        consumer.apply(LoggerMiddleware).forRoutes({ path: '*', method: RequestMethod.ALL });
+        consumer
+            .apply(LoggerMiddleware)
+            .forRoutes({ path: '*', method: RequestMethod.ALL });
     }
 }

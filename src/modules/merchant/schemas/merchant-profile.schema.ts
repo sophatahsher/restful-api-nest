@@ -28,12 +28,14 @@ export class MerchantProfile {
 
     @Prop()
     region: string;
-    
+
     @Prop({ default: true })
     status: boolean;
 }
 
 type MerchantProfileDocument = HydratedDocument<MerchantProfile>;
 type MerchantProfileModel = SoftDeleteModel<MerchantProfileDocument>;
-const MerchantProfileSchema = SchemaFactory.createForClass(MerchantProfile).plugin(mongooseDelete, { overrideMethods: true });
-export { MerchantProfileDocument, MerchantProfileSchema, MerchantProfileModel}
+const MerchantProfileSchema = SchemaFactory.createForClass(
+    MerchantProfile
+).plugin(mongooseDelete, { overrideMethods: true });
+export { MerchantProfileDocument, MerchantProfileSchema, MerchantProfileModel };

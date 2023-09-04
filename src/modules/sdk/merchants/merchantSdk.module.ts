@@ -1,9 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MerchantChatSdkModule } from './chat/chat-sdk.module';
 
-const merchantSkdModules = [
-    MerchantChatSdkModule
-];
+const merchantSkdModules = [MerchantChatSdkModule];
 
 @Module({
     imports: merchantSkdModules,

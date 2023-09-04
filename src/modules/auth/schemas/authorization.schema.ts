@@ -6,7 +6,6 @@ import { Merchant } from 'src/modules/merchant/schemas/merchant.schema';
 
 @Schema({ collection: 'authorization_keys', timestamps: true })
 export class AuthorizationKey {
-
     @Prop()
     name: string;
 
@@ -25,8 +24,14 @@ export class AuthorizationKey {
 
 type AuthorizationKeyDocument = HydratedDocument<AuthorizationKey>;
 type AuthorizationKeyModel = SoftDeleteModel<AuthorizationKeyDocument>;
-const AuthorizationKeySchema = SchemaFactory.createForClass(AuthorizationKey).plugin(mongooseDelete, {
+const AuthorizationKeySchema = SchemaFactory.createForClass(
+    AuthorizationKey
+).plugin(mongooseDelete, {
     overrideMethods: true
 });
 
-export { AuthorizationKeyDocument, AuthorizationKeySchema, AuthorizationKeyModel };
+export {
+    AuthorizationKeyDocument,
+    AuthorizationKeySchema,
+    AuthorizationKeyModel
+};

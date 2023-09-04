@@ -1,4 +1,3 @@
-
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from './../../common/http/response';
@@ -17,6 +16,6 @@ export class MerchantController {
         const result = await this.service.findOne(auth._id);
         return {
             data: result
-        }
+        };
     }
 }

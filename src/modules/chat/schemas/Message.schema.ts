@@ -4,17 +4,17 @@ import {
     Entity,
     Column,
     PrimaryGeneratedColumn,
-    CreateDateColumn,
-   } from 'typeorm';
+    CreateDateColumn
+} from 'typeorm';
 
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
-    
+
 @Schema({ collection: 'chat_messages', timestamps: true })
 export class ChatMessage {
     @PrimaryGeneratedColumn('uuid')
     id: number;
-    
+
     @Prop()
     userId: string; // Message Owner
 
@@ -42,7 +42,7 @@ export class ChatMessage {
     @Prop()
     attachments: string;
 
-    @Prop({ type: Object})
+    @Prop({ type: Object })
     attachmentDetails: any;
 
     @Prop({ unique: false })
@@ -50,12 +50,15 @@ export class ChatMessage {
 
     @Prop({ unique: false })
     isArchived: boolean;
-    
+
     @Prop()
     createdAt: Date;
 }
 
 type ChatMessageDocument = HydratedDocument<ChatMessage>;
 type ChatMessageModel = SoftDeleteModel<ChatMessageDocument>;
-const ChatMessageSchema = SchemaFactory.createForClass(ChatMessage).plugin(mongooseDelete, { overrideMethods: true });
-export { ChatMessageDocument, ChatMessageSchema, ChatMessageModel}
+const ChatMessageSchema = SchemaFactory.createForClass(ChatMessage).plugin(
+    mongooseDelete,
+    { overrideMethods: true }
+);
+export { ChatMessageDocument, ChatMessageSchema, ChatMessageModel };

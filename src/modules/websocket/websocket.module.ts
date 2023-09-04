@@ -7,7 +7,9 @@ import { ChatMessage, ChatMessageSchema } from '../chat/schemas/message.schema';
 
 @Module({
     imports: [
-        MongooseModule.forFeature([{ name: ChatMessage.name, schema: ChatMessageSchema }]),
+        MongooseModule.forFeature([
+            { name: ChatMessage.name, schema: ChatMessageSchema }
+        ])
         //forwardRef(() => AuthModule),
     ],
     providers: [WebsocketGateway, WebsocketService],

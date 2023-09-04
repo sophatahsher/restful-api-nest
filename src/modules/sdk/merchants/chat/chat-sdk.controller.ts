@@ -2,11 +2,11 @@ import {
     Controller,
     Get,
     Param,
-    Body, 
+    Body,
     Query,
     UseGuards,
     Put,
-    Post,
+    Post
 } from '@nestjs/common';
 import { ApiSecurity, ApiTags } from '@nestjs/swagger';
 import { MerchantAuth } from 'src/common/decorators/authMerchantGuard.decorator';
@@ -19,29 +19,34 @@ import { AcceptChatRequestThreadDto } from './dto/Accept.dto';
 @ApiSecurity('apiKey')
 @UseGuards(MerchantAuthGuard)
 @Controller('merchant-sdk/chat')
-
 export class MerchantChatSdkController {
     constructor(private chatService: ChatService) {
         console.log('merchant-sdk/chat=========');
     }
 
     @Get('/thread/request')
-    async getChatThreadRequest(@MerchantAuth() merchantAuth: any, @Query() query: any): Promise<HttpResponse> {
+    async getChatThreadRequest(
+        @MerchantAuth() merchantAuth: any,
+        @Query() query: any
+    ): Promise<HttpResponse> {
         console.log('query=========', query);
         //const result = await this.service.findOne(auth._id);
         return {
             data: {}
-        }
+        };
     }
 
     // PerformBy: Only Merchant
     @Post('/thread/request/accept')
-    async acceptChatThreadRequest(@MerchantAuth() merchantAuth, @Body() param: AcceptChatRequestThreadDto): Promise<HttpResponse> {
+    async acceptChatThreadRequest(
+        @MerchantAuth() merchantAuth,
+        @Body() param: AcceptChatRequestThreadDto
+    ): Promise<HttpResponse> {
         console.log('merchant: ', merchantAuth);
         console.log('id: ', param);
         //const result = await this.chatService.deleteChatThreadRequest(id);
         return {
             data: []
-        }
+        };
     }
 }

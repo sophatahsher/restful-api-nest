@@ -29,13 +29,10 @@ export class UserService {
         return this.userModel.findOne({ username }).exec();
     }
 
-    async update(
-        id: string,
-        updateUserDto: UpdateUserDto,
-    ) {
+    async update(id: string, updateUserDto: UpdateUserDto) {
         return this.userModel
-        .findByIdAndUpdate(id, updateUserDto, { new: true })
-        .exec();
+            .findByIdAndUpdate(id, updateUserDto, { new: true })
+            .exec();
     }
 
     async remove(id: string) {

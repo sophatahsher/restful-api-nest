@@ -5,7 +5,7 @@ import {
     ValidationPipe,
     UseGuards,
     Put,
-    Get,
+    Get
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { Auth } from 'src/common/decorators/authGuard.decorator';
@@ -25,7 +25,7 @@ export class AuthController {
         const result = await this.service.loginUser(body);
         return {
             data: result
-        }
+        };
     }
 
     @Get('/refresh')
@@ -33,16 +33,19 @@ export class AuthController {
         const result = await this.service.loginUser(body);
         return {
             data: result
-        }
+        };
     }
 
     @ApiBearerAuth()
     @UseGuards(TokenAuthGuard)
     @Put('/change-password')
-    async changeUserPassword(@Auth() auth: any, @Body() body: ChangePasswordBodyDto) {
+    async changeUserPassword(
+        @Auth() auth: any,
+        @Body() body: ChangePasswordBodyDto
+    ) {
         const result = await this.service.changeUserPassword(auth._id, body);
         return {
             data: result
-        }
+        };
     }
 }

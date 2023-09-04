@@ -13,6 +13,7 @@ import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { UserModule } from './modules/users/user.module';
 import { LiveChatModule } from './modules/chat/chat.module';
 import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
+import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -52,6 +53,7 @@ async function bootstrap() {
 
     configSwagger(app);
     configClientSwagger(app);
+    configAnonymousSwagger(app)
 
     await app.startAllMicroservices();
     await app.listen(port, process.env.HOST);
@@ -70,14 +72,10 @@ const configSwagger = (app: INestApplication) => {
     app.setGlobalPrefix('api');
 
     const document = SwaggerModule.createDocument(app, apiDocs, {
-        include: [
-            AuthModule,
-            UserModule,
-            LiveChatModule
-        ]
+        include: [AuthModule, UserModule, LiveChatModule]
     });
 
-    if(process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
         SwaggerModule.setup('/docs', app, document, {
             swaggerOptions: {
                 persistAuthorization: true
@@ -128,6 +126,37 @@ const configClientSwagger = (app: INestApplication) => {
     }
 };
 
+// Anonymous
+const configAnonymousSwagger = (app: INestApplication) => {
+    app.setGlobalPrefix('api');
+    const apiAnonymousDocs = new DocumentBuilder()
+        .setTitle('NestJS Anonymous API Documents')
+        .setVersion('1.0')
+        .addApiKey(
+            {
+                type: 'apiKey',
+                name: 'Authorization',
+                in: 'header'
+            },
+            'apiKey'
+        )
+        .build();
+    const swaggerAnonymousDocs = SwaggerModule.createDocument(app, apiAnonymousDocs, {
+        include: [
+            AnonymousSDKModules
+        ],
+        deepScanRoutes: true
+    });
+
+    SwaggerModule.setup('/api/docs/anonymous', app, swaggerAnonymousDocs, {
+        swaggerOptions: {
+            persistAuthorization: true
+        }
+    });
+
+    if (process.env.NODE_ENV === 'production') {
+        app.setGlobalPrefix('/');
+    }
+};
+
 bootstrap().then(() => Logger.log(`Server is listening on port: ${port}✅`));
-
-

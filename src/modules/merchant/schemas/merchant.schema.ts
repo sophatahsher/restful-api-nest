@@ -13,12 +13,15 @@ export class Merchant {
 
     @Prop()
     loginType: string;
-    
+
     @Prop({ default: true })
     status: boolean;
 }
 
 type MerchantDocument = HydratedDocument<Merchant>;
 type MerchantModel = SoftDeleteModel<MerchantDocument>;
-const MerchantSchema = SchemaFactory.createForClass(Merchant).plugin(mongooseDelete, { overrideMethods: true });
-export { MerchantDocument, MerchantSchema, MerchantModel}
+const MerchantSchema = SchemaFactory.createForClass(Merchant).plugin(
+    mongooseDelete,
+    { overrideMethods: true }
+);
+export { MerchantDocument, MerchantSchema, MerchantModel };

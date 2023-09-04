@@ -4,17 +4,17 @@ import {
     Entity,
     Column,
     PrimaryGeneratedColumn,
-    CreateDateColumn,
-   } from 'typeorm';
+    CreateDateColumn
+} from 'typeorm';
 
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
-    
+
 @Schema({ collection: 'chat_groups', timestamps: true })
 export class GroupChat {
     @PrimaryGeneratedColumn('uuid')
     id: number;
-    
+
     @Prop()
     name: string;
 
@@ -43,10 +43,13 @@ export class GroupChat {
     author: string;
 
     @Prop()
-    createdAt: Date;  
+    createdAt: Date;
 }
 
 type GroupChatDocument = HydratedDocument<GroupChat>;
 type GroupChatModel = SoftDeleteModel<GroupChatDocument>;
-const GroupChatSchema = SchemaFactory.createForClass(GroupChat).plugin(mongooseDelete, { overrideMethods: true });
-export { GroupChatDocument, GroupChatSchema, GroupChatModel}
+const GroupChatSchema = SchemaFactory.createForClass(GroupChat).plugin(
+    mongooseDelete,
+    { overrideMethods: true }
+);
+export { GroupChatDocument, GroupChatSchema, GroupChatModel };

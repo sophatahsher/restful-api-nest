@@ -1,4 +1,9 @@
-import { UseGuards, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common';
+import {
+    UseGuards,
+    UseInterceptors,
+    UsePipes,
+    ValidationPipe
+} from '@nestjs/common';
 import {
     ConnectedSocket,
     MessageBody,
@@ -32,11 +37,11 @@ export class WebsocketGateway {
     async handleSendMessage(client: Socket, payload: any): Promise<void> {
         //console.log('payload=======', payload);
         await this.websocketService.createMessage(payload);
-        this.server.emit('sendMessage', {status: 'success' });
+        this.server.emit('sendMessage', { status: 'success' });
     }
 
     afterInit(server: Server) {
-        console.log(`afterInit : ${server}`); 
+        console.log(`afterInit : ${server}`);
         //Do stuffs
     }
 
@@ -55,10 +60,10 @@ export class WebsocketGateway {
             //if (socketId) {
             //    this.websocketService.handshake(socketId);
             //}
-            return 'hello'
+            return 'hello';
         } catch (e) {
             console.log('client.handshake==========', e);
-        } 
+        }
     }
 
     async handleDisconnect(client: Socket) {
@@ -76,13 +81,19 @@ export class WebsocketGateway {
     }
 
     @SubscribeMessage('subscribe')
-    async subscribeMessage(@MessageBody() body: any, @ConnectedSocket() client: Socket) {
+    async subscribeMessage(
+        @MessageBody() body: any,
+        @ConnectedSocket() client: Socket
+    ) {
         client.join(body.socketId);
         return 'success';
     }
 
     @SubscribeMessage('unsubscribe')
-    async unsubscribeMessage(@MessageBody() body: any, @ConnectedSocket() client: Socket) {
+    async unsubscribeMessage(
+        @MessageBody() body: any,
+        @ConnectedSocket() client: Socket
+    ) {
         client.leave(body.socketId);
         return 'success';
     }

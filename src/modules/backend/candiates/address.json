@@ -1,0 +1,16 @@
+[
+    {
+        "id": 205285,
+        "address_type": "Office",
+        "address_line_1": "Address1",
+        "address_line_2": "Address2",
+        "country": "Indonesia",
+        "province": "Province",
+        "district": "district",
+        "sub_district": "sub district",
+        "postcode": "22222",
+        "landline_fax": "fax",
+        "created_at": "2023-09-15T10:32:19.822598Z",
+        "updated_at": "2023-09-15T10:32:19.822622Z"
+    }
+]

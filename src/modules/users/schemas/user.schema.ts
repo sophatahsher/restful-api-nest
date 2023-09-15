@@ -3,19 +3,30 @@ import { HydratedDocument } from 'mongoose';
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
 
-@Schema({ collection: 'users', timestamps: true })
+//@Schema({ collection: 'users', timestamps: true })
+@Schema({ collection: 'app_users', timestamps: true })
 export class User {
-    @Prop({ required: true, unique: true })
-    username: string;
 
-    @Prop()
-    password: string;
+    @Prop({ required: true })
+    firstName: string;
+
+    @Prop({ required: true })
+    lastName: string;
 
     @Prop()
     email: string;
 
-    @Prop({ default: true })
-    status: boolean;
+    @Prop()
+    phoneNumber: string;
+
+    @Prop({ required: true, unique: true })
+    username: string;
+
+    @Prop({ required: true })
+    password: string;
+
+    @Prop({ default: 1, required: false })
+    status: number;
 }
 
 type UserDocument = HydratedDocument<User>;

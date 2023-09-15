@@ -1,0 +1,44 @@
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1333648,
+            "organization": 1878615,
+            "organization_name": "Neo Technology",
+            "organization_logo": null,
+            "organization_permissions": {
+                "see_organization_details": true
+            },
+            "job_permissions": {
+                "request_scorecard": true,
+                "publish": true
+            },
+            "is_organization_confidential": false,
+            "position_name": "Software Engineer",
+            "headcount": 1,
+            "candidate_count": 1,
+            "most_advanced_job_pipeline_stage_name": "New Candidates",
+            "owner": 242351,
+            "owner_name": "Sher",
+            "owner_picture": null,
+            "job_recruiters": [
+                {
+                    "recruiter_id": 242351,
+                    "recruiter_name": "Sher",
+                    "recruiter_picture": null
+                }
+            ],
+            "location_display": "",
+            "salary_min": null,
+            "salary_max": null,
+            "currency_code": "USD",
+            "is_published": false,
+            "status": "active",
+            "can_edit_status": true,
+            "created_at": "2023-09-07T03:59:02.304021Z",
+            "open_at": "2023-09-07T03:59:02.297840Z"
+        }
+    ]
+}

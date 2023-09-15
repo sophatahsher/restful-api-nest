@@ -21,7 +21,7 @@ import { AcceptChatRequestThreadDto } from './dto/Accept.dto';
 @Controller('merchant-sdk/chat')
 export class MerchantChatSdkController {
     constructor(private chatService: ChatService) {
-        console.log('merchant-sdk/chat=========');
+        //console.log('merchant-sdk/chat=========');
     }
 
     @Get('/thread/request')

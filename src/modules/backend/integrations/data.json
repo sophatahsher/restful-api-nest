@@ -1,0 +1,230 @@
+{
+    "count": 8,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 10,
+            "name": "Adobe Sign",
+            "short_description": "DOCUMENT SIGNING SOLUTIONS",
+            "description": "Adobe Acrobat Sign is a cloud-based e-signature service that allows the user to send, sign, track, and manage signature processes using a browser or mobile device. It is part of the Adobe Document Cloud suite of services.",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/adobe-sign_1.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=p8P21jVT9fboMqDWfFx08o83JeQ%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/adobe-sign-main.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=gCyIpM6tqEGjseAT9v0mOtQLys4%3D&Expires=1694776738",
+            "url": "https://www.adobesigndemo.com/",
+            "terms_conditions_url": "https://www.adobe.com/legal/terms.html",
+            "privacy_policy_url": "https://www.adobe.com/privacy.html",
+            "categories": [
+                "signature"
+            ],
+            "created_at": "2023-08-08T11:20:29.130647Z",
+            "updated_at": "2023-08-09T03:08:57.598913Z",
+            "generate_token": false,
+            "default_authentication_type": "oauth",
+            "oauth_endpoints": {
+                "register": "/v1/oauth/adobe_sign/register/",
+                "disconnect": "/v1/oauth/adobe_sign/disconnect/",
+                "authorization_url": "/v1/oauth/adobe_sign/authorization-url/"
+            },
+            "form_fields": []
+        },
+        {
+            "id": 6,
+            "name": "BambooHR",
+            "short_description": "BambooHR is designed with small and medium sized businesses in mind. We set you free to focus on what matters most. - your people.",
+            "description": "<p>BambooHR is a comprehensive HR software that simplifies and supports every step of the employee experience. It helps you with data management, reporting, workflow automation, analytics, applicant tracking, and onboarding.</p> <p>Here are some specific examples of how BambooHR can help you with your HR needs:</p> <ul>\r\n  <li>\r\n    <strong>Data management</strong>: BambooHR provides a single source of truth for all your HR data.\r\n  </li>\r\n</ul><ul>\r\n  <li>\r\n    <strong>Reporting</strong>: BambooHR offers a variety of pre-built reports that can help you track your progress and identify areas for improvement.\r\n  </li>\r\n</ul> <ul>\r\n  <li>\r\n    <strong>Workflow automation</strong>: BambooHR can automate many of your HR tasks, such as onboarding and performance reviews.\r\n  </li>\r\n</ul> <ul>\r\n  <li>\r\n    <strong>Analytics</strong>: BambooHR provides in-depth analytics that can help you understand your workforce and make better decisions.\r\n  </li>\r\n</ul> <ul>\r\n  <li>\r\n    <strong>Applicant tracking system</strong>: BambooHR's applicant tracking system can help you find and hire the best talent.\r\n  </li>\r\n</ul><ul>\r\n  <li>\r\n    <strong>Onboarding</strong>: BambooHR's onboarding tools can help you create a positive and productive onboarding experience for new hires.\r\n  </li>\r\n</ul>",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/bamboosmall.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=pMuCLLJvfRh3K9QlDXinPuyLnuY%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/bamboohr_cover.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=hykFj9%2B4Q0qhv4i%2FLgDHdbwZ4AE%3D&Expires=1694776738",
+            "url": "https://www.bamboohr.com/",
+            "terms_conditions_url": "https://www.bamboohr.com/terms-of-service/",
+            "privacy_policy_url": "https://www.bamboohr.com/privacy-policy/",
+            "categories": [
+                "hrms"
+            ],
+            "created_at": "2023-06-30T06:35:47.989009Z",
+            "updated_at": "2023-07-03T08:46:22.889725Z",
+            "generate_token": false,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": [
+                {
+                    "id": 2,
+                    "key": "api_key",
+                    "label": "API Key",
+                    "is_required": true,
+                    "placeholder": null,
+                    "prefix": null,
+                    "suffix": null,
+                    "type": "text"
+                },
+                {
+                    "id": 3,
+                    "key": "subdomain",
+                    "label": "Subdomain",
+                    "is_required": true,
+                    "placeholder": "Subdomain",
+                    "prefix": "https://",
+                    "suffix": ".bamboohr.com",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Codility",
+            "short_description": "Codility is the #1 rated technical recruitment platform for teams to test the coding skills of developers and make evidence-based hiring decisions.",
+            "description": "The Codility integration allows you to build smarter workflows by centralizing your candidate assessment processes in Manatal. \r\n\r\nThe integration allows you to send out assessment tests from and receive the test results within Manatal. \r\n\r\nThen you can make smarter hiring decisions with your team and hiring managers.\r\n\r\nFor getting started with the Codility integration, you are required to have an active Codility subscription. If you already have a subscription, you can click on the \"Integrate\" button and get started to connect both solutions.",
+            "instructions": "Input your service provider’s API key below in order to connect it to Manatal. The API key should be available in your account on that service provider’s platform.",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/codility-1-1.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=PaKyj%2F9RVCUMNnelR%2Bvmp1qVg4o%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/codility-16-9.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=RhTXe8FXsq6EAKIm411e001z5fw%3D&Expires=1694776738",
+            "url": "https://www.codility.com/",
+            "terms_conditions_url": "https://www.codility.com/terms-of-service/",
+            "privacy_policy_url": "https://www.codility.com/data-privacy-notice/",
+            "categories": [
+                "assessment"
+            ],
+            "created_at": "2022-04-04T03:12:32.165374Z",
+            "updated_at": "2023-05-19T03:58:42.419361Z",
+            "generate_token": false,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": []
+        },
+        {
+            "id": 7,
+            "name": "HiBob",
+            "short_description": "The HR platform that powers productivity, engagement, and retention.",
+            "description": "HiBob is on a mission to transform how organizations operate in the modern world of work with its HR platform Bob. Leading the way for the future workplace, Bob offers resilient, agile technology that wraps all the complexities of HR processes into a game-changing, user-friendly tool that touches every employee across the business.\r\nSay ‘hi’ to Bob. The modern HR platform for modern business.",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/bob-1-1.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=K49LlSStbNJC4L%2FH8sP9ah%2BuVlA%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/bob-main.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=BFHgNAz%2F%2BMALz%2Ff8USH0a%2BNufLE%3D&Expires=1694776738",
+            "url": "https://www.hibob.com/",
+            "terms_conditions_url": "https://www.hibob.com/privacy/terms-and-conditions/",
+            "privacy_policy_url": "https://www.hibob.com/privacy/privacy-policy/",
+            "categories": [
+                "hrms"
+            ],
+            "created_at": "2023-07-12T03:49:04.345696Z",
+            "updated_at": "2023-07-13T02:17:09.259397Z",
+            "generate_token": false,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": [
+                {
+                    "id": 4,
+                    "key": "api_key",
+                    "label": "API Key",
+                    "is_required": true,
+                    "placeholder": "API Key",
+                    "prefix": null,
+                    "suffix": null,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Humaans",
+            "short_description": "HR software for modern People teams to onboard, manage and grow their employees.",
+            "description": "Deep integrations, workflow automation, best-in-class employee experience. Say goodbye to spreadsheets and clunky systems. It's time for a whole new HRIS.",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/humaans-1-1.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=XI4IIme1w1Pm551BpNpTdDkYGZE%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/humaans-main.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=36VUXYSo8rrhO%2BL%2FmuinR2m5apM%3D&Expires=1694776738",
+            "url": "https://humaans.io/",
+            "terms_conditions_url": "https://humaans.io/terms?_gl=1*z5w5x6*_up*MQ..*_ga*MTkxMTkzNjU4NS4xNjg5MDU5NTgw*_ga_T58MKY4WGD*MTY4OTA1OTU3OC4xLjAuMTY4OTA1OTU3OC4wLjAuMA..",
+            "privacy_policy_url": "https://humaans.io/privacy?_gl=1*z5w5x6*_up*MQ..*_ga*MTkxMTkzNjU4NS4xNjg5MDU5NTgw*_ga_T58MKY4WGD*MTY4OTA1OTU3OC4xLjAuMTY4OTA1OTU3OC4wLjAuMA..",
+            "categories": [
+                "hrms"
+            ],
+            "created_at": "2023-07-12T03:51:50.675050Z",
+            "updated_at": "2023-07-13T02:17:13.516886Z",
+            "generate_token": false,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": [
+                {
+                    "id": 5,
+                    "key": "api_key",
+                    "label": "API Key",
+                    "is_required": true,
+                    "placeholder": "API Key",
+                    "prefix": null,
+                    "suffix": null,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "MailChimp",
+            "short_description": "Marketing automation platform and email marketing service.",
+            "description": "MailChimp is a marketing automation platform and email marketing service. With the MailChimp integration, you can now leverage contact & candidate information from Manatal for your newsletter and email campaigns.",
+            "instructions": "Input your service provider’s API key below in order to connect it to Manatal. The API key should be available in your account on that service provider’s platform.",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/mailchimp_list_logo.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=q7cPqhnvZyujuVq01UFnlCQXOR0%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/mailchimp_cover_logo.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=dsC41nF4mDn4TkGkKCTvpi0wF%2Fo%3D&Expires=1694776738",
+            "url": "https://mailchimp.com/",
+            "terms_conditions_url": "https://mailchimp.com/legal/",
+            "privacy_policy_url": "https://www.intuit.com/privacy/statement/",
+            "categories": [
+                "marketing"
+            ],
+            "created_at": "2022-03-29T02:29:00.730305Z",
+            "updated_at": "2023-05-19T03:58:46.780125Z",
+            "generate_token": false,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": []
+        },
+        {
+            "id": 4,
+            "name": "Omni HR",
+            "short_description": "The all-in-one HR platform for fast-growing, modern teams in Asia",
+            "description": "The comprehensive HRIS that frees HR teams from administrative loops and automates the entire end-to-end employee lifecycle. Hire, onboard, manage, and pay employees across Asia and beyond in just a few clicks.",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/omni-11.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=7DS08R%2BEdnPy2bNnou7mMxOydAI%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/omni-32.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=DOxoqumIK37X6dmQIwUZ%2F0jAAWM%3D&Expires=1694776738",
+            "url": "https://omnihr.co/",
+            "terms_conditions_url": "https://omnihr.co/terms/",
+            "privacy_policy_url": "https://omnihr.co/privacy-policy/",
+            "categories": [
+                "hrms"
+            ],
+            "created_at": "2023-05-11T05:04:16.665604Z",
+            "updated_at": "2023-08-24T08:26:16.868306Z",
+            "generate_token": true,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": []
+        },
+        {
+            "id": 3,
+            "name": "Sprout Solutions",
+            "short_description": "Sprout Solutions is the #1 HR Analytics people platform in the Philippines that scales up your business with safe & secure end-to-end HR solutions, employee insights, and engagement tools plus a dedicated customer service.",
+            "description": "With Sprout, time-keeping will be time-consuming no more! We have multiple ways to help you keep time for your employees, from good old biometric devices installed on your premises to a mobile app with geo-tag and geo-fence options.",
+            "instructions": "",
+            "logo": "https://manahub.s3.amazonaws.com/media/integration_logo/Group_2.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=tDYfSbnLCcTPr8ep%2BAjx0k7LOt4%3D&Expires=1694776738",
+            "status": "active",
+            "cover_logo": "https://manahub.s3.amazonaws.com/media/integration_logo/Group_1_lfvxRpB.png?AWSAccessKeyId=AKIATGBDKH6NJ6SLELCP&Signature=9jHu2qfx4q4eYn%2B2jrzfJaLl6zw%3D&Expires=1694776738",
+            "url": "https://sprout.ph/why-sprout/",
+            "terms_conditions_url": "https://sprout.ph/terms-of-service/",
+            "privacy_policy_url": "https://sprout.ph/privacy-policy/",
+            "categories": [
+                "hrms"
+            ],
+            "created_at": "2023-05-11T05:01:16.105579Z",
+            "updated_at": "2023-06-20T05:02:58.924679Z",
+            "generate_token": true,
+            "default_authentication_type": "token",
+            "oauth_endpoints": {},
+            "form_fields": []
+        }
+    ]
+}

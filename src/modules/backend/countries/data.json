@@ -1,0 +1,3501 @@
+[
+    {
+        "id": 2,
+        "name": "Afghanistan",
+        "common_name": "Afghanistan",
+        "official_name": "Islamic Republic of Afghanistan",
+        "demonym": "Afghan",
+        "iso2": "AF",
+        "iso3": "AFG",
+        "phone_code": 93,
+        "alternative_spellings": [
+            "Afġānistān"
+        ],
+        "demonym_name": "Afghan"
+    },
+    {
+        "id": 5,
+        "name": "Åland Islands",
+        "common_name": "Åland Islands",
+        "official_name": "Åland Islands",
+        "demonym": "Ålandish",
+        "iso2": "AX",
+        "iso3": "ALA",
+        "phone_code": 358,
+        "alternative_spellings": [
+            "Aaland",
+            "Ahvenanmaa",
+            "Aland"
+        ],
+        "demonym_name": "Ålandish"
+    },
+    {
+        "id": 6,
+        "name": "Albania",
+        "common_name": "Albania",
+        "official_name": "Republic of Albania",
+        "demonym": "Albanian",
+        "iso2": "AL",
+        "iso3": "ALB",
+        "phone_code": 355,
+        "alternative_spellings": [
+            "Shqipëria",
+            "Shqipëri",
+            "Shqipnia"
+        ],
+        "demonym_name": "Albanian"
+    },
+    {
+        "id": 66,
+        "name": "Algeria",
+        "common_name": "Algeria",
+        "official_name": "People's Democratic Republic of Algeria",
+        "demonym": "Algerian",
+        "iso2": "DZ",
+        "iso3": "DZA",
+        "phone_code": 213,
+        "alternative_spellings": [
+            "Dzayer",
+            "Algérie"
+        ],
+        "demonym_name": "Algerian"
+    },
+    {
+        "id": 236,
+        "name": "United States",
+        "common_name": "United States",
+        "official_name": "United States of America",
+        "demonym": "American",
+        "iso2": "US",
+        "iso3": "USA",
+        "phone_code": 1,
+        "alternative_spellings": [],
+        "demonym_name": "American"
+    },
+    {
+        "id": 234,
+        "name": "United States Minor Outlying Islands",
+        "common_name": "United States Minor Outlying Islands",
+        "official_name": "United States Minor Outlying Islands",
+        "demonym": "American Islander",
+        "iso2": "UM",
+        "iso3": "UMI",
+        "phone_code": null,
+        "alternative_spellings": [],
+        "demonym_name": "American Islander (United States Minor Outlying Islands)"
+    },
+    {
+        "id": 11,
+        "name": "American Samoa",
+        "common_name": "American Samoa",
+        "official_name": "American Samoa",
+        "demonym": "American Samoan",
+        "iso2": "AS",
+        "iso3": "ASM",
+        "phone_code": 1684,
+        "alternative_spellings": [
+            "Amerika Sāmoa",
+            "Sāmoa Amelika",
+            "Amelika Sāmoa"
+        ],
+        "demonym_name": "American Samoan"
+    },
+    {
+        "id": 7,
+        "name": "Andorra",
+        "common_name": "Andorra",
+        "official_name": "Principality of Andorra",
+        "demonym": "Andorran",
+        "iso2": "AD",
+        "iso3": "AND",
+        "phone_code": 376,
+        "alternative_spellings": [
+            "Principat d'Andorra"
+        ],
+        "demonym_name": "Andorran"
+    },
+    {
+        "id": 3,
+        "name": "Angola",
+        "common_name": "Angola",
+        "official_name": "Republic of Angola",
+        "demonym": "Angolan",
+        "iso2": "AO",
+        "iso3": "AGO",
+        "phone_code": 244,
+        "alternative_spellings": [
+            "República de Angola",
+            "ʁɛpublika de an'ɡɔla"
+        ],
+        "demonym_name": "Angolan"
+    },
+    {
+        "id": 4,
+        "name": "Anguilla",
+        "common_name": "Anguilla",
+        "official_name": "Anguilla",
+        "demonym": "Anguillian",
+        "iso2": "AI",
+        "iso3": "AIA",
+        "phone_code": 1264,
+        "alternative_spellings": [],
+        "demonym_name": "Anguillian"
+    },
+    {
+        "id": 12,
+        "name": "Antarctica",
+        "common_name": "Antarctica",
+        "official_name": "Antarctica",
+        "demonym": "Antarctican",
+        "iso2": "AQ",
+        "iso3": "ATA",
+        "phone_code": null,
+        "alternative_spellings": [],
+        "demonym_name": "Antarctican"
+    },
+    {
+        "id": 14,
+        "name": "Antigua and Barbuda",
+        "common_name": "Antigua and Barbuda",
+        "official_name": "Antigua and Barbuda",
+        "demonym": "Antiguan, Barbudan",
+        "iso2": "AG",
+        "iso3": "ATG",
+        "phone_code": 1268,
+        "alternative_spellings": [],
+        "demonym_name": "Antiguan, Barbudan"
+    },
+    {
+        "id": 9,
+        "name": "Argentina",
+        "common_name": "Argentina",
+        "official_name": "Argentine Republic",
+        "demonym": "Argentine",
+        "iso2": "AR",
+        "iso3": "ARG",
+        "phone_code": 54,
+        "alternative_spellings": [
+            "República Argentina"
+        ],
+        "demonym_name": "Argentine"
+    },
+    {
+        "id": 10,
+        "name": "Armenia",
+        "common_name": "Armenia",
+        "official_name": "Republic of Armenia",
+        "demonym": "Armenian",
+        "iso2": "AM",
+        "iso3": "ARM",
+        "phone_code": 374,
+        "alternative_spellings": [
+            "Հայաստանի Հանրապետություն",
+            "Hayastan"
+        ],
+        "demonym_name": "Armenian"
+    },
+    {
+        "id": 1,
+        "name": "Aruba",
+        "common_name": "Aruba",
+        "official_name": "Aruba",
+        "demonym": "Aruban",
+        "iso2": "AW",
+        "iso3": "ABW",
+        "phone_code": 297,
+        "alternative_spellings": [],
+        "demonym_name": "Aruban"
+    },
+    {
+        "id": 15,
+        "name": "Australia",
+        "common_name": "Australia",
+        "official_name": "Commonwealth of Australia",
+        "demonym": "Australian",
+        "iso2": "AU",
+        "iso3": "AUS",
+        "phone_code": 61,
+        "alternative_spellings": [],
+        "demonym_name": "Australian"
+    },
+    {
+        "id": 16,
+        "name": "Austria",
+        "common_name": "Austria",
+        "official_name": "Republic of Austria",
+        "demonym": "Austrian",
+        "iso2": "AT",
+        "iso3": "AUT",
+        "phone_code": 43,
+        "alternative_spellings": [
+            "Oesterreich",
+            "Osterreich"
+        ],
+        "demonym_name": "Austrian"
+    },
+    {
+        "id": 17,
+        "name": "Azerbaijan",
+        "common_name": "Azerbaijan",
+        "official_name": "Republic of Azerbaijan",
+        "demonym": "Azerbaijani",
+        "iso2": "AZ",
+        "iso3": "AZE",
+        "phone_code": 994,
+        "alternative_spellings": [
+            "Azərbaycan Respublikası"
+        ],
+        "demonym_name": "Azerbaijani"
+    },
+    {
+        "id": 25,
+        "name": "Bahamas",
+        "common_name": "Bahamas",
+        "official_name": "Commonwealth of the Bahamas",
+        "demonym": "Bahamian",
+        "iso2": "BS",
+        "iso3": "BHS",
+        "phone_code": 1242,
+        "alternative_spellings": [],
+        "demonym_name": "Bahamian"
+    },
+    {
+        "id": 24,
+        "name": "Bahrain",
+        "common_name": "Bahrain",
+        "official_name": "Kingdom of Bahrain",
+        "demonym": "Bahraini",
+        "iso2": "BH",
+        "iso3": "BHR",
+        "phone_code": 973,
+        "alternative_spellings": [
+            "Mamlakat al-Baḥrayn"
+        ],
+        "demonym_name": "Bahraini"
+    },
+    {
+        "id": 22,
+        "name": "Bangladesh",
+        "common_name": "Bangladesh",
+        "official_name": "People's Republic of Bangladesh",
+        "demonym": "Bangladeshi",
+        "iso2": "BD",
+        "iso3": "BGD",
+        "phone_code": 880,
+        "alternative_spellings": [
+            "Gônôprôjatôntri Bangladesh"
+        ],
+        "demonym_name": "Bangladeshi"
+    },
+    {
+        "id": 35,
+        "name": "Barbados",
+        "common_name": "Barbados",
+        "official_name": "Barbados",
+        "demonym": "Barbadian",
+        "iso2": "BB",
+        "iso3": "BRB",
+        "phone_code": 1246,
+        "alternative_spellings": [],
+        "demonym_name": "Barbadian"
+    },
+    {
+        "id": 29,
+        "name": "Belarus",
+        "common_name": "Belarus",
+        "official_name": "Republic of Belarus",
+        "demonym": "Belarusian",
+        "iso2": "BY",
+        "iso3": "BLR",
+        "phone_code": 375,
+        "alternative_spellings": [
+            "Белоруссия",
+            "Bielaruś",
+            "Республика Белоруссия"
+        ],
+        "demonym_name": "Belarusian"
+    },
+    {
+        "id": 19,
+        "name": "Belgium",
+        "common_name": "Belgium",
+        "official_name": "Kingdom of Belgium",
+        "demonym": "Belgian",
+        "iso2": "BE",
+        "iso3": "BEL",
+        "phone_code": 32,
+        "alternative_spellings": [
+            "Belgique",
+            "Royaume de Belgique",
+            "België",
+            "Belgie",
+            "Königreich Belgien",
+            "Belgien",
+            "Koninkrijk België"
+        ],
+        "demonym_name": "Belgian"
+    },
+    {
+        "id": 30,
+        "name": "Belize",
+        "common_name": "Belize",
+        "official_name": "Belize",
+        "demonym": "Belizean",
+        "iso2": "BZ",
+        "iso3": "BLZ",
+        "phone_code": 501,
+        "alternative_spellings": [],
+        "demonym_name": "Belizean"
+    },
+    {
+        "id": 20,
+        "name": "Benin",
+        "common_name": "Benin",
+        "official_name": "Republic of Benin",
+        "demonym": "Beninese",
+        "iso2": "BJ",
+        "iso3": "BEN",
+        "phone_code": 229,
+        "alternative_spellings": [
+            "République du Bénin"
+        ],
+        "demonym_name": "Beninese"
+    },
+    {
+        "id": 31,
+        "name": "Bermuda",
+        "common_name": "Bermuda",
+        "official_name": "Bermuda",
+        "demonym": "Bermudian",
+        "iso2": "BM",
+        "iso3": "BMU",
+        "phone_code": 1441,
+        "alternative_spellings": [
+            "The Islands of Bermuda",
+            "The Bermudas",
+            "Somers Isles"
+        ],
+        "demonym_name": "Bermudian"
+    },
+    {
+        "id": 37,
+        "name": "Bhutan",
+        "common_name": "Bhutan",
+        "official_name": "Kingdom of Bhutan",
+        "demonym": "Bhutanese",
+        "iso2": "BT",
+        "iso3": "BTN",
+        "phone_code": 975,
+        "alternative_spellings": [],
+        "demonym_name": "Bhutanese"
+    },
+    {
+        "id": 32,
+        "name": "Bolivia",
+        "common_name": "Bolivia",
+        "official_name": "Plurinational State of Bolivia",
+        "demonym": "Bolivian",
+        "iso2": "BO",
+        "iso3": "BOL",
+        "phone_code": 591,
+        "alternative_spellings": [
+            "Tetã Volívia",
+            "Bolivia, Plurinational State of",
+            "Buliwya Mamallaqta",
+            "Wuliwya Suyu",
+            "Estado Plurinacional de Bolivia",
+            "Buliwya",
+            "Wuliwya"
+        ],
+        "demonym_name": "Bolivian"
+    },
+    {
+        "id": 26,
+        "name": "Bosnia and Herzegovina",
+        "common_name": "Bosnia and Herzegovina",
+        "official_name": "Bosnia and Herzegovina",
+        "demonym": "Bosnian, Herzegovinian",
+        "iso2": "BA",
+        "iso3": "BIH",
+        "phone_code": 387,
+        "alternative_spellings": [
+            "Bosnia-Herzegovina",
+            "Босна и Херцеговина"
+        ],
+        "demonym_name": "Bosnian, Herzegovinian"
+    },
+    {
+        "id": 34,
+        "name": "Brazil",
+        "common_name": "Brazil",
+        "official_name": "Federative Republic of Brazil",
+        "demonym": "Brazilian",
+        "iso2": "BR",
+        "iso3": "BRA",
+        "phone_code": 55,
+        "alternative_spellings": [
+            "República Federativa do Brasil",
+            "Brasil"
+        ],
+        "demonym_name": "Brazilian"
+    },
+    {
+        "id": 81,
+        "name": "United Kingdom",
+        "common_name": "United Kingdom",
+        "official_name": "United Kingdom of Great Britain and Northern Ireland",
+        "demonym": "British",
+        "iso2": "GB",
+        "iso3": "GBR",
+        "phone_code": 44,
+        "alternative_spellings": [
+            "Great Britain"
+        ],
+        "demonym_name": "British"
+    },
+    {
+        "id": 36,
+        "name": "Brunei",
+        "common_name": "Brunei",
+        "official_name": "Nation of Brunei, Abode of Peace",
+        "demonym": "Bruneian",
+        "iso2": "BN",
+        "iso3": "BRN",
+        "phone_code": 673,
+        "alternative_spellings": [
+            "Nation of Brunei",
+            "the Abode of Peace",
+            "Brunei Darussalam"
+        ],
+        "demonym_name": "Bruneian"
+    },
+    {
+        "id": 23,
+        "name": "Bulgaria",
+        "common_name": "Bulgaria",
+        "official_name": "Republic of Bulgaria",
+        "demonym": "Bulgarian",
+        "iso2": "BG",
+        "iso3": "BGR",
+        "phone_code": 359,
+        "alternative_spellings": [
+            "Република България"
+        ],
+        "demonym_name": "Bulgarian"
+    },
+    {
+        "id": 21,
+        "name": "Burkina Faso",
+        "common_name": "Burkina Faso",
+        "official_name": "Burkina Faso",
+        "demonym": "Burkinabe",
+        "iso2": "BF",
+        "iso3": "BFA",
+        "phone_code": 226,
+        "alternative_spellings": [],
+        "demonym_name": "Burkinabe"
+    },
+    {
+        "id": 18,
+        "name": "Burundi",
+        "common_name": "Burundi",
+        "official_name": "Republic of Burundi",
+        "demonym": "Burundian",
+        "iso2": "BI",
+        "iso3": "BDI",
+        "phone_code": 257,
+        "alternative_spellings": [
+            "République du Burundi",
+            "Republika y'Uburundi"
+        ],
+        "demonym_name": "Burundian"
+    },
+    {
+        "id": 121,
+        "name": "Cambodia",
+        "common_name": "Cambodia",
+        "official_name": "Kingdom of Cambodia",
+        "demonym": "Cambodian",
+        "iso2": "KH",
+        "iso3": "KHM",
+        "phone_code": 855,
+        "alternative_spellings": [],
+        "demonym_name": "Cambodian"
+    },
+    {
+        "id": 47,
+        "name": "Cameroon",
+        "common_name": "Cameroon",
+        "official_name": "Republic of Cameroon",
+        "demonym": "Cameroonian",
+        "iso2": "CM",
+        "iso3": "CMR",
+        "phone_code": 237,
+        "alternative_spellings": [
+            "République du Cameroun"
+        ],
+        "demonym_name": "Cameroonian"
+    },
+    {
+        "id": 41,
+        "name": "Canada",
+        "common_name": "Canada",
+        "official_name": "Canada",
+        "demonym": "Canadian",
+        "iso2": "CA",
+        "iso3": "CAN",
+        "phone_code": 1,
+        "alternative_spellings": [],
+        "demonym_name": "Canadian"
+    },
+    {
+        "id": 53,
+        "name": "Cape Verde",
+        "common_name": "Cape Verde",
+        "official_name": "Republic of Cabo Verde",
+        "demonym": "Cape Verdian",
+        "iso2": "CV",
+        "iso3": "CPV",
+        "phone_code": 238,
+        "alternative_spellings": [
+            "República de Cabo Verde"
+        ],
+        "demonym_name": "Cape Verdian"
+    },
+    {
+        "id": 58,
+        "name": "Cayman Islands",
+        "common_name": "Cayman Islands",
+        "official_name": "Cayman Islands",
+        "demonym": "Caymanian",
+        "iso2": "KY",
+        "iso3": "CYM",
+        "phone_code": 1345,
+        "alternative_spellings": [],
+        "demonym_name": "Caymanian"
+    },
+    {
+        "id": 40,
+        "name": "Central African Republic",
+        "common_name": "Central African Republic",
+        "official_name": "Central African Republic",
+        "demonym": "Central African",
+        "iso2": "CF",
+        "iso3": "CAF",
+        "phone_code": 236,
+        "alternative_spellings": [
+            "République centrafricaine"
+        ],
+        "demonym_name": "Central African"
+    },
+    {
+        "id": 218,
+        "name": "Chad",
+        "common_name": "Chad",
+        "official_name": "Republic of Chad",
+        "demonym": "Chadian",
+        "iso2": "TD",
+        "iso3": "TCD",
+        "phone_code": 235,
+        "alternative_spellings": [
+            "République du Tchad",
+            "Tchad"
+        ],
+        "demonym_name": "Chadian"
+    },
+    {
+        "id": 44,
+        "name": "Chile",
+        "common_name": "Chile",
+        "official_name": "Republic of Chile",
+        "demonym": "Chilean",
+        "iso2": "CL",
+        "iso3": "CHL",
+        "phone_code": 56,
+        "alternative_spellings": [
+            "República de Chile"
+        ],
+        "demonym_name": "Chilean"
+    },
+    {
+        "id": 45,
+        "name": "China",
+        "common_name": "China",
+        "official_name": "People's Republic of China",
+        "demonym": "Chinese",
+        "iso2": "CN",
+        "iso3": "CHN",
+        "phone_code": 86,
+        "alternative_spellings": [
+            "中华人民共和国",
+            "Zhongguo",
+            "Zhōnghuá Rénmín Gònghéguó",
+            "Zhōngguó",
+            "Zhonghua"
+        ],
+        "demonym_name": "Chinese"
+    },
+    {
+        "id": 57,
+        "name": "Christmas Island",
+        "common_name": "Christmas Island",
+        "official_name": "Territory of Christmas Island",
+        "demonym": "Christmas Islander",
+        "iso2": "CX",
+        "iso3": "CXR",
+        "phone_code": 61,
+        "alternative_spellings": [],
+        "demonym_name": "Christmas Islander"
+    },
+    {
+        "id": 42,
+        "name": "Cocos (Keeling) Islands",
+        "common_name": "Cocos (Keeling) Islands",
+        "official_name": "Territory of the Cocos (Keeling) Islands",
+        "demonym": "Cocos Islander",
+        "iso2": "CC",
+        "iso3": "CCK",
+        "phone_code": 61,
+        "alternative_spellings": [
+            "Keeling Islands",
+            "Cocos Islands"
+        ],
+        "demonym_name": "Cocos Islander"
+    },
+    {
+        "id": 51,
+        "name": "Colombia",
+        "common_name": "Colombia",
+        "official_name": "Republic of Colombia",
+        "demonym": "Colombian",
+        "iso2": "CO",
+        "iso3": "COL",
+        "phone_code": 57,
+        "alternative_spellings": [
+            "República de Colombia"
+        ],
+        "demonym_name": "Colombian"
+    },
+    {
+        "id": 52,
+        "name": "Comoros",
+        "common_name": "Comoros",
+        "official_name": "Union of the Comoros",
+        "demonym": "Comoran",
+        "iso2": "KM",
+        "iso3": "COM",
+        "phone_code": 269,
+        "alternative_spellings": [
+            "Union des Comores",
+            "al-Ittiḥād al-Qumurī",
+            "Udzima wa Komori"
+        ],
+        "demonym_name": "Comoran"
+    },
+    {
+        "id": 48,
+        "name": "DR Congo",
+        "common_name": "DR Congo",
+        "official_name": "Democratic Republic of the Congo",
+        "demonym": "Congolese",
+        "iso2": "CD",
+        "iso3": "COD",
+        "phone_code": 243,
+        "alternative_spellings": [
+            "Congo-Kinshasa",
+            "Congo, the Democratic Republic of the",
+            "DR Congo"
+        ],
+        "demonym_name": "Congolese"
+    },
+    {
+        "id": 49,
+        "name": "Republic of the Congo",
+        "common_name": "Republic of the Congo",
+        "official_name": "Republic of the Congo",
+        "demonym": "Congolese",
+        "iso2": "CG",
+        "iso3": "COG",
+        "phone_code": 242,
+        "alternative_spellings": [
+            "Congo",
+            "Congo-Brazzaville"
+        ],
+        "demonym_name": "Congolese (Republic of the Congo)"
+    },
+    {
+        "id": 50,
+        "name": "Cook Islands",
+        "common_name": "Cook Islands",
+        "official_name": "Cook Islands",
+        "demonym": "Cook Islander",
+        "iso2": "CK",
+        "iso3": "COK",
+        "phone_code": 682,
+        "alternative_spellings": [
+            "Kūki 'Āirani"
+        ],
+        "demonym_name": "Cook Islander"
+    },
+    {
+        "id": 54,
+        "name": "Costa Rica",
+        "common_name": "Costa Rica",
+        "official_name": "Republic of Costa Rica",
+        "demonym": "Costa Rican",
+        "iso2": "CR",
+        "iso3": "CRI",
+        "phone_code": 506,
+        "alternative_spellings": [
+            "República de Costa Rica"
+        ],
+        "demonym_name": "Costa Rican"
+    },
+    {
+        "id": 101,
+        "name": "Croatia",
+        "common_name": "Croatia",
+        "official_name": "Republic of Croatia",
+        "demonym": "Croatian",
+        "iso2": "HR",
+        "iso3": "HRV",
+        "phone_code": 385,
+        "alternative_spellings": [
+            "Hrvatska",
+            "Republika Hrvatska"
+        ],
+        "demonym_name": "Croatian"
+    },
+    {
+        "id": 55,
+        "name": "Cuba",
+        "common_name": "Cuba",
+        "official_name": "Republic of Cuba",
+        "demonym": "Cuban",
+        "iso2": "CU",
+        "iso3": "CUB",
+        "phone_code": 53,
+        "alternative_spellings": [
+            "República de Cuba"
+        ],
+        "demonym_name": "Cuban"
+    },
+    {
+        "id": 56,
+        "name": "Curaçao",
+        "common_name": "Curaçao",
+        "official_name": "Country of Curaçao",
+        "demonym": "Curaçaoan",
+        "iso2": "CW",
+        "iso3": "CUW",
+        "phone_code": 5999,
+        "alternative_spellings": [
+            "Curacao",
+            "Land Curaçao",
+            "Kòrsou",
+            "Pais Kòrsou"
+        ],
+        "demonym_name": "Curaçaoan (Curaçao)"
+    },
+    {
+        "id": 59,
+        "name": "Cyprus",
+        "common_name": "Cyprus",
+        "official_name": "Republic of Cyprus",
+        "demonym": "Cypriot",
+        "iso2": "CY",
+        "iso3": "CYP",
+        "phone_code": 357,
+        "alternative_spellings": [
+            "Kýpros",
+            "Kıbrıs",
+            "Kıbrıs Cumhuriyeti",
+            "Κυπριακή Δημοκρατία"
+        ],
+        "demonym_name": "Cypriot"
+    },
+    {
+        "id": 60,
+        "name": "Czechia",
+        "common_name": "Czechia",
+        "official_name": "Czech Republic",
+        "demonym": "Czech",
+        "iso2": "CZ",
+        "iso3": "CZE",
+        "phone_code": 420,
+        "alternative_spellings": [
+            "Česká republika",
+            "Česko"
+        ],
+        "demonym_name": "Czech"
+    },
+    {
+        "id": 64,
+        "name": "Denmark",
+        "common_name": "Denmark",
+        "official_name": "Kingdom of Denmark",
+        "demonym": "Danish",
+        "iso2": "DK",
+        "iso3": "DNK",
+        "phone_code": 45,
+        "alternative_spellings": [
+            "Kongeriget Danmark",
+            "Danmark"
+        ],
+        "demonym_name": "Danish"
+    },
+    {
+        "id": 62,
+        "name": "Djibouti",
+        "common_name": "Djibouti",
+        "official_name": "Republic of Djibouti",
+        "demonym": "Djibouti",
+        "iso2": "DJ",
+        "iso3": "DJI",
+        "phone_code": 253,
+        "alternative_spellings": [
+            "Gabuuti",
+            "Jabuuti",
+            "République de Djibouti",
+            "Jamhuuriyadda Jabuuti",
+            "Gabuutih Ummuuno"
+        ],
+        "demonym_name": "Djibouti"
+    },
+    {
+        "id": 63,
+        "name": "Dominica",
+        "common_name": "Dominica",
+        "official_name": "Commonwealth of Dominica",
+        "demonym": "Dominican",
+        "iso2": "DM",
+        "iso3": "DMA",
+        "phone_code": 1767,
+        "alternative_spellings": [
+            "Wai‘tu kubuli",
+            "Dominique"
+        ],
+        "demonym_name": "Dominican (Dominica)"
+    },
+    {
+        "id": 65,
+        "name": "Dominican Republic",
+        "common_name": "Dominican Republic",
+        "official_name": "Dominican Republic",
+        "demonym": "Dominican",
+        "iso2": "DO",
+        "iso3": "DOM",
+        "phone_code": 1809,
+        "alternative_spellings": [],
+        "demonym_name": "Dominican"
+    },
+    {
+        "id": 169,
+        "name": "Netherlands",
+        "common_name": "Netherlands",
+        "official_name": "Kingdom of the Netherlands",
+        "demonym": "Dutch",
+        "iso2": "NL",
+        "iso3": "NLD",
+        "phone_code": 31,
+        "alternative_spellings": [
+            "Holland",
+            "Nederland",
+            "The Netherlands"
+        ],
+        "demonym_name": "Dutch"
+    },
+    {
+        "id": 224,
+        "name": "Timor-Leste",
+        "common_name": "Timor-Leste",
+        "official_name": "Democratic Republic of Timor-Leste",
+        "demonym": "East Timorese",
+        "iso2": "TL",
+        "iso3": "TLS",
+        "phone_code": 670,
+        "alternative_spellings": [
+            "East Timor",
+            "República Democrática de Timor-Leste",
+            "Timor Lorosae",
+            "Repúblika Demokrátika Timór-Leste",
+            "Timór Lorosa'e"
+        ],
+        "demonym_name": "East Timorese"
+    },
+    {
+        "id": 67,
+        "name": "Ecuador",
+        "common_name": "Ecuador",
+        "official_name": "Republic of Ecuador",
+        "demonym": "Ecuadorean",
+        "iso2": "EC",
+        "iso3": "ECU",
+        "phone_code": 593,
+        "alternative_spellings": [
+            "República del Ecuador"
+        ],
+        "demonym_name": "Ecuadorean"
+    },
+    {
+        "id": 68,
+        "name": "Egypt",
+        "common_name": "Egypt",
+        "official_name": "Arab Republic of Egypt",
+        "demonym": "Egyptian",
+        "iso2": "EG",
+        "iso3": "EGY",
+        "phone_code": 20,
+        "alternative_spellings": [],
+        "demonym_name": "Egyptian"
+    },
+    {
+        "id": 8,
+        "name": "United Arab Emirates",
+        "common_name": "United Arab Emirates",
+        "official_name": "United Arab Emirates",
+        "demonym": "Emirati",
+        "iso2": "AE",
+        "iso3": "ARE",
+        "phone_code": 971,
+        "alternative_spellings": [
+            "Emirates"
+        ],
+        "demonym_name": "Emirati"
+    },
+    {
+        "id": 90,
+        "name": "Equatorial Guinea",
+        "common_name": "Equatorial Guinea",
+        "official_name": "Republic of Equatorial Guinea",
+        "demonym": "Equatorial Guinean",
+        "iso2": "GQ",
+        "iso3": "GNQ",
+        "phone_code": 240,
+        "alternative_spellings": [
+            "República de Guinea Ecuatorial",
+            "República da Guiné Equatorial",
+            "République de Guinée équatoriale"
+        ],
+        "demonym_name": "Equatorial Guinean"
+    },
+    {
+        "id": 69,
+        "name": "Eritrea",
+        "common_name": "Eritrea",
+        "official_name": "State of Eritrea",
+        "demonym": "Eritrean",
+        "iso2": "ER",
+        "iso3": "ERI",
+        "phone_code": 291,
+        "alternative_spellings": [
+            "Iritriyā",
+            "ሃገረ ኤርትራ",
+            "ʾErtrā",
+            "Dawlat Iritriyá"
+        ],
+        "demonym_name": "Eritrean"
+    },
+    {
+        "id": 72,
+        "name": "Estonia",
+        "common_name": "Estonia",
+        "official_name": "Republic of Estonia",
+        "demonym": "Estonian",
+        "iso2": "EE",
+        "iso3": "EST",
+        "phone_code": 372,
+        "alternative_spellings": [
+            "Eesti Vabariik",
+            "Eesti"
+        ],
+        "demonym_name": "Estonian"
+    },
+    {
+        "id": 73,
+        "name": "Ethiopia",
+        "common_name": "Ethiopia",
+        "official_name": "Federal Democratic Republic of Ethiopia",
+        "demonym": "Ethiopian",
+        "iso2": "ET",
+        "iso3": "ETH",
+        "phone_code": 251,
+        "alternative_spellings": [
+            "ʾĪtyōṗṗyā",
+            "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+        ],
+        "demonym_name": "Ethiopian"
+    },
+    {
+        "id": 76,
+        "name": "Falkland Islands",
+        "common_name": "Falkland Islands",
+        "official_name": "Falkland Islands",
+        "demonym": "Falkland Islander",
+        "iso2": "FK",
+        "iso3": "FLK",
+        "phone_code": 500,
+        "alternative_spellings": [
+            "Islas Malvinas",
+            "Falkland Islands (Malvinas)"
+        ],
+        "demonym_name": "Falkland Islander"
+    },
+    {
+        "id": 78,
+        "name": "Faroe Islands",
+        "common_name": "Faroe Islands",
+        "official_name": "Faroe Islands",
+        "demonym": "Faroese",
+        "iso2": "FO",
+        "iso3": "FRO",
+        "phone_code": 298,
+        "alternative_spellings": [
+            "Færøerne",
+            "Føroyar"
+        ],
+        "demonym_name": "Faroese"
+    },
+    {
+        "id": 75,
+        "name": "Fiji",
+        "common_name": "Fiji",
+        "official_name": "Republic of Fiji",
+        "demonym": "Fijian",
+        "iso2": "FJ",
+        "iso3": "FJI",
+        "phone_code": 679,
+        "alternative_spellings": [
+            "Viti",
+            "Fijī Gaṇarājya",
+            "Matanitu ko Viti"
+        ],
+        "demonym_name": "Fijian"
+    },
+    {
+        "id": 179,
+        "name": "Philippines",
+        "common_name": "Philippines",
+        "official_name": "Republic of the Philippines",
+        "demonym": "Filipino",
+        "iso2": "PH",
+        "iso3": "PHL",
+        "phone_code": 63,
+        "alternative_spellings": [
+            "Repúblika ng Pilipinas"
+        ],
+        "demonym_name": "Filipino"
+    },
+    {
+        "id": 74,
+        "name": "Finland",
+        "common_name": "Finland",
+        "official_name": "Republic of Finland",
+        "demonym": "Finnish",
+        "iso2": "FI",
+        "iso3": "FIN",
+        "phone_code": 358,
+        "alternative_spellings": [
+            "Suomen tasavalta",
+            "Republiken Finland",
+            "Suomi"
+        ],
+        "demonym_name": "Finnish"
+    },
+    {
+        "id": 77,
+        "name": "France",
+        "common_name": "France",
+        "official_name": "French Republic",
+        "demonym": "French",
+        "iso2": "FR",
+        "iso3": "FRA",
+        "phone_code": 33,
+        "alternative_spellings": [
+            "République française"
+        ],
+        "demonym_name": "French"
+    },
+    {
+        "id": 188,
+        "name": "French Polynesia",
+        "common_name": "French Polynesia",
+        "official_name": "French Polynesia",
+        "demonym": "French Polynesian",
+        "iso2": "PF",
+        "iso3": "PYF",
+        "phone_code": 689,
+        "alternative_spellings": [
+            "Pōrīnetia Farāni",
+            "Polynésie française"
+        ],
+        "demonym_name": "French Polynesian"
+    },
+    {
+        "id": 80,
+        "name": "Gabon",
+        "common_name": "Gabon",
+        "official_name": "Gabonese Republic",
+        "demonym": "Gabonese",
+        "iso2": "GA",
+        "iso3": "GAB",
+        "phone_code": 241,
+        "alternative_spellings": [
+            "République Gabonaise"
+        ],
+        "demonym_name": "Gabonese"
+    },
+    {
+        "id": 88,
+        "name": "Gambia",
+        "common_name": "Gambia",
+        "official_name": "Republic of the Gambia",
+        "demonym": "Gambian",
+        "iso2": "GM",
+        "iso3": "GMB",
+        "phone_code": 220,
+        "alternative_spellings": [],
+        "demonym_name": "Gambian"
+    },
+    {
+        "id": 82,
+        "name": "Georgia",
+        "common_name": "Georgia",
+        "official_name": "Georgia",
+        "demonym": "Georgian",
+        "iso2": "GE",
+        "iso3": "GEO",
+        "phone_code": 995,
+        "alternative_spellings": [
+            "Sakartvelo"
+        ],
+        "demonym_name": "Georgian"
+    },
+    {
+        "id": 61,
+        "name": "Germany",
+        "common_name": "Germany",
+        "official_name": "Federal Republic of Germany",
+        "demonym": "German",
+        "iso2": "DE",
+        "iso3": "DEU",
+        "phone_code": 49,
+        "alternative_spellings": [
+            "Bundesrepublik Deutschland",
+            "Deutschland"
+        ],
+        "demonym_name": "German"
+    },
+    {
+        "id": 84,
+        "name": "Ghana",
+        "common_name": "Ghana",
+        "official_name": "Republic of Ghana",
+        "demonym": "Ghanaian",
+        "iso2": "GH",
+        "iso3": "GHA",
+        "phone_code": 233,
+        "alternative_spellings": [],
+        "demonym_name": "Ghanaian"
+    },
+    {
+        "id": 85,
+        "name": "Gibraltar",
+        "common_name": "Gibraltar",
+        "official_name": "Gibraltar",
+        "demonym": "Gibraltar",
+        "iso2": "GI",
+        "iso3": "GIB",
+        "phone_code": 350,
+        "alternative_spellings": [],
+        "demonym_name": "Gibraltar"
+    },
+    {
+        "id": 91,
+        "name": "Greece",
+        "common_name": "Greece",
+        "official_name": "Hellenic Republic",
+        "demonym": "Greek",
+        "iso2": "GR",
+        "iso3": "GRC",
+        "phone_code": 30,
+        "alternative_spellings": [
+            "Ελληνική Δημοκρατία",
+            "Elláda"
+        ],
+        "demonym_name": "Greek"
+    },
+    {
+        "id": 93,
+        "name": "Greenland",
+        "common_name": "Greenland",
+        "official_name": "Greenland",
+        "demonym": "Greenlandic",
+        "iso2": "GL",
+        "iso3": "GRL",
+        "phone_code": 299,
+        "alternative_spellings": [
+            "Grønland"
+        ],
+        "demonym_name": "Greenlandic"
+    },
+    {
+        "id": 92,
+        "name": "Grenada",
+        "common_name": "Grenada",
+        "official_name": "Grenada",
+        "demonym": "Grenadian",
+        "iso2": "GD",
+        "iso3": "GRD",
+        "phone_code": 1473,
+        "alternative_spellings": [],
+        "demonym_name": "Grenadian"
+    },
+    {
+        "id": 87,
+        "name": "Guadeloupe",
+        "common_name": "Guadeloupe",
+        "official_name": "Guadeloupe",
+        "demonym": "Guadeloupian",
+        "iso2": "GP",
+        "iso3": "GLP",
+        "phone_code": 590,
+        "alternative_spellings": [
+            "Gwadloup"
+        ],
+        "demonym_name": "Guadeloupian"
+    },
+    {
+        "id": 96,
+        "name": "Guam",
+        "common_name": "Guam",
+        "official_name": "Guam",
+        "demonym": "Guamanian",
+        "iso2": "GU",
+        "iso3": "GUM",
+        "phone_code": 1671,
+        "alternative_spellings": [
+            "Guåhån"
+        ],
+        "demonym_name": "Guamanian"
+    },
+    {
+        "id": 94,
+        "name": "Guatemala",
+        "common_name": "Guatemala",
+        "official_name": "Republic of Guatemala",
+        "demonym": "Guatemalan",
+        "iso2": "GT",
+        "iso3": "GTM",
+        "phone_code": 502,
+        "alternative_spellings": [],
+        "demonym_name": "Guatemalan"
+    },
+    {
+        "id": 83,
+        "name": "Guernsey",
+        "common_name": "Guernsey",
+        "official_name": "Bailiwick of Guernsey",
+        "demonym": "Guernseymen",
+        "iso2": "GG",
+        "iso3": "GGY",
+        "phone_code": 44,
+        "alternative_spellings": [
+            "Bailliage de Guernesey"
+        ],
+        "demonym_name": "Guernseymen (Guernsey)"
+    },
+    {
+        "id": 95,
+        "name": "French Guiana",
+        "common_name": "French Guiana",
+        "official_name": "Guiana",
+        "demonym": "Guianan",
+        "iso2": "GF",
+        "iso3": "GUF",
+        "phone_code": 594,
+        "alternative_spellings": [
+            "Guyane"
+        ],
+        "demonym_name": "Guianan"
+    },
+    {
+        "id": 89,
+        "name": "Guinea-Bissau",
+        "common_name": "Guinea-Bissau",
+        "official_name": "Republic of Guinea-Bissau",
+        "demonym": "Guinea-Bissauan",
+        "iso2": "GW",
+        "iso3": "GNB",
+        "phone_code": 245,
+        "alternative_spellings": [
+            "República da Guiné-Bissau"
+        ],
+        "demonym_name": "Guinea-Bissauan"
+    },
+    {
+        "id": 86,
+        "name": "Guinea",
+        "common_name": "Guinea",
+        "official_name": "Republic of Guinea",
+        "demonym": "Guinean",
+        "iso2": "GN",
+        "iso3": "GIN",
+        "phone_code": 224,
+        "alternative_spellings": [
+            "République de Guinée"
+        ],
+        "demonym_name": "Guinean"
+    },
+    {
+        "id": 97,
+        "name": "Guyana",
+        "common_name": "Guyana",
+        "official_name": "Co-operative Republic of Guyana",
+        "demonym": "Guyanese",
+        "iso2": "GY",
+        "iso3": "GUY",
+        "phone_code": 592,
+        "alternative_spellings": [],
+        "demonym_name": "Guyanese"
+    },
+    {
+        "id": 102,
+        "name": "Haiti",
+        "common_name": "Haiti",
+        "official_name": "Republic of Haiti",
+        "demonym": "Haitian",
+        "iso2": "HT",
+        "iso3": "HTI",
+        "phone_code": 509,
+        "alternative_spellings": [
+            "République d'Haïti",
+            "Repiblik Ayiti"
+        ],
+        "demonym_name": "Haitian"
+    },
+    {
+        "id": 99,
+        "name": "Heard Island and McDonald Islands",
+        "common_name": "Heard Island and McDonald Islands",
+        "official_name": "Heard Island and McDonald Islands",
+        "demonym": "Heard and McDonald Islander",
+        "iso2": "HM",
+        "iso3": "HMD",
+        "phone_code": null,
+        "alternative_spellings": [],
+        "demonym_name": "Heard and McDonald Islander"
+    },
+    {
+        "id": 100,
+        "name": "Honduras",
+        "common_name": "Honduras",
+        "official_name": "Republic of Honduras",
+        "demonym": "Honduran",
+        "iso2": "HN",
+        "iso3": "HND",
+        "phone_code": 504,
+        "alternative_spellings": [
+            "República de Honduras"
+        ],
+        "demonym_name": "Honduran"
+    },
+    {
+        "id": 98,
+        "name": "Hong Kong",
+        "common_name": "Hong Kong",
+        "official_name": "Hong Kong Special Administrative Region of the People's Republic of China",
+        "demonym": "Hong Konger",
+        "iso2": "HK",
+        "iso3": "HKG",
+        "phone_code": 852,
+        "alternative_spellings": [],
+        "demonym_name": "Hong Konger"
+    },
+    {
+        "id": 103,
+        "name": "Hungary",
+        "common_name": "Hungary",
+        "official_name": "Hungary",
+        "demonym": "Hungarian",
+        "iso2": "HU",
+        "iso3": "HUN",
+        "phone_code": 36,
+        "alternative_spellings": [],
+        "demonym_name": "Hungarian"
+    },
+    {
+        "id": 111,
+        "name": "Iceland",
+        "common_name": "Iceland",
+        "official_name": "Iceland",
+        "demonym": "Icelander",
+        "iso2": "IS",
+        "iso3": "ISL",
+        "phone_code": 354,
+        "alternative_spellings": [
+            "Island",
+            "Lýðveldið Ísland",
+            "Republic of Iceland"
+        ],
+        "demonym_name": "Icelander"
+    },
+    {
+        "id": 122,
+        "name": "Kiribati",
+        "common_name": "Kiribati",
+        "official_name": "Independent and Sovereign Republic of Kiribati",
+        "demonym": "I-Kiribati",
+        "iso2": "KI",
+        "iso3": "KIR",
+        "phone_code": 686,
+        "alternative_spellings": [
+            "Ribaberiki Kiribati",
+            "Republic of Kiribati"
+        ],
+        "demonym_name": "I-Kiribati"
+    },
+    {
+        "id": 106,
+        "name": "India",
+        "common_name": "India",
+        "official_name": "Republic of India",
+        "demonym": "Indian",
+        "iso2": "IN",
+        "iso3": "IND",
+        "phone_code": 91,
+        "alternative_spellings": [
+            "Bharat Ganrajya",
+            "இந்தியா",
+            "Bhārat"
+        ],
+        "demonym_name": "Indian"
+    },
+    {
+        "id": 104,
+        "name": "Indonesia",
+        "common_name": "Indonesia",
+        "official_name": "Republic of Indonesia",
+        "demonym": "Indonesian",
+        "iso2": "ID",
+        "iso3": "IDN",
+        "phone_code": 62,
+        "alternative_spellings": [
+            "Republik Indonesia"
+        ],
+        "demonym_name": "Indonesian"
+    },
+    {
+        "id": 109,
+        "name": "Iran",
+        "common_name": "Iran",
+        "official_name": "Islamic Republic of Iran",
+        "demonym": "Iranian",
+        "iso2": "IR",
+        "iso3": "IRN",
+        "phone_code": 98,
+        "alternative_spellings": [
+            "Iran, Islamic Republic of",
+            "Jomhuri-ye Eslāmi-ye Irān"
+        ],
+        "demonym_name": "Iranian"
+    },
+    {
+        "id": 110,
+        "name": "Iraq",
+        "common_name": "Iraq",
+        "official_name": "Republic of Iraq",
+        "demonym": "Iraqi",
+        "iso2": "IQ",
+        "iso3": "IRQ",
+        "phone_code": 964,
+        "alternative_spellings": [
+            "Jumhūriyyat al-‘Irāq"
+        ],
+        "demonym_name": "Iraqi"
+    },
+    {
+        "id": 108,
+        "name": "Ireland",
+        "common_name": "Ireland",
+        "official_name": "Republic of Ireland",
+        "demonym": "Irish",
+        "iso2": "IE",
+        "iso3": "IRL",
+        "phone_code": 353,
+        "alternative_spellings": [
+            "Poblacht na hÉireann",
+            "Éire"
+        ],
+        "demonym_name": "Irish"
+    },
+    {
+        "id": 112,
+        "name": "Israel",
+        "common_name": "Israel",
+        "official_name": "State of Israel",
+        "demonym": "Israeli",
+        "iso2": "IL",
+        "iso3": "ISR",
+        "phone_code": 972,
+        "alternative_spellings": [
+            "Medīnat Yisrā'el"
+        ],
+        "demonym_name": "Israeli"
+    },
+    {
+        "id": 113,
+        "name": "Italy",
+        "common_name": "Italy",
+        "official_name": "Italian Republic",
+        "demonym": "Italian",
+        "iso2": "IT",
+        "iso3": "ITA",
+        "phone_code": 39,
+        "alternative_spellings": [
+            "Repubblica italiana"
+        ],
+        "demonym_name": "Italian"
+    },
+    {
+        "id": 46,
+        "name": "Ivory Coast",
+        "common_name": "Ivory Coast",
+        "official_name": "Republic of Côte d'Ivoire",
+        "demonym": "Ivorian",
+        "iso2": "CI",
+        "iso3": "CIV",
+        "phone_code": 225,
+        "alternative_spellings": [
+            "Côte d'Ivoire",
+            "Ivory Coast",
+            "République de Côte d'Ivoire"
+        ],
+        "demonym_name": "Ivorian"
+    },
+    {
+        "id": 114,
+        "name": "Jamaica",
+        "common_name": "Jamaica",
+        "official_name": "Jamaica",
+        "demonym": "Jamaican",
+        "iso2": "JM",
+        "iso3": "JAM",
+        "phone_code": 1876,
+        "alternative_spellings": [],
+        "demonym_name": "Jamaican"
+    },
+    {
+        "id": 117,
+        "name": "Japan",
+        "common_name": "Japan",
+        "official_name": "Japan",
+        "demonym": "Japanese",
+        "iso2": "JP",
+        "iso3": "JPN",
+        "phone_code": 81,
+        "alternative_spellings": [
+            "Nihon",
+            "Nippon"
+        ],
+        "demonym_name": "Japanese"
+    },
+    {
+        "id": 115,
+        "name": "Jersey",
+        "common_name": "Jersey",
+        "official_name": "Bailiwick of Jersey",
+        "demonym": "Jerseymen",
+        "iso2": "JE",
+        "iso3": "JEY",
+        "phone_code": 44,
+        "alternative_spellings": [
+            "Bailliage de Jersey",
+            "Bailliage dé Jèrri"
+        ],
+        "demonym_name": "Jerseymen (Jersey)"
+    },
+    {
+        "id": 116,
+        "name": "Jordan",
+        "common_name": "Jordan",
+        "official_name": "Hashemite Kingdom of Jordan",
+        "demonym": "Jordanian",
+        "iso2": "JO",
+        "iso3": "JOR",
+        "phone_code": 962,
+        "alternative_spellings": [
+            "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+        ],
+        "demonym_name": "Jordanian"
+    },
+    {
+        "id": 118,
+        "name": "Kazakhstan",
+        "common_name": "Kazakhstan",
+        "official_name": "Republic of Kazakhstan",
+        "demonym": "Kazakhstani",
+        "iso2": "KZ",
+        "iso3": "KAZ",
+        "phone_code": 7,
+        "alternative_spellings": [
+            "Qazaqstan",
+            "Республика Казахстан",
+            "Respublika Kazakhstan",
+            "Qazaqstan Respublïkası",
+            "Казахстан",
+            "Қазақстан Республикасы"
+        ],
+        "demonym_name": "Kazakhstani"
+    },
+    {
+        "id": 119,
+        "name": "Kenya",
+        "common_name": "Kenya",
+        "official_name": "Republic of Kenya",
+        "demonym": "Kenyan",
+        "iso2": "KE",
+        "iso3": "KEN",
+        "phone_code": 254,
+        "alternative_spellings": [
+            "Jamhuri ya Kenya"
+        ],
+        "demonym_name": "Kenyan"
+    },
+    {
+        "id": 120,
+        "name": "Kyrgyzstan",
+        "common_name": "Kyrgyzstan",
+        "official_name": "Kyrgyz Republic",
+        "demonym": "Kirghiz",
+        "iso2": "KG",
+        "iso3": "KGZ",
+        "phone_code": 996,
+        "alternative_spellings": [
+            "Кыргыз Республикасы",
+            "Kyrgyz Respublikasy",
+            "Киргизия"
+        ],
+        "demonym_name": "Kirghiz"
+    },
+    {
+        "id": 123,
+        "name": "Saint Kitts and Nevis",
+        "common_name": "Saint Kitts and Nevis",
+        "official_name": "Federation of Saint Christopher and Nevisa",
+        "demonym": "Kittitian or Nevisian",
+        "iso2": "KN",
+        "iso3": "KNA",
+        "phone_code": 1869,
+        "alternative_spellings": [
+            "Federation of Saint Christopher and Nevis"
+        ],
+        "demonym_name": "Kittitian or Nevisian"
+    },
+    {
+        "id": 125,
+        "name": "Kosovo",
+        "common_name": "Kosovo",
+        "official_name": "Republic of Kosovo",
+        "demonym": "Kosovar",
+        "iso2": "XK",
+        "iso3": "UNK",
+        "phone_code": 383,
+        "alternative_spellings": [
+            "Република Косово"
+        ],
+        "demonym_name": "Kosovar"
+    },
+    {
+        "id": 126,
+        "name": "Kuwait",
+        "common_name": "Kuwait",
+        "official_name": "State of Kuwait",
+        "demonym": "Kuwaiti",
+        "iso2": "KW",
+        "iso3": "KWT",
+        "phone_code": 965,
+        "alternative_spellings": [
+            "Dawlat al-Kuwait"
+        ],
+        "demonym_name": "Kuwaiti"
+    },
+    {
+        "id": 127,
+        "name": "Laos",
+        "common_name": "Laos",
+        "official_name": "Lao People's Democratic Republic",
+        "demonym": "Laotian",
+        "iso2": "LA",
+        "iso3": "LAO",
+        "phone_code": 856,
+        "alternative_spellings": [
+            "Lao",
+            "Sathalanalat Paxathipatai Paxaxon Lao"
+        ],
+        "demonym_name": "Laotian"
+    },
+    {
+        "id": 137,
+        "name": "Latvia",
+        "common_name": "Latvia",
+        "official_name": "Republic of Latvia",
+        "demonym": "Latvian",
+        "iso2": "LV",
+        "iso3": "LVA",
+        "phone_code": 371,
+        "alternative_spellings": [
+            "Latvijas Republika"
+        ],
+        "demonym_name": "Latvian"
+    },
+    {
+        "id": 128,
+        "name": "Lebanon",
+        "common_name": "Lebanon",
+        "official_name": "Lebanese Republic",
+        "demonym": "Lebanese",
+        "iso2": "LB",
+        "iso3": "LBN",
+        "phone_code": 961,
+        "alternative_spellings": [
+            "Al-Jumhūrīyah Al-Libnānīyah"
+        ],
+        "demonym_name": "Lebanese"
+    },
+    {
+        "id": 129,
+        "name": "Liberia",
+        "common_name": "Liberia",
+        "official_name": "Republic of Liberia",
+        "demonym": "Liberian",
+        "iso2": "LR",
+        "iso3": "LBR",
+        "phone_code": 231,
+        "alternative_spellings": [],
+        "demonym_name": "Liberian"
+    },
+    {
+        "id": 130,
+        "name": "Libya",
+        "common_name": "Libya",
+        "official_name": "State of Libya",
+        "demonym": "Libyan",
+        "iso2": "LY",
+        "iso3": "LBY",
+        "phone_code": 218,
+        "alternative_spellings": [
+            "Dawlat Libya"
+        ],
+        "demonym_name": "Libyan"
+    },
+    {
+        "id": 132,
+        "name": "Liechtenstein",
+        "common_name": "Liechtenstein",
+        "official_name": "Principality of Liechtenstein",
+        "demonym": "Liechtensteiner",
+        "iso2": "LI",
+        "iso3": "LIE",
+        "phone_code": 423,
+        "alternative_spellings": [
+            "Fürstentum Liechtenstein"
+        ],
+        "demonym_name": "Liechtensteiner"
+    },
+    {
+        "id": 135,
+        "name": "Lithuania",
+        "common_name": "Lithuania",
+        "official_name": "Republic of Lithuania",
+        "demonym": "Lithuanian",
+        "iso2": "LT",
+        "iso3": "LTU",
+        "phone_code": 370,
+        "alternative_spellings": [
+            "Lietuvos Respublika"
+        ],
+        "demonym_name": "Lithuanian"
+    },
+    {
+        "id": 136,
+        "name": "Luxembourg",
+        "common_name": "Luxembourg",
+        "official_name": "Grand Duchy of Luxembourg",
+        "demonym": "Luxembourger",
+        "iso2": "LU",
+        "iso3": "LUX",
+        "phone_code": 352,
+        "alternative_spellings": [
+            "Großherzogtum Luxemburg",
+            "Groussherzogtum Lëtzebuerg",
+            "Grand-Duché de Luxembourg"
+        ],
+        "demonym_name": "Luxembourger"
+    },
+    {
+        "id": 138,
+        "name": "Macau",
+        "common_name": "Macau",
+        "official_name": "Macao Special Administrative Region of the People's Republic of China",
+        "demonym": "Macanese",
+        "iso2": "MO",
+        "iso3": "MAC",
+        "phone_code": 853,
+        "alternative_spellings": [
+            "澳门",
+            "Macao",
+            "Região Administrativa Especial de Macau da República Popular da China",
+            "中華人民共和國澳門特別行政區"
+        ],
+        "demonym_name": "Macanese"
+    },
+    {
+        "id": 147,
+        "name": "Macedonia",
+        "common_name": "Macedonia",
+        "official_name": "Republic of Macedonia",
+        "demonym": "Macedonian",
+        "iso2": "MK",
+        "iso3": "MKD",
+        "phone_code": 389,
+        "alternative_spellings": [
+            "Република Македонија",
+            "Macedonia, the Former Yugoslav Republic of"
+        ],
+        "demonym_name": "Macedonian"
+    },
+    {
+        "id": 161,
+        "name": "Mayotte",
+        "common_name": "Mayotte",
+        "official_name": "Department of Mayotte",
+        "demonym": "Mahoran",
+        "iso2": "YT",
+        "iso3": "MYT",
+        "phone_code": 262,
+        "alternative_spellings": [
+            "Département de Mayotte"
+        ],
+        "demonym_name": "Mahoran"
+    },
+    {
+        "id": 143,
+        "name": "Madagascar",
+        "common_name": "Madagascar",
+        "official_name": "Republic of Madagascar",
+        "demonym": "Malagasy",
+        "iso2": "MG",
+        "iso3": "MDG",
+        "phone_code": 261,
+        "alternative_spellings": [
+            "République de Madagascar",
+            "Repoblikan'i Madagasikara"
+        ],
+        "demonym_name": "Malagasy"
+    },
+    {
+        "id": 159,
+        "name": "Malawi",
+        "common_name": "Malawi",
+        "official_name": "Republic of Malawi",
+        "demonym": "Malawian",
+        "iso2": "MW",
+        "iso3": "MWI",
+        "phone_code": 265,
+        "alternative_spellings": [],
+        "demonym_name": "Malawian"
+    },
+    {
+        "id": 160,
+        "name": "Malaysia",
+        "common_name": "Malaysia",
+        "official_name": "Malaysia",
+        "demonym": "Malaysian",
+        "iso2": "MY",
+        "iso3": "MYS",
+        "phone_code": 60,
+        "alternative_spellings": [],
+        "demonym_name": "Malaysian"
+    },
+    {
+        "id": 144,
+        "name": "Maldives",
+        "common_name": "Maldives",
+        "official_name": "Republic of the Maldives",
+        "demonym": "Maldivan",
+        "iso2": "MV",
+        "iso3": "MDV",
+        "phone_code": 960,
+        "alternative_spellings": [
+            "Dhivehi Raajjeyge Jumhooriyya",
+            "Maldive Islands"
+        ],
+        "demonym_name": "Maldivan"
+    },
+    {
+        "id": 148,
+        "name": "Mali",
+        "common_name": "Mali",
+        "official_name": "Republic of Mali",
+        "demonym": "Malian",
+        "iso2": "ML",
+        "iso3": "MLI",
+        "phone_code": 223,
+        "alternative_spellings": [
+            "République du Mali"
+        ],
+        "demonym_name": "Malian"
+    },
+    {
+        "id": 149,
+        "name": "Malta",
+        "common_name": "Malta",
+        "official_name": "Republic of Malta",
+        "demonym": "Maltese",
+        "iso2": "MT",
+        "iso3": "MLT",
+        "phone_code": 356,
+        "alternative_spellings": [
+            "Repubblika ta' Malta"
+        ],
+        "demonym_name": "Maltese"
+    },
+    {
+        "id": 105,
+        "name": "Isle of Man",
+        "common_name": "Isle of Man",
+        "official_name": "Isle of Man",
+        "demonym": "Manx",
+        "iso2": "IM",
+        "iso3": "IMN",
+        "phone_code": 44,
+        "alternative_spellings": [
+            "Mannin",
+            "Ellan Vannin",
+            "Mann"
+        ],
+        "demonym_name": "Manx"
+    },
+    {
+        "id": 153,
+        "name": "Northern Mariana Islands",
+        "common_name": "Northern Mariana Islands",
+        "official_name": "Commonwealth of the Northern Mariana Islands",
+        "demonym": "Mariana",
+        "iso2": "MP",
+        "iso3": "MNP",
+        "phone_code": 1670,
+        "alternative_spellings": [
+            "Sankattan Siha Na Islas Mariånas"
+        ],
+        "demonym_name": "Mariana (Northern Mariana Islands)"
+    },
+    {
+        "id": 146,
+        "name": "Marshall Islands",
+        "common_name": "Marshall Islands",
+        "official_name": "Republic of the Marshall Islands",
+        "demonym": "Marshallese",
+        "iso2": "MH",
+        "iso3": "MHL",
+        "phone_code": 692,
+        "alternative_spellings": [
+            "Aolepān Aorōkin M̧ajeļ"
+        ],
+        "demonym_name": "Marshallese"
+    },
+    {
+        "id": 157,
+        "name": "Martinique",
+        "common_name": "Martinique",
+        "official_name": "Martinique",
+        "demonym": "Martinican",
+        "iso2": "MQ",
+        "iso3": "MTQ",
+        "phone_code": 596,
+        "alternative_spellings": [],
+        "demonym_name": "Martinican (Martinique)"
+    },
+    {
+        "id": 155,
+        "name": "Mauritania",
+        "common_name": "Mauritania",
+        "official_name": "Islamic Republic of Mauritania",
+        "demonym": "Mauritanian",
+        "iso2": "MR",
+        "iso3": "MRT",
+        "phone_code": 222,
+        "alternative_spellings": [
+            "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+        ],
+        "demonym_name": "Mauritanian"
+    },
+    {
+        "id": 158,
+        "name": "Mauritius",
+        "common_name": "Mauritius",
+        "official_name": "Republic of Mauritius",
+        "demonym": "Mauritian",
+        "iso2": "MU",
+        "iso3": "MUS",
+        "phone_code": 230,
+        "alternative_spellings": [
+            "République de Maurice"
+        ],
+        "demonym_name": "Mauritian"
+    },
+    {
+        "id": 145,
+        "name": "Mexico",
+        "common_name": "Mexico",
+        "official_name": "United Mexican States",
+        "demonym": "Mexican",
+        "iso2": "MX",
+        "iso3": "MEX",
+        "phone_code": 52,
+        "alternative_spellings": [
+            "Estados Unidos Mexicanos",
+            "Mexicanos"
+        ],
+        "demonym_name": "Mexican"
+    },
+    {
+        "id": 79,
+        "name": "Micronesia",
+        "common_name": "Micronesia",
+        "official_name": "Federated States of Micronesia",
+        "demonym": "Micronesian",
+        "iso2": "FM",
+        "iso3": "FSM",
+        "phone_code": 691,
+        "alternative_spellings": [
+            "Micronesia, Federated States of"
+        ],
+        "demonym_name": "Micronesian"
+    },
+    {
+        "id": 142,
+        "name": "Moldova",
+        "common_name": "Moldova",
+        "official_name": "Republic of Moldova",
+        "demonym": "Moldovan",
+        "iso2": "MD",
+        "iso3": "MDA",
+        "phone_code": 373,
+        "alternative_spellings": [
+            "Moldova, Republic of",
+            "Republica Moldova"
+        ],
+        "demonym_name": "Moldovan"
+    },
+    {
+        "id": 141,
+        "name": "Monaco",
+        "common_name": "Monaco",
+        "official_name": "Principality of Monaco",
+        "demonym": "Monegasque",
+        "iso2": "MC",
+        "iso3": "MCO",
+        "phone_code": 377,
+        "alternative_spellings": [
+            "Principauté de Monaco"
+        ],
+        "demonym_name": "Monegasque"
+    },
+    {
+        "id": 152,
+        "name": "Mongolia",
+        "common_name": "Mongolia",
+        "official_name": "Mongolia",
+        "demonym": "Mongolian",
+        "iso2": "MN",
+        "iso3": "MNG",
+        "phone_code": 976,
+        "alternative_spellings": [],
+        "demonym_name": "Mongolian"
+    },
+    {
+        "id": 151,
+        "name": "Montenegro",
+        "common_name": "Montenegro",
+        "official_name": "Montenegro",
+        "demonym": "Montenegrin",
+        "iso2": "ME",
+        "iso3": "MNE",
+        "phone_code": 382,
+        "alternative_spellings": [
+            "Crna Gora"
+        ],
+        "demonym_name": "Montenegrin"
+    },
+    {
+        "id": 156,
+        "name": "Montserrat",
+        "common_name": "Montserrat",
+        "official_name": "Montserrat",
+        "demonym": "Montserratian",
+        "iso2": "MS",
+        "iso3": "MSR",
+        "phone_code": 1664,
+        "alternative_spellings": [],
+        "demonym_name": "Montserratian"
+    },
+    {
+        "id": 140,
+        "name": "Morocco",
+        "common_name": "Morocco",
+        "official_name": "Kingdom of Morocco",
+        "demonym": "Moroccan",
+        "iso2": "MA",
+        "iso3": "MAR",
+        "phone_code": 212,
+        "alternative_spellings": [
+            "Al-Mamlakah al-Maġribiyah"
+        ],
+        "demonym_name": "Moroccan"
+    },
+    {
+        "id": 134,
+        "name": "Lesotho",
+        "common_name": "Lesotho",
+        "official_name": "Kingdom of Lesotho",
+        "demonym": "Mosotho",
+        "iso2": "LS",
+        "iso3": "LSO",
+        "phone_code": 266,
+        "alternative_spellings": [
+            "Muso oa Lesotho"
+        ],
+        "demonym_name": "Mosotho"
+    },
+    {
+        "id": 39,
+        "name": "Botswana",
+        "common_name": "Botswana",
+        "official_name": "Republic of Botswana",
+        "demonym": "Motswana",
+        "iso2": "BW",
+        "iso3": "BWA",
+        "phone_code": 267,
+        "alternative_spellings": [
+            "Lefatshe la Botswana"
+        ],
+        "demonym_name": "Motswana"
+    },
+    {
+        "id": 154,
+        "name": "Mozambique",
+        "common_name": "Mozambique",
+        "official_name": "Republic of Mozambique",
+        "demonym": "Mozambican",
+        "iso2": "MZ",
+        "iso3": "MOZ",
+        "phone_code": 258,
+        "alternative_spellings": [
+            "República de Moçambique"
+        ],
+        "demonym_name": "Mozambican"
+    },
+    {
+        "id": 150,
+        "name": "Myanmar",
+        "common_name": "Myanmar",
+        "official_name": "Republic of the Union of Myanmar",
+        "demonym": "Myanmar",
+        "iso2": "MM",
+        "iso3": "MMR",
+        "phone_code": 95,
+        "alternative_spellings": [
+            "Pyidaunzu Thanmăda Myăma Nainngandaw",
+            "Burma"
+        ],
+        "demonym_name": "Myanmar"
+    },
+    {
+        "id": 162,
+        "name": "Namibia",
+        "common_name": "Namibia",
+        "official_name": "Republic of Namibia",
+        "demonym": "Namibian",
+        "iso2": "NA",
+        "iso3": "NAM",
+        "phone_code": 264,
+        "alternative_spellings": [
+            "Namibië"
+        ],
+        "demonym_name": "Namibian"
+    },
+    {
+        "id": 172,
+        "name": "Nauru",
+        "common_name": "Nauru",
+        "official_name": "Republic of Nauru",
+        "demonym": "Nauruan",
+        "iso2": "NR",
+        "iso3": "NRU",
+        "phone_code": 674,
+        "alternative_spellings": [
+            "Naoero",
+            "Pleasant Island",
+            "Ripublik Naoero"
+        ],
+        "demonym_name": "Nauruan"
+    },
+    {
+        "id": 171,
+        "name": "Nepal",
+        "common_name": "Nepal",
+        "official_name": "Federal Democratic Republic of Nepal",
+        "demonym": "Nepalese",
+        "iso2": "NP",
+        "iso3": "NPL",
+        "phone_code": 977,
+        "alternative_spellings": [
+            "Loktāntrik Ganatantra Nepāl"
+        ],
+        "demonym_name": "Nepalese"
+    },
+    {
+        "id": 163,
+        "name": "New Caledonia",
+        "common_name": "New Caledonia",
+        "official_name": "New Caledonia",
+        "demonym": "New Caledonian",
+        "iso2": "NC",
+        "iso3": "NCL",
+        "phone_code": 687,
+        "alternative_spellings": [],
+        "demonym_name": "New Caledonian"
+    },
+    {
+        "id": 173,
+        "name": "New Zealand",
+        "common_name": "New Zealand",
+        "official_name": "New Zealand",
+        "demonym": "New Zealander",
+        "iso2": "NZ",
+        "iso3": "NZL",
+        "phone_code": 64,
+        "alternative_spellings": [
+            "Aotearoa"
+        ],
+        "demonym_name": "New Zealander"
+    },
+    {
+        "id": 167,
+        "name": "Nicaragua",
+        "common_name": "Nicaragua",
+        "official_name": "Republic of Nicaragua",
+        "demonym": "Nicaraguan",
+        "iso2": "NI",
+        "iso3": "NIC",
+        "phone_code": 505,
+        "alternative_spellings": [
+            "República de Nicaragua"
+        ],
+        "demonym_name": "Nicaraguan"
+    },
+    {
+        "id": 166,
+        "name": "Nigeria",
+        "common_name": "Nigeria",
+        "official_name": "Federal Republic of Nigeria",
+        "demonym": "Nigerian",
+        "iso2": "NG",
+        "iso3": "NGA",
+        "phone_code": 234,
+        "alternative_spellings": [
+            "Naíjíríà",
+            "Nijeriya"
+        ],
+        "demonym_name": "Nigerian"
+    },
+    {
+        "id": 164,
+        "name": "Niger",
+        "common_name": "Niger",
+        "official_name": "Republic of Niger",
+        "demonym": "Nigerien",
+        "iso2": "NE",
+        "iso3": "NER",
+        "phone_code": 227,
+        "alternative_spellings": [
+            "Nijar"
+        ],
+        "demonym_name": "Nigerien"
+    },
+    {
+        "id": 168,
+        "name": "Niue",
+        "common_name": "Niue",
+        "official_name": "Niue",
+        "demonym": "Niuean",
+        "iso2": "NU",
+        "iso3": "NIU",
+        "phone_code": 683,
+        "alternative_spellings": [],
+        "demonym_name": "Niuean"
+    },
+    {
+        "id": 244,
+        "name": "Vanuatu",
+        "common_name": "Vanuatu",
+        "official_name": "Republic of Vanuatu",
+        "demonym": "Ni-Vanuatu",
+        "iso2": "VU",
+        "iso3": "VUT",
+        "phone_code": 678,
+        "alternative_spellings": [
+            "Ripablik blong Vanuatu",
+            "République de Vanuatu"
+        ],
+        "demonym_name": "Ni-Vanuatu"
+    },
+    {
+        "id": 165,
+        "name": "Norfolk Island",
+        "common_name": "Norfolk Island",
+        "official_name": "Territory of Norfolk Island",
+        "demonym": "Norfolk Islander",
+        "iso2": "NF",
+        "iso3": "NFK",
+        "phone_code": 672,
+        "alternative_spellings": [
+            "Teratri of Norf'k Ailen"
+        ],
+        "demonym_name": "Norfolk Islander"
+    },
+    {
+        "id": 184,
+        "name": "North Korea",
+        "common_name": "North Korea",
+        "official_name": "Democratic People's Republic of Korea",
+        "demonym": "North Korean",
+        "iso2": "KP",
+        "iso3": "PRK",
+        "phone_code": 850,
+        "alternative_spellings": [
+            "Korea, Democratic People's Republic of",
+            "조선민주주의인민공화국",
+            "Chosŏn Minjujuŭi Inmin Konghwaguk"
+        ],
+        "demonym_name": "North Korean"
+    },
+    {
+        "id": 170,
+        "name": "Norway",
+        "common_name": "Norway",
+        "official_name": "Kingdom of Norway",
+        "demonym": "Norwegian",
+        "iso2": "NO",
+        "iso3": "NOR",
+        "phone_code": 47,
+        "alternative_spellings": [
+            "Noreg",
+            "Kongeriket Noreg",
+            "Norge",
+            "Kongeriket Norge"
+        ],
+        "demonym_name": "Norwegian"
+    },
+    {
+        "id": 174,
+        "name": "Oman",
+        "common_name": "Oman",
+        "official_name": "Sultanate of Oman",
+        "demonym": "Omani",
+        "iso2": "OM",
+        "iso3": "OMN",
+        "phone_code": 968,
+        "alternative_spellings": [
+            "Salṭanat ʻUmān"
+        ],
+        "demonym_name": "Omani"
+    },
+    {
+        "id": 175,
+        "name": "Pakistan",
+        "common_name": "Pakistan",
+        "official_name": "Islamic Republic of Pakistan",
+        "demonym": "Pakistani",
+        "iso2": "PK",
+        "iso3": "PAK",
+        "phone_code": 92,
+        "alternative_spellings": [
+            "Islāmī Jumhūriya'eh Pākistān",
+            "Pākistān"
+        ],
+        "demonym_name": "Pakistani"
+    },
+    {
+        "id": 180,
+        "name": "Palau",
+        "common_name": "Palau",
+        "official_name": "Republic of Palau",
+        "demonym": "Palauan",
+        "iso2": "PW",
+        "iso3": "PLW",
+        "phone_code": 680,
+        "alternative_spellings": [
+            "Beluu er a Belau"
+        ],
+        "demonym_name": "Palauan"
+    },
+    {
+        "id": 187,
+        "name": "Palestine",
+        "common_name": "Palestine",
+        "official_name": "State of Palestine",
+        "demonym": "Palestinian",
+        "iso2": "PS",
+        "iso3": "PSE",
+        "phone_code": 970,
+        "alternative_spellings": [
+            "Palestine, State of",
+            "Dawlat Filasṭin"
+        ],
+        "demonym_name": "Palestinian"
+    },
+    {
+        "id": 176,
+        "name": "Panama",
+        "common_name": "Panama",
+        "official_name": "Republic of Panama",
+        "demonym": "Panamanian",
+        "iso2": "PA",
+        "iso3": "PAN",
+        "phone_code": 507,
+        "alternative_spellings": [
+            "República de Panamá"
+        ],
+        "demonym_name": "Panamanian"
+    },
+    {
+        "id": 181,
+        "name": "Papua New Guinea",
+        "common_name": "Papua New Guinea",
+        "official_name": "Independent State of Papua New Guinea",
+        "demonym": "Papua New Guinean",
+        "iso2": "PG",
+        "iso3": "PNG",
+        "phone_code": 675,
+        "alternative_spellings": [
+            "Independen Stet bilong Papua Niugini"
+        ],
+        "demonym_name": "Papua New Guinean"
+    },
+    {
+        "id": 186,
+        "name": "Paraguay",
+        "common_name": "Paraguay",
+        "official_name": "Republic of Paraguay",
+        "demonym": "Paraguayan",
+        "iso2": "PY",
+        "iso3": "PRY",
+        "phone_code": 595,
+        "alternative_spellings": [
+            "Tetã Paraguái",
+            "República del Paraguay"
+        ],
+        "demonym_name": "Paraguayan"
+    },
+    {
+        "id": 178,
+        "name": "Peru",
+        "common_name": "Peru",
+        "official_name": "Republic of Peru",
+        "demonym": "Peruvian",
+        "iso2": "PE",
+        "iso3": "PER",
+        "phone_code": 51,
+        "alternative_spellings": [
+            "República del Perú"
+        ],
+        "demonym_name": "Peruvian"
+    },
+    {
+        "id": 177,
+        "name": "Pitcairn Islands",
+        "common_name": "Pitcairn Islands",
+        "official_name": "Pitcairn Group of Islands",
+        "demonym": "Pitcairn Islander",
+        "iso2": "PN",
+        "iso3": "PCN",
+        "phone_code": 64,
+        "alternative_spellings": [
+            "Pitcairn",
+            "Pitcairn Henderson Ducie and Oeno Islands"
+        ],
+        "demonym_name": "Pitcairn Islander"
+    },
+    {
+        "id": 182,
+        "name": "Poland",
+        "common_name": "Poland",
+        "official_name": "Republic of Poland",
+        "demonym": "Polish",
+        "iso2": "PL",
+        "iso3": "POL",
+        "phone_code": 48,
+        "alternative_spellings": [
+            "Rzeczpospolita Polska"
+        ],
+        "demonym_name": "Polish"
+    },
+    {
+        "id": 185,
+        "name": "Portugal",
+        "common_name": "Portugal",
+        "official_name": "Portuguese Republic",
+        "demonym": "Portuguese",
+        "iso2": "PT",
+        "iso3": "PRT",
+        "phone_code": 351,
+        "alternative_spellings": [
+            "Portuguesa",
+            "República Portuguesa"
+        ],
+        "demonym_name": "Portuguese"
+    },
+    {
+        "id": 183,
+        "name": "Puerto Rico",
+        "common_name": "Puerto Rico",
+        "official_name": "Commonwealth of Puerto Rico",
+        "demonym": "Puerto Rican",
+        "iso2": "PR",
+        "iso3": "PRI",
+        "phone_code": 1787,
+        "alternative_spellings": [
+            "Estado Libre Asociado de Puerto Rico"
+        ],
+        "demonym_name": "Puerto Rican"
+    },
+    {
+        "id": 189,
+        "name": "Qatar",
+        "common_name": "Qatar",
+        "official_name": "State of Qatar",
+        "demonym": "Qatari",
+        "iso2": "QA",
+        "iso3": "QAT",
+        "phone_code": 974,
+        "alternative_spellings": [
+            "Dawlat Qaṭar"
+        ],
+        "demonym_name": "Qatari"
+    },
+    {
+        "id": 190,
+        "name": "Réunion",
+        "common_name": "Réunion",
+        "official_name": "Réunion Island",
+        "demonym": "Réunionese",
+        "iso2": "RE",
+        "iso3": "REU",
+        "phone_code": 262,
+        "alternative_spellings": [
+            "Reunion"
+        ],
+        "demonym_name": "Réunionese (Réunion)"
+    },
+    {
+        "id": 191,
+        "name": "Romania",
+        "common_name": "Romania",
+        "official_name": "Romania",
+        "demonym": "Romanian",
+        "iso2": "RO",
+        "iso3": "ROU",
+        "phone_code": 40,
+        "alternative_spellings": [
+            "Rumania",
+            "România",
+            "Roumania"
+        ],
+        "demonym_name": "Romanian"
+    },
+    {
+        "id": 192,
+        "name": "Russia",
+        "common_name": "Russia",
+        "official_name": "Russian Federation",
+        "demonym": "Russian",
+        "iso2": "RU",
+        "iso3": "RUS",
+        "phone_code": 7,
+        "alternative_spellings": [
+            "Российская Федерация"
+        ],
+        "demonym_name": "Russian"
+    },
+    {
+        "id": 193,
+        "name": "Rwanda",
+        "common_name": "Rwanda",
+        "official_name": "Republic of Rwanda",
+        "demonym": "Rwandan",
+        "iso2": "RW",
+        "iso3": "RWA",
+        "phone_code": 250,
+        "alternative_spellings": [
+            "République du Rwanda",
+            "Repubulika y'u Rwanda"
+        ],
+        "demonym_name": "Rwandan"
+    },
+    {
+        "id": 70,
+        "name": "Western Sahara",
+        "common_name": "Western Sahara",
+        "official_name": "Sahrawi Arab Democratic Republic",
+        "demonym": "Sahrawi",
+        "iso2": "EH",
+        "iso3": "ESH",
+        "phone_code": 212,
+        "alternative_spellings": [
+            "Taneẓroft Tutrimt"
+        ],
+        "demonym_name": "Sahrawi"
+    },
+    {
+        "id": 27,
+        "name": "Saint Barthélemy",
+        "common_name": "Saint Barthélemy",
+        "official_name": "Collectivity of Saint Barthélemy",
+        "demonym": "Saint Barthélemy Islander",
+        "iso2": "BL",
+        "iso3": "BLM",
+        "phone_code": 590,
+        "alternative_spellings": [
+            "Collectivité de Saint-Barthélemy",
+            "St. Barthelemy"
+        ],
+        "demonym_name": "Saint Barthélemy Islander"
+    },
+    {
+        "id": 28,
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "common_name": "Saint Helena, Ascension and Tristan da Cunha",
+        "official_name": "Saint Helena, Ascension and Tristan da Cunha",
+        "demonym": "Saint Helenian",
+        "iso2": "SH",
+        "iso3": "SHN",
+        "phone_code": 290,
+        "alternative_spellings": [
+            "St. Helena, Ascension and Tristan da Cunha",
+            "Saint Helena"
+        ],
+        "demonym_name": "Saint Helenian"
+    },
+    {
+        "id": 131,
+        "name": "Saint Lucia",
+        "common_name": "Saint Lucia",
+        "official_name": "Saint Lucia",
+        "demonym": "Saint Lucian",
+        "iso2": "LC",
+        "iso3": "LCA",
+        "phone_code": 1758,
+        "alternative_spellings": [],
+        "demonym_name": "Saint Lucian"
+    },
+    {
+        "id": 139,
+        "name": "Saint Martin",
+        "common_name": "Saint Martin",
+        "official_name": "Saint Martin",
+        "demonym": "Saint Martin Islander",
+        "iso2": "MF",
+        "iso3": "MAF",
+        "phone_code": 590,
+        "alternative_spellings": [
+            "Saint Martin (French part)",
+            "Collectivity of Saint Martin",
+            "Collectivité de Saint-Martin"
+        ],
+        "demonym_name": "Saint Martin Islander"
+    },
+    {
+        "id": 205,
+        "name": "Saint Pierre and Miquelon",
+        "common_name": "Saint Pierre and Miquelon",
+        "official_name": "Saint Pierre and Miquelon",
+        "demonym": "Saint-Pierrais",
+        "iso2": "PM",
+        "iso3": "SPM",
+        "phone_code": 508,
+        "alternative_spellings": [
+            "Collectivité territoriale de Saint-Pierre-et-Miquelon"
+        ],
+        "demonym_name": "Saint-Pierrais (Saint Pierre and Miquelon)"
+    },
+    {
+        "id": 239,
+        "name": "Saint Vincent and the Grenadines",
+        "common_name": "Saint Vincent and the Grenadines",
+        "official_name": "Saint Vincent and the Grenadines",
+        "demonym": "Saint Vincentian",
+        "iso2": "VC",
+        "iso3": "VCT",
+        "phone_code": 1784,
+        "alternative_spellings": [],
+        "demonym_name": "Saint Vincentian"
+    },
+    {
+        "id": 202,
+        "name": "El Salvador",
+        "common_name": "El Salvador",
+        "official_name": "Republic of El Salvador",
+        "demonym": "Salvadoran",
+        "iso2": "SV",
+        "iso3": "SLV",
+        "phone_code": 503,
+        "alternative_spellings": [
+            "República de El Salvador"
+        ],
+        "demonym_name": "Salvadoran"
+    },
+    {
+        "id": 203,
+        "name": "San Marino",
+        "common_name": "San Marino",
+        "official_name": "Most Serene Republic of San Marino",
+        "demonym": "Sammarinese",
+        "iso2": "SM",
+        "iso3": "SMR",
+        "phone_code": 378,
+        "alternative_spellings": [
+            "Repubblica di San Marino",
+            "Republic of San Marino"
+        ],
+        "demonym_name": "Sammarinese"
+    },
+    {
+        "id": 246,
+        "name": "Samoa",
+        "common_name": "Samoa",
+        "official_name": "Independent State of Samoa",
+        "demonym": "Samoan",
+        "iso2": "WS",
+        "iso3": "WSM",
+        "phone_code": 685,
+        "alternative_spellings": [
+            "Malo Saʻoloto Tutoʻatasi o Sāmoa"
+        ],
+        "demonym_name": "Samoan"
+    },
+    {
+        "id": 208,
+        "name": "São Tomé and Príncipe",
+        "common_name": "São Tomé and Príncipe",
+        "official_name": "Democratic Republic of São Tomé and Príncipe",
+        "demonym": "Sao Tomean",
+        "iso2": "ST",
+        "iso3": "STP",
+        "phone_code": 239,
+        "alternative_spellings": [
+            "Sao Tome and Principe",
+            "República Democrática de São Tomé e Príncipe"
+        ],
+        "demonym_name": "Sao Tomean"
+    },
+    {
+        "id": 194,
+        "name": "Saudi Arabia",
+        "common_name": "Saudi Arabia",
+        "official_name": "Kingdom of Saudi Arabia",
+        "demonym": "Saudi Arabian",
+        "iso2": "SA",
+        "iso3": "SAU",
+        "phone_code": 966,
+        "alternative_spellings": [
+            "Saudi",
+            "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+        ],
+        "demonym_name": "Saudi Arabian"
+    },
+    {
+        "id": 196,
+        "name": "Senegal",
+        "common_name": "Senegal",
+        "official_name": "Republic of Senegal",
+        "demonym": "Senegalese",
+        "iso2": "SN",
+        "iso3": "SEN",
+        "phone_code": 221,
+        "alternative_spellings": [
+            "République du Sénégal"
+        ],
+        "demonym_name": "Senegalese"
+    },
+    {
+        "id": 206,
+        "name": "Serbia",
+        "common_name": "Serbia",
+        "official_name": "Republic of Serbia",
+        "demonym": "Serbian",
+        "iso2": "RS",
+        "iso3": "SRB",
+        "phone_code": 381,
+        "alternative_spellings": [
+            "Republika Srbija",
+            "Srbija",
+            "Република Србија"
+        ],
+        "demonym_name": "Serbian"
+    },
+    {
+        "id": 215,
+        "name": "Seychelles",
+        "common_name": "Seychelles",
+        "official_name": "Republic of Seychelles",
+        "demonym": "Seychellois",
+        "iso2": "SC",
+        "iso3": "SYC",
+        "phone_code": 248,
+        "alternative_spellings": [
+            "République des Seychelles",
+            "Repiblik Sesel"
+        ],
+        "demonym_name": "Seychellois"
+    },
+    {
+        "id": 201,
+        "name": "Sierra Leone",
+        "common_name": "Sierra Leone",
+        "official_name": "Republic of Sierra Leone",
+        "demonym": "Sierra Leonean",
+        "iso2": "SL",
+        "iso3": "SLE",
+        "phone_code": 232,
+        "alternative_spellings": [],
+        "demonym_name": "Sierra Leonean"
+    },
+    {
+        "id": 197,
+        "name": "Singapore",
+        "common_name": "Singapore",
+        "official_name": "Republic of Singapore",
+        "demonym": "Singaporean",
+        "iso2": "SG",
+        "iso3": "SGP",
+        "phone_code": 65,
+        "alternative_spellings": [
+            "Republik Singapura",
+            "Singapura",
+            "新加坡共和国"
+        ],
+        "demonym_name": "Singaporean"
+    },
+    {
+        "id": 210,
+        "name": "Slovakia",
+        "common_name": "Slovakia",
+        "official_name": "Slovak Republic",
+        "demonym": "Slovak",
+        "iso2": "SK",
+        "iso3": "SVK",
+        "phone_code": 421,
+        "alternative_spellings": [
+            "Slovenská republika"
+        ],
+        "demonym_name": "Slovak"
+    },
+    {
+        "id": 211,
+        "name": "Slovenia",
+        "common_name": "Slovenia",
+        "official_name": "Republic of Slovenia",
+        "demonym": "Slovene",
+        "iso2": "SI",
+        "iso3": "SVN",
+        "phone_code": 386,
+        "alternative_spellings": [
+            "Republika Slovenija"
+        ],
+        "demonym_name": "Slovene"
+    },
+    {
+        "id": 200,
+        "name": "Solomon Islands",
+        "common_name": "Solomon Islands",
+        "official_name": "Solomon Islands",
+        "demonym": "Solomon Islander",
+        "iso2": "SB",
+        "iso3": "SLB",
+        "phone_code": 677,
+        "alternative_spellings": [],
+        "demonym_name": "Solomon Islander"
+    },
+    {
+        "id": 204,
+        "name": "Somalia",
+        "common_name": "Somalia",
+        "official_name": "Federal Republic of Somalia",
+        "demonym": "Somali",
+        "iso2": "SO",
+        "iso3": "SOM",
+        "phone_code": 252,
+        "alternative_spellings": [
+            "Jamhuuriyadda Federaalka Soomaaliya",
+            "aṣ-Ṣūmāl",
+            "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya"
+        ],
+        "demonym_name": "Somali"
+    },
+    {
+        "id": 248,
+        "name": "South Africa",
+        "common_name": "South Africa",
+        "official_name": "Republic of South Africa",
+        "demonym": "South African",
+        "iso2": "ZA",
+        "iso3": "ZAF",
+        "phone_code": 27,
+        "alternative_spellings": [
+            "Suid-Afrika"
+        ],
+        "demonym_name": "South African"
+    },
+    {
+        "id": 198,
+        "name": "South Georgia",
+        "common_name": "South Georgia",
+        "official_name": "South Georgia and the South Sandwich Islands",
+        "demonym": "South Georgian South Sandwich Islander",
+        "iso2": "GS",
+        "iso3": "SGS",
+        "phone_code": 500,
+        "alternative_spellings": [],
+        "demonym_name": "South Georgian South Sandwich Islander"
+    },
+    {
+        "id": 124,
+        "name": "South Korea",
+        "common_name": "South Korea",
+        "official_name": "Republic of Korea",
+        "demonym": "South Korean",
+        "iso2": "KR",
+        "iso3": "KOR",
+        "phone_code": 82,
+        "alternative_spellings": [
+            "Korea, Republic of"
+        ],
+        "demonym_name": "South Korean"
+    },
+    {
+        "id": 207,
+        "name": "South Sudan",
+        "common_name": "South Sudan",
+        "official_name": "Republic of South Sudan",
+        "demonym": "South Sudanese",
+        "iso2": "SS",
+        "iso3": "SSD",
+        "phone_code": 211,
+        "alternative_spellings": [],
+        "demonym_name": "South Sudanese"
+    },
+    {
+        "id": 71,
+        "name": "Spain",
+        "common_name": "Spain",
+        "official_name": "Kingdom of Spain",
+        "demonym": "Spanish",
+        "iso2": "ES",
+        "iso3": "ESP",
+        "phone_code": 34,
+        "alternative_spellings": [
+            "Reino de España"
+        ],
+        "demonym_name": "Spanish"
+    },
+    {
+        "id": 133,
+        "name": "Sri Lanka",
+        "common_name": "Sri Lanka",
+        "official_name": "Democratic Socialist Republic of Sri Lanka",
+        "demonym": "Sri Lankan",
+        "iso2": "LK",
+        "iso3": "LKA",
+        "phone_code": 94,
+        "alternative_spellings": [
+            "ilaṅkai"
+        ],
+        "demonym_name": "Sri Lankan"
+    },
+    {
+        "id": 214,
+        "name": "Sint Maarten",
+        "common_name": "Sint Maarten",
+        "official_name": "Sint Maarten",
+        "demonym": "St. Maartener",
+        "iso2": "SX",
+        "iso3": "SXM",
+        "phone_code": 1721,
+        "alternative_spellings": [
+            "Sint Maarten (Dutch part)"
+        ],
+        "demonym_name": "St. Maartener"
+    },
+    {
+        "id": 195,
+        "name": "Sudan",
+        "common_name": "Sudan",
+        "official_name": "Republic of the Sudan",
+        "demonym": "Sudanese",
+        "iso2": "SD",
+        "iso3": "SDN",
+        "phone_code": 249,
+        "alternative_spellings": [
+            "Jumhūrīyat as-Sūdān"
+        ],
+        "demonym_name": "Sudanese"
+    },
+    {
+        "id": 209,
+        "name": "Suriname",
+        "common_name": "Suriname",
+        "official_name": "Republic of Suriname",
+        "demonym": "Surinamer",
+        "iso2": "SR",
+        "iso3": "SUR",
+        "phone_code": 597,
+        "alternative_spellings": [
+            "Republiek Suriname",
+            "Sarnam",
+            "Sranangron"
+        ],
+        "demonym_name": "Surinamer"
+    },
+    {
+        "id": 213,
+        "name": "Eswatini",
+        "common_name": "Eswatini",
+        "official_name": "Kingdom of Eswatini",
+        "demonym": "Swazi",
+        "iso2": "SZ",
+        "iso3": "SWZ",
+        "phone_code": 268,
+        "alternative_spellings": [
+            "weSwatini",
+            "Ngwane",
+            "Swatini",
+            "Swaziland",
+            "Umbuso weSwatini"
+        ],
+        "demonym_name": "Swazi"
+    },
+    {
+        "id": 212,
+        "name": "Sweden",
+        "common_name": "Sweden",
+        "official_name": "Kingdom of Sweden",
+        "demonym": "Swedish",
+        "iso2": "SE",
+        "iso3": "SWE",
+        "phone_code": 46,
+        "alternative_spellings": [
+            "Konungariket Sverige"
+        ],
+        "demonym_name": "Swedish"
+    },
+    {
+        "id": 43,
+        "name": "Switzerland",
+        "common_name": "Switzerland",
+        "official_name": "Swiss Confederation",
+        "demonym": "Swiss",
+        "iso2": "CH",
+        "iso3": "CHE",
+        "phone_code": 41,
+        "alternative_spellings": [
+            "Svizra",
+            "Svizzera",
+            "Suisse",
+            "Schweiz"
+        ],
+        "demonym_name": "Swiss"
+    },
+    {
+        "id": 216,
+        "name": "Syria",
+        "common_name": "Syria",
+        "official_name": "Syrian Arab Republic",
+        "demonym": "Syrian",
+        "iso2": "SY",
+        "iso3": "SYR",
+        "phone_code": 963,
+        "alternative_spellings": [
+            "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
+        ],
+        "demonym_name": "Syrian"
+    },
+    {
+        "id": 221,
+        "name": "Tajikistan",
+        "common_name": "Tajikistan",
+        "official_name": "Republic of Tajikistan",
+        "demonym": "Tadzhik",
+        "iso2": "TJ",
+        "iso3": "TJK",
+        "phone_code": 992,
+        "alternative_spellings": [
+            "Çumhuriyi Toçikiston",
+            "Toçikiston",
+            "Ҷумҳурии Тоҷикистон"
+        ],
+        "demonym_name": "Tadzhik"
+    },
+    {
+        "id": 230,
+        "name": "Taiwan",
+        "common_name": "Taiwan",
+        "official_name": "Republic of China (Taiwan)",
+        "demonym": "Taiwanese",
+        "iso2": "TW",
+        "iso3": "TWN",
+        "phone_code": 886,
+        "alternative_spellings": [
+            "Republic of China",
+            "Zhōnghuá Mínguó",
+            "Táiwān",
+            "Chinese Taipei",
+            "中華民國"
+        ],
+        "demonym_name": "Taiwanese"
+    },
+    {
+        "id": 231,
+        "name": "Tanzania",
+        "common_name": "Tanzania",
+        "official_name": "United Republic of Tanzania",
+        "demonym": "Tanzanian",
+        "iso2": "TZ",
+        "iso3": "TZA",
+        "phone_code": 255,
+        "alternative_spellings": [
+            "Tanzania, United Republic of",
+            "Jamhuri ya Muungano wa Tanzania"
+        ],
+        "demonym_name": "Tanzanian"
+    },
+    {
+        "id": 220,
+        "name": "Thailand",
+        "common_name": "Thailand",
+        "official_name": "Kingdom of Thailand",
+        "demonym": "Thai",
+        "iso2": "TH",
+        "iso3": "THA",
+        "phone_code": 66,
+        "alternative_spellings": [
+            "Prathet",
+            "ราชอาณาจักรไทย",
+            "Thai",
+            "Ratcha Anachak Thai"
+        ],
+        "demonym_name": "Thai"
+    },
+    {
+        "id": 219,
+        "name": "Togo",
+        "common_name": "Togo",
+        "official_name": "Togolese Republic",
+        "demonym": "Togolese",
+        "iso2": "TG",
+        "iso3": "TGO",
+        "phone_code": 228,
+        "alternative_spellings": [
+            "Togolese",
+            "République Togolaise"
+        ],
+        "demonym_name": "Togolese"
+    },
+    {
+        "id": 222,
+        "name": "Tokelau",
+        "common_name": "Tokelau",
+        "official_name": "Tokelau",
+        "demonym": "Tokelauan",
+        "iso2": "TK",
+        "iso3": "TKL",
+        "phone_code": 690,
+        "alternative_spellings": [],
+        "demonym_name": "Tokelauan"
+    },
+    {
+        "id": 225,
+        "name": "Tonga",
+        "common_name": "Tonga",
+        "official_name": "Kingdom of Tonga",
+        "demonym": "Tongan",
+        "iso2": "TO",
+        "iso3": "TON",
+        "phone_code": 676,
+        "alternative_spellings": [],
+        "demonym_name": "Tongan"
+    },
+    {
+        "id": 226,
+        "name": "Trinidad and Tobago",
+        "common_name": "Trinidad and Tobago",
+        "official_name": "Republic of Trinidad and Tobago",
+        "demonym": "Trinidadian",
+        "iso2": "TT",
+        "iso3": "TTO",
+        "phone_code": 1868,
+        "alternative_spellings": [],
+        "demonym_name": "Trinidadian"
+    },
+    {
+        "id": 227,
+        "name": "Tunisia",
+        "common_name": "Tunisia",
+        "official_name": "Tunisian Republic",
+        "demonym": "Tunisian",
+        "iso2": "TN",
+        "iso3": "TUN",
+        "phone_code": 216,
+        "alternative_spellings": [
+            "al-Jumhūriyyah at-Tūnisiyyah",
+            "Republic of Tunisia"
+        ],
+        "demonym_name": "Tunisian"
+    },
+    {
+        "id": 228,
+        "name": "Turkey",
+        "common_name": "Turkey",
+        "official_name": "Republic of Turkey",
+        "demonym": "Turkish",
+        "iso2": "TR",
+        "iso3": "TUR",
+        "phone_code": 90,
+        "alternative_spellings": [
+            "Türkiye Cumhuriyeti",
+            "Turkiye"
+        ],
+        "demonym_name": "Turkish"
+    },
+    {
+        "id": 223,
+        "name": "Turkmenistan",
+        "common_name": "Turkmenistan",
+        "official_name": "Turkmenistan",
+        "demonym": "Turkmen",
+        "iso2": "TM",
+        "iso3": "TKM",
+        "phone_code": 993,
+        "alternative_spellings": [],
+        "demonym_name": "Turkmen"
+    },
+    {
+        "id": 217,
+        "name": "Turks and Caicos Islands",
+        "common_name": "Turks and Caicos Islands",
+        "official_name": "Turks and Caicos Islands",
+        "demonym": "Turks and Caicos Islander",
+        "iso2": "TC",
+        "iso3": "TCA",
+        "phone_code": 1649,
+        "alternative_spellings": [],
+        "demonym_name": "Turks and Caicos Islander"
+    },
+    {
+        "id": 229,
+        "name": "Tuvalu",
+        "common_name": "Tuvalu",
+        "official_name": "Tuvalu",
+        "demonym": "Tuvaluan",
+        "iso2": "TV",
+        "iso3": "TUV",
+        "phone_code": 688,
+        "alternative_spellings": [],
+        "demonym_name": "Tuvaluan"
+    },
+    {
+        "id": 232,
+        "name": "Uganda",
+        "common_name": "Uganda",
+        "official_name": "Republic of Uganda",
+        "demonym": "Ugandan",
+        "iso2": "UG",
+        "iso3": "UGA",
+        "phone_code": 256,
+        "alternative_spellings": [
+            "Jamhuri ya Uganda"
+        ],
+        "demonym_name": "Ugandan"
+    },
+    {
+        "id": 233,
+        "name": "Ukraine",
+        "common_name": "Ukraine",
+        "official_name": "Ukraine",
+        "demonym": "Ukrainian",
+        "iso2": "UA",
+        "iso3": "UKR",
+        "phone_code": 380,
+        "alternative_spellings": [
+            "Ukrayina"
+        ],
+        "demonym_name": "Ukrainian"
+    },
+    {
+        "id": 235,
+        "name": "Uruguay",
+        "common_name": "Uruguay",
+        "official_name": "Oriental Republic of Uruguay",
+        "demonym": "Uruguayan",
+        "iso2": "UY",
+        "iso3": "URY",
+        "phone_code": 598,
+        "alternative_spellings": [
+            "República Oriental del Uruguay"
+        ],
+        "demonym_name": "Uruguayan"
+    },
+    {
+        "id": 237,
+        "name": "Uzbekistan",
+        "common_name": "Uzbekistan",
+        "official_name": "Republic of Uzbekistan",
+        "demonym": "Uzbekistani",
+        "iso2": "UZ",
+        "iso3": "UZB",
+        "phone_code": 998,
+        "alternative_spellings": [
+            "Ўзбекистон Республикаси",
+            "O‘zbekiston Respublikasi"
+        ],
+        "demonym_name": "Uzbekistani"
+    },
+    {
+        "id": 238,
+        "name": "Vatican City",
+        "common_name": "Vatican City",
+        "official_name": "Vatican City State",
+        "demonym": "Vatican",
+        "iso2": "VA",
+        "iso3": "VAT",
+        "phone_code": 3906698,
+        "alternative_spellings": [
+            "Holy See (Vatican City State)",
+            "Stato della Città del Vaticano"
+        ],
+        "demonym_name": "Vatican"
+    },
+    {
+        "id": 240,
+        "name": "Venezuela",
+        "common_name": "Venezuela",
+        "official_name": "Bolivarian Republic of Venezuela",
+        "demonym": "Venezuelan",
+        "iso2": "VE",
+        "iso3": "VEN",
+        "phone_code": 58,
+        "alternative_spellings": [
+            "Venezuela, Bolivarian Republic of",
+            "República Bolivariana de Venezuela"
+        ],
+        "demonym_name": "Venezuelan"
+    },
+    {
+        "id": 243,
+        "name": "Vietnam",
+        "common_name": "Vietnam",
+        "official_name": "Socialist Republic of Vietnam",
+        "demonym": "Vietnamese",
+        "iso2": "VN",
+        "iso3": "VNM",
+        "phone_code": 84,
+        "alternative_spellings": [
+            "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+            "Viet Nam"
+        ],
+        "demonym_name": "Vietnamese"
+    },
+    {
+        "id": 242,
+        "name": "United States Virgin Islands",
+        "common_name": "United States Virgin Islands",
+        "official_name": "Virgin Islands of the United States",
+        "demonym": "Virgin Islander",
+        "iso2": "VI",
+        "iso3": "VIR",
+        "phone_code": 1340,
+        "alternative_spellings": [
+            "Virgin Islands, U.S."
+        ],
+        "demonym_name": "Virgin Islander (United States Virgin Islands)"
+    },
+    {
+        "id": 241,
+        "name": "British Virgin Islands",
+        "common_name": "British Virgin Islands",
+        "official_name": "Virgin Islands",
+        "demonym": "Virgin Islander",
+        "iso2": "VG",
+        "iso3": "VGB",
+        "phone_code": 1284,
+        "alternative_spellings": [
+            "Virgin Islands, British"
+        ],
+        "demonym_name": "Virgin Islander (British Virgin Islands)"
+    },
+    {
+        "id": 245,
+        "name": "Wallis and Futuna",
+        "common_name": "Wallis and Futuna",
+        "official_name": "Territory of the Wallis and Futuna Islands",
+        "demonym": "Wallis and Futuna Islander",
+        "iso2": "WF",
+        "iso3": "WLF",
+        "phone_code": 681,
+        "alternative_spellings": [
+            "Territoire des îles Wallis et Futuna"
+        ],
+        "demonym_name": "Wallis and Futuna Islander"
+    },
+    {
+        "id": 247,
+        "name": "Yemen",
+        "common_name": "Yemen",
+        "official_name": "Republic of Yemen",
+        "demonym": "Yemeni",
+        "iso2": "YE",
+        "iso3": "YEM",
+        "phone_code": 967,
+        "alternative_spellings": [
+            "al-Jumhūriyyah al-Yamaniyyah",
+            "Yemeni Republic"
+        ],
+        "demonym_name": "Yemeni"
+    },
+    {
+        "id": 249,
+        "name": "Zambia",
+        "common_name": "Zambia",
+        "official_name": "Republic of Zambia",
+        "demonym": "Zambian",
+        "iso2": "ZM",
+        "iso3": "ZMB",
+        "phone_code": 260,
+        "alternative_spellings": [],
+        "demonym_name": "Zambian"
+    },
+    {
+        "id": 250,
+        "name": "Zimbabwe",
+        "common_name": "Zimbabwe",
+        "official_name": "Republic of Zimbabwe",
+        "demonym": "Zimbabwean",
+        "iso2": "ZW",
+        "iso3": "ZWE",
+        "phone_code": 263,
+        "alternative_spellings": [],
+        "demonym_name": "Zimbabwean"
+    }
+]

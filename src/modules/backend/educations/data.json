@@ -1,0 +1,25 @@
+[
+    {
+        "id": 36155885,
+        "degree": 4,
+        "degree_name": "Master's Degree",
+        "school": 532120,
+        "school_name": "VU Amsterdam",
+        "specialization": "Accountant",
+        "final_grade": "A",
+        "score_type": "99.98",
+        "city_new": null,
+        "city_new_name": null,
+        "state_new": null,
+        "state_new_name": null,
+        "country_new": 169,
+        "country_new_name": "Netherlands",
+        "location_display": "Netherlands",
+        "started_at": "2021-04-01",
+        "ended_at": "2023-09-30",
+        "started_at_precision": "day",
+        "ended_at_precision": "day",
+        "description": "Desc",
+        "source": "form"
+    }
+]

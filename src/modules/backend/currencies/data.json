@@ -1,0 +1,835 @@
+[
+    {
+        "id": 54,
+        "name": "Guinean Franc",
+        "symbol": "FG",
+        "code": "GNF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_gnf_logo.png"
+    },
+    {
+        "id": 55,
+        "name": "Guatemalan Quetzal",
+        "symbol": "GTQ",
+        "code": "GTQ",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_gtq_logo.png"
+    },
+    {
+        "id": 7,
+        "name": "Hong Kong Dollar",
+        "symbol": "HK$",
+        "code": "HKD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_hkd_logo.png"
+    },
+    {
+        "id": 1034,
+        "name": "Haitian Gourde",
+        "symbol": "G",
+        "code": "HTG",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/Flag_of_Haiti.svg.webp"
+    },
+    {
+        "id": 40,
+        "name": "Comorian Franc",
+        "symbol": "CF",
+        "code": "KMF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_kmf_logo.png"
+    },
+    {
+        "id": 69,
+        "name": "South Korean Won",
+        "symbol": "₩",
+        "code": "KRW",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_krw_logo.png"
+    },
+    {
+        "id": 70,
+        "name": "Kuwaiti Dinar",
+        "symbol": "KD",
+        "code": "KWD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_kwd_logo.png"
+    },
+    {
+        "id": 66,
+        "name": "Kazakhstani Tenge",
+        "symbol": "KZT",
+        "code": "KZT",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_kzt_logo.png"
+    },
+    {
+        "id": 71,
+        "name": "Lebanese Pound",
+        "symbol": "LB£",
+        "code": "LBP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_lbp_logo.png"
+    },
+    {
+        "id": 73,
+        "name": "Sri Lankan Rupee",
+        "symbol": "SLRs",
+        "code": "LKR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_lkr_logo.png"
+    },
+    {
+        "id": 72,
+        "name": "Libyan Dinar",
+        "symbol": "LD",
+        "code": "LYD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_lyd_logo.png"
+    },
+    {
+        "id": 50,
+        "name": "Moroccan Dirham",
+        "symbol": "MAD",
+        "code": "MAD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mad_logo.png"
+    },
+    {
+        "id": 75,
+        "name": "Moldovan Leu",
+        "symbol": "MDL",
+        "code": "MDL",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mdl_logo.png"
+    },
+    {
+        "id": 76,
+        "name": "Malagasy Ariary",
+        "symbol": "MGA",
+        "code": "MGA",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mga_logo.png"
+    },
+    {
+        "id": 148,
+        "name": "Zimbabwe Dollar",
+        "symbol": "Z$",
+        "code": "ZWL",
+        "logo": null
+    },
+    {
+        "id": 111,
+        "name": "Venezuelan Bolívar",
+        "symbol": "Bs.F.",
+        "code": "VEF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_vef_logo.png"
+    },
+    {
+        "id": 1001,
+        "name": "Angolan kwanza",
+        "symbol": "Kz‎",
+        "code": "AOA",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/Flag_of_Angola.svg.webp"
+    },
+    {
+        "id": 29,
+        "name": "Bolivian Boliviano",
+        "symbol": "Bs",
+        "code": "BOB",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bob_logo.png"
+    },
+    {
+        "id": 5,
+        "name": "Brazilian Real",
+        "symbol": "R$",
+        "code": "BRL",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_brl_logo.png"
+    },
+    {
+        "id": 78,
+        "name": "Macedonian Denar",
+        "symbol": "MKD",
+        "code": "MKD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mkd_logo.png"
+    },
+    {
+        "id": 81,
+        "name": "Mauritian Rupee",
+        "symbol": "MURs",
+        "code": "MUR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mur_logo.png"
+    },
+    {
+        "id": 77,
+        "name": "Mexican Peso",
+        "symbol": "MX$",
+        "code": "MXN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mxn_logo.png"
+    },
+    {
+        "id": 10,
+        "name": "Malaysian Ringgit",
+        "symbol": "RM",
+        "code": "MYR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_myr_logo.png"
+    },
+    {
+        "id": 93,
+        "name": "Russian Ruble",
+        "symbol": "RUB",
+        "code": "RUB",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_rub_logo.png"
+    },
+    {
+        "id": 95,
+        "name": "Saudi Riyal",
+        "symbol": "SR",
+        "code": "SAR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_sar_logo.png"
+    },
+    {
+        "id": 96,
+        "name": "Sudanese Pound",
+        "symbol": "SDG",
+        "code": "SDG",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_sdg_logo.png"
+    },
+    {
+        "id": 99,
+        "name": "Swedish Krona",
+        "symbol": "Skr",
+        "code": "SEK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_sek_logo.png"
+    },
+    {
+        "id": 13,
+        "name": "Singapore Dollar",
+        "symbol": "S$",
+        "code": "SGD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_sgd_logo.png"
+    },
+    {
+        "id": 1,
+        "name": "US Dollar",
+        "symbol": "$",
+        "code": "USD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_usd_logo.png"
+    },
+    {
+        "id": 18,
+        "name": "United Arab Emirates Dirham",
+        "symbol": "AED",
+        "code": "AED",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_aed_logo.png"
+    },
+    {
+        "id": 16,
+        "name": "Afghan Afghani",
+        "symbol": "Af",
+        "code": "AFN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_afn_logo.png"
+    },
+    {
+        "id": 17,
+        "name": "Albanian Lek",
+        "symbol": "ALL",
+        "code": "ALL",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_all_logo.png"
+    },
+    {
+        "id": 20,
+        "name": "Armenian Dram",
+        "symbol": "AMD",
+        "code": "AMD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_amd_logo.png"
+    },
+    {
+        "id": 19,
+        "name": "Argentine Peso",
+        "symbol": "AR$",
+        "code": "ARS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ars_logo.png"
+    },
+    {
+        "id": 4,
+        "name": "Australian Dollar",
+        "symbol": "AU$",
+        "code": "AUD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_aud_logo.png"
+    },
+    {
+        "id": 21,
+        "name": "Azerbaijani Manat",
+        "symbol": "man.",
+        "code": "AZN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_azn_logo.png"
+    },
+    {
+        "id": 27,
+        "name": "Bosnia-Herzegovina Convertible Mark",
+        "symbol": "KM",
+        "code": "BAM",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bam_logo.png"
+    },
+    {
+        "id": 79,
+        "name": "Myanma Kyat",
+        "symbol": "MMK",
+        "code": "MMK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mmk_logo.png"
+    },
+    {
+        "id": 114,
+        "name": "Mongolian tögrög",
+        "symbol": "₮",
+        "code": "MNT",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/mnt.png"
+    },
+    {
+        "id": 74,
+        "name": "Macanese Pataca",
+        "symbol": "MOP$",
+        "code": "MOP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mop_logo.png"
+    },
+    {
+        "id": 113,
+        "name": "Yemeni Rial",
+        "symbol": "YR",
+        "code": "YER",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_yer_logo.png"
+    },
+    {
+        "id": 15,
+        "name": "South African Rand",
+        "symbol": "R",
+        "code": "ZAR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_zar_logo.png"
+    },
+    {
+        "id": 149,
+        "name": "Zambian Kwacha",
+        "symbol": "K",
+        "code": "ZMW",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/Flag_of_Zambia.svg.webp"
+    },
+    {
+        "id": 24,
+        "name": "Bangladeshi Taka",
+        "symbol": "Tk",
+        "code": "BDT",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bdt_logo.png"
+    },
+    {
+        "id": 25,
+        "name": "Bulgarian Lev",
+        "symbol": "BGN",
+        "code": "BGN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bgn_logo.png"
+    },
+    {
+        "id": 26,
+        "name": "Bahraini Dinar",
+        "symbol": "BD",
+        "code": "BHD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bhd_logo.png"
+    },
+    {
+        "id": 22,
+        "name": "Burundian Franc",
+        "symbol": "FBu",
+        "code": "BIF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bif_logo.png"
+    },
+    {
+        "id": 30,
+        "name": "Brunei Dollar",
+        "symbol": "BN$",
+        "code": "BND",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bnd_logo.png"
+    },
+    {
+        "id": 32,
+        "name": "Botswanan Pula",
+        "symbol": "BWP",
+        "code": "BWP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bwp_logo.png"
+    },
+    {
+        "id": 28,
+        "name": "Belize Dollar",
+        "symbol": "BZ$",
+        "code": "BZD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_bzd_logo.png"
+    },
+    {
+        "id": 34,
+        "name": "Canadian Dollar",
+        "symbol": "CA$",
+        "code": "CAD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_cad_logo.png"
+    },
+    {
+        "id": 37,
+        "name": "Congolese Franc",
+        "symbol": "CDF",
+        "code": "CDF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_cdf_logo.png"
+    },
+    {
+        "id": 35,
+        "name": "Swiss Franc",
+        "symbol": "CHF",
+        "code": "CHF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_chf_logo.png"
+    },
+    {
+        "id": 36,
+        "name": "Chilean Peso",
+        "symbol": "CL$",
+        "code": "CLP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_clp_logo.png"
+    },
+    {
+        "id": 51,
+        "name": "British Pound Sterling",
+        "symbol": "£",
+        "code": "GBP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_gbp_logo.png"
+    },
+    {
+        "id": 52,
+        "name": "Georgian Lari",
+        "symbol": "GEL",
+        "code": "GEL",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_gel_logo.png"
+    },
+    {
+        "id": 53,
+        "name": "Ghanaian Cedi",
+        "symbol": "GH₵",
+        "code": "GHS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ghs_logo.png"
+    },
+    {
+        "id": 94,
+        "name": "Rwandan Franc",
+        "symbol": "RWF",
+        "code": "RWF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_rwf_logo.png"
+    },
+    {
+        "id": 14,
+        "name": "Chinese Yuan",
+        "symbol": "CN¥",
+        "code": "CNY",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_cny_logo.png"
+    },
+    {
+        "id": 39,
+        "name": "Colombian Peso",
+        "symbol": "CO$",
+        "code": "COP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_cop_logo.png"
+    },
+    {
+        "id": 42,
+        "name": "Costa Rican Colón",
+        "symbol": "₡",
+        "code": "CRC",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_crc_logo.png"
+    },
+    {
+        "id": 41,
+        "name": "Cape Verdean Escudo",
+        "symbol": "CV$",
+        "code": "CVE",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_cve_logo.png"
+    },
+    {
+        "id": 43,
+        "name": "Czech Republic Koruna",
+        "symbol": "Kč",
+        "code": "CZK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_czk_logo.png"
+    },
+    {
+        "id": 44,
+        "name": "Djiboutian Franc",
+        "symbol": "Fdj",
+        "code": "DJF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_djf_logo.png"
+    },
+    {
+        "id": 45,
+        "name": "Danish Krone",
+        "symbol": "Dkr",
+        "code": "DKK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_dkk_logo.png"
+    },
+    {
+        "id": 46,
+        "name": "Dominican Peso",
+        "symbol": "RD$",
+        "code": "DOP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_dop_logo.png"
+    },
+    {
+        "id": 47,
+        "name": "Algerian Dinar",
+        "symbol": "DA",
+        "code": "DZD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_dzd_logo.png"
+    },
+    {
+        "id": 48,
+        "name": "Egyptian Pound",
+        "symbol": "EGP",
+        "code": "EGP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_egp_logo.png"
+    },
+    {
+        "id": 49,
+        "name": "Eritrean Nakfa",
+        "symbol": "Nfk",
+        "code": "ERN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ern_logo.png"
+    },
+    {
+        "id": 6,
+        "name": "Ethiopian Birr",
+        "symbol": "Br",
+        "code": "ETB",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_etb_logo.png"
+    },
+    {
+        "id": 2,
+        "name": "Euro",
+        "symbol": "€",
+        "code": "EUR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_eur_logo.png"
+    },
+    {
+        "id": 56,
+        "name": "Honduran Lempira",
+        "symbol": "HNL",
+        "code": "HNL",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_hnl_logo.png"
+    },
+    {
+        "id": 57,
+        "name": "Croatian Kuna",
+        "symbol": "kn",
+        "code": "HRK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_hrk_logo.png"
+    },
+    {
+        "id": 58,
+        "name": "Hungarian Forint",
+        "symbol": "Ft",
+        "code": "HUF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_huf_logo.png"
+    },
+    {
+        "id": 8,
+        "name": "Indonesian Rupiah",
+        "symbol": "Rp",
+        "code": "IDR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_idr_logo.png"
+    },
+    {
+        "id": 62,
+        "name": "Israeli New Sheqel",
+        "symbol": "₪",
+        "code": "ILS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ils_logo.png"
+    },
+    {
+        "id": 9,
+        "name": "Indian Rupee",
+        "symbol": "Rs",
+        "code": "INR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_inr_logo.png"
+    },
+    {
+        "id": 60,
+        "name": "Iraqi Dinar",
+        "symbol": "IQD",
+        "code": "IQD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_iqd_logo.png"
+    },
+    {
+        "id": 59,
+        "name": "Iranian Rial",
+        "symbol": "IRR",
+        "code": "IRR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_irr_logo.png"
+    },
+    {
+        "id": 61,
+        "name": "Icelandic Króna",
+        "symbol": "Ikr",
+        "code": "ISK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_isk_logo.png"
+    },
+    {
+        "id": 63,
+        "name": "Jamaican Dollar",
+        "symbol": "J$",
+        "code": "JMD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_jmd_logo.png"
+    },
+    {
+        "id": 64,
+        "name": "Jordanian Dinar",
+        "symbol": "JD",
+        "code": "JOD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_jod_logo.png"
+    },
+    {
+        "id": 65,
+        "name": "Japanese Yen",
+        "symbol": "¥",
+        "code": "JPY",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_jpy_logo.png"
+    },
+    {
+        "id": 67,
+        "name": "Kenyan Shilling",
+        "symbol": "Ksh",
+        "code": "KES",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_kes_logo.png"
+    },
+    {
+        "id": 68,
+        "name": "Cambodian Riel",
+        "symbol": "KHR",
+        "code": "KHR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_khr_logo.png"
+    },
+    {
+        "id": 84,
+        "name": "Nicaraguan Córdoba",
+        "symbol": "C$",
+        "code": "NIO",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_nio_logo.png"
+    },
+    {
+        "id": 31,
+        "name": "Norwegian Krone",
+        "symbol": "Nkr",
+        "code": "NOK",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_nok_logo.png"
+    },
+    {
+        "id": 85,
+        "name": "Nepalese Rupee",
+        "symbol": "NPRs",
+        "code": "NPR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_npr_logo.png"
+    },
+    {
+        "id": 38,
+        "name": "New Zealand Dollar",
+        "symbol": "NZ$",
+        "code": "NZD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_nzd_logo.png"
+    },
+    {
+        "id": 86,
+        "name": "Omani Rial",
+        "symbol": "OMR",
+        "code": "OMR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_omr_logo.png"
+    },
+    {
+        "id": 87,
+        "name": "Panamanian Balboa",
+        "symbol": "B/.",
+        "code": "PAB",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_pab_logo.png"
+    },
+    {
+        "id": 88,
+        "name": "Peruvian Nuevo Sol",
+        "symbol": "S/.",
+        "code": "PEN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_pen_logo.png"
+    },
+    {
+        "id": 11,
+        "name": "Philippine Peso",
+        "symbol": "₱",
+        "code": "PHP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_php_logo.png"
+    },
+    {
+        "id": 12,
+        "name": "Pakistani Rupee",
+        "symbol": "PKRs",
+        "code": "PKR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_pkr_logo.png"
+    },
+    {
+        "id": 89,
+        "name": "Polish Zloty",
+        "symbol": "zł",
+        "code": "PLN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_pln_logo.png"
+    },
+    {
+        "id": 90,
+        "name": "Paraguayan Guarani",
+        "symbol": "₲",
+        "code": "PYG",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_pyg_logo.png"
+    },
+    {
+        "id": 91,
+        "name": "Qatari Rial",
+        "symbol": "QR",
+        "code": "QAR",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_qar_logo.png"
+    },
+    {
+        "id": 80,
+        "name": "Mozambican Metical",
+        "symbol": "MTn",
+        "code": "MZN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_mzn_logo.png"
+    },
+    {
+        "id": 82,
+        "name": "Namibian Dollar",
+        "symbol": "N$",
+        "code": "NAD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_nad_logo.png"
+    },
+    {
+        "id": 83,
+        "name": "Nigerian Naira",
+        "symbol": "₦",
+        "code": "NGN",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ngn_logo.png"
+    },
+    {
+        "id": 92,
+        "name": "Romanian Leu",
+        "symbol": "RON",
+        "code": "RON",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ron_logo.png"
+    },
+    {
+        "id": 98,
+        "name": "Serbian Dinar",
+        "symbol": "din.",
+        "code": "RSD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_rsd_logo.png"
+    },
+    {
+        "id": 97,
+        "name": "Somali Shilling",
+        "symbol": "Ssh",
+        "code": "SOS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_sos_logo.png"
+    },
+    {
+        "id": 147,
+        "name": "Suriname Dollar",
+        "symbol": "Sr$",
+        "code": "SRD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/suriname.png"
+    },
+    {
+        "id": 100,
+        "name": "Syrian Pound",
+        "symbol": "SY£",
+        "code": "SYP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_syp_logo.png"
+    },
+    {
+        "id": 3,
+        "name": "Thai Baht",
+        "symbol": "฿",
+        "code": "THB",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_thb_logo.png"
+    },
+    {
+        "id": 103,
+        "name": "Tunisian Dinar",
+        "symbol": "DT",
+        "code": "TND",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_tnd_logo.png"
+    },
+    {
+        "id": 101,
+        "name": "Tongan Paʻanga",
+        "symbol": "T$",
+        "code": "TOP",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_top_logo.png"
+    },
+    {
+        "id": 104,
+        "name": "Turkish Lira",
+        "symbol": "TL",
+        "code": "TRY",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_try_logo.png"
+    },
+    {
+        "id": 102,
+        "name": "Trinidad and Tobago Dollar",
+        "symbol": "TT$",
+        "code": "TTD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ttd_logo.png"
+    },
+    {
+        "id": 105,
+        "name": "New Taiwan Dollar",
+        "symbol": "NT$",
+        "code": "TWD",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_twd_logo.png"
+    },
+    {
+        "id": 106,
+        "name": "Tanzanian Shilling",
+        "symbol": "TSh",
+        "code": "TZS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_tzs_logo.png"
+    },
+    {
+        "id": 108,
+        "name": "Ukrainian Hryvnia",
+        "symbol": "₴",
+        "code": "UAH",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_uah_logo.png"
+    },
+    {
+        "id": 107,
+        "name": "Ugandan Shilling",
+        "symbol": "USh",
+        "code": "UGX",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_ugx_logo.png"
+    },
+    {
+        "id": 109,
+        "name": "Uruguayan Peso",
+        "symbol": "$U",
+        "code": "UYU",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_uyu_logo.png"
+    },
+    {
+        "id": 110,
+        "name": "Uzbekistan Som",
+        "symbol": "UZS",
+        "code": "UZS",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_uzs_logo.png"
+    },
+    {
+        "id": 112,
+        "name": "Vietnamese Dong",
+        "symbol": "₫",
+        "code": "VND",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_vnd_logo.png"
+    },
+    {
+        "id": 33,
+        "name": "CFA Franc BEAC",
+        "symbol": "FCFA",
+        "code": "XAF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_xaf_logo.png"
+    },
+    {
+        "id": 23,
+        "name": "CFA Franc BCEAO",
+        "symbol": "CFA",
+        "code": "XOF",
+        "logo": "https://manatal-backend-public-assets.s3.amazonaws.com/media/currency_logo/currency_xof_logo.png"
+    }
+]

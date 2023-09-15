@@ -12,19 +12,21 @@ export class HttpExceptionFilter implements ExceptionFilter {
     catch(exception: HttpException, host: ArgumentsHost) {
         const ctx = host.switchToHttp();
         const response = ctx.getResponse<Response>();
-        //const request = ctx.getRequest<Request>();
+        const request = ctx.getRequest<Request>();
         const status = exception.getStatus();
         const customException: any = exception;
+        console.log('HttpExceptionFilter=======',exception.getStatus());
         if (exception instanceof HttpException) {
             response.status(status).json({
-                status: customException.response.errorCode,
-                statusCode: status,
+                status: customException.response.status,
                 timestamp: new Date().toISOString(),
-                errorCode: customException.response.errorCode,
                 code: customException.response.errorCode,
-                //path: request.url,
-                errorMessage:
-                    customException.response.errorMessage || exception.message
+                statusCode: customException.response.statusCode,
+                errorMessage: customException.response.errorMessage || exception.message,
+                request: { 
+                    url: request.url, 
+                    method: request.method
+                }
             });
         } else {
             response.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
@@ -34,8 +36,6 @@ export class HttpExceptionFilter implements ExceptionFilter {
                 code: customException.response.errorCode,
                 errorMessage: 'Internal server error'
             });
-        }
-
-        //return { status: 'OK', code: 0, errorMessage: null };
+        } 
     }
 }

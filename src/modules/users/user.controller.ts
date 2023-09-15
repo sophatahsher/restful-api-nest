@@ -7,17 +7,19 @@ import {
     Param,
     Delete,
     UseGuards,
-    Put
+    Put,
+    HttpCode,
+    Query,
+    Version
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from './../../common/http/response';
 import { Auth } from 'src/common/decorators/authGuard.decorator';
 import { TokenAuthGuard } from 'src/common/guards/auth.guard';
-
 import { UserService } from './user.service';
-
-import { CreateUserDto } from './dto/create-user.dto';
+import { CreateAppUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { QueryParamsDto } from './dto/list.dto';
 
 @ApiTags('users')
 @ApiBearerAuth()
@@ -26,28 +28,32 @@ import { UpdateUserDto } from './dto/update-user.dto';
 export class UserController {
     constructor(private userService: UserService) {}
 
-    @Post()
-    create(@Body() createUserDto: CreateUserDto) {
-        return this.userService.create(createUserDto);
-    }
-
     @Get()
-    async findAll() {
-        return { data: await this.userService.findAll() };
+    async findAll(@Query() qry: QueryParamsDto) {
+        const { data, metadata } = await this.userService.findAll(qry);
+        return { data: data, metadata: metadata };
     }
 
     @Get(':id')
-    findById(@Param('id') id: string) {
-        return this.userService.findById(id);
+    async findById(@Param('id') id: string) {
+        return { data: await this.userService.findById(id) };
+    }
+
+    @HttpCode(200)
+    @Post()
+    async create(@Body() createUserDto: CreateAppUserDto): Promise<HttpResponse> {
+        const result = await this.userService.create(createUserDto);
+        return { data: result }
     }
 
     @Put(':id')
-    update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-        return this.userService.update(id, updateUserDto);
+    async update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto): Promise<HttpResponse> {
+        const result = await this.userService.update(id, updateUserDto);
+        return { data: result };
     }
 
     @Delete(':id')
-    remove(@Param('id') id: string) {
-        return this.userService.remove(id);
+    async remove(@Param('id') id: string) {
+        return await this.userService.remove(id);
     }
 }

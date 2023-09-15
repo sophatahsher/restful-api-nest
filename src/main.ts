@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { MainModule } from './main.module';
 import { useContainer } from 'class-validator';
-import { INestApplication, Logger, ValidationPipe } from '@nestjs/common';
+import { INestApplication, Logger, ValidationPipe, VersioningType } from '@nestjs/common';
 import { HttpExceptionFilter } from './common/http/exception/http-exception.filter';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ConfigService } from '@nestjs/config';
@@ -28,11 +28,6 @@ const port = process.env.PORT || 3000;
 async function bootstrap() {
     const app = await NestFactory.create(MainModule);
 
-    // WebsocketAdapter not support namespace
-    //app.useWebSocketAdapter(new WsAdapter(app));
-    //app.useWebSocketAdapter(new WsAdapter(8001));
-    //app.use(cors(corsOptions));
-
     // Inject Global Filter Exception
     app.useGlobalFilters(new HttpExceptionFilter());
 
@@ -52,6 +47,7 @@ async function bootstrap() {
     app.useGlobalPipes(new ValidationPipe());
 
     configSwagger(app);
+    configAppUserSwagger(app);
     configClientSwagger(app);
     configAnonymousSwagger(app)
 
@@ -63,30 +59,62 @@ async function bootstrap() {
 }
 
 const configSwagger = (app: INestApplication) => {
+    app.setGlobalPrefix('api');
+    app.enableVersioning({
+        defaultVersion: "1.0",
+        type: VersioningType.URI,
+    });
+    
     const apiDocs = new DocumentBuilder()
         .setTitle('NestJS API Documents')
         .setVersion('1.0')
         .addBearerAuth()
         .build();
 
-    app.setGlobalPrefix('api');
-
     const document = SwaggerModule.createDocument(app, apiDocs, {
         include: [AuthModule, UserModule, LiveChatModule]
     });
 
-    if (process.env.NODE_ENV !== 'production') {
+    // Enable SWAGGER
+    if ( process.env.NODE_ENV !== 'production' ) {
+
         SwaggerModule.setup('/docs', app, document, {
             swaggerOptions: {
-                persistAuthorization: true
+                persistAuthorization: true,
+                urls: [
+
+                ]
             }
         });
     }
+};
+
+const configAppUserSwagger = (app: INestApplication) => {
+    app.setGlobalPrefix('api/v1.0');
+    const apiAppDocs = new DocumentBuilder()
+        .setTitle('NestJS App User Api Documents')
+        .setVersion('1.0')
+        .addBearerAuth()
+        .build();
+
+    const swaggerAppDocs = SwaggerModule.createDocument(app, apiAppDocs, {
+        include: [
+            //MerchantSDKModules
+        ],
+        deepScanRoutes: true
+    });
+
+    SwaggerModule.setup('/app-api', app, swaggerAppDocs, {
+        swaggerOptions: {
+            persistAuthorization: true
+        }
+    });
 
     if (process.env.NODE_ENV === 'production') {
         app.setGlobalPrefix('/');
     }
 };
+
 
 const configClientSwagger = (app: INestApplication) => {
     app.setGlobalPrefix('api');

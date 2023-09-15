@@ -4,7 +4,8 @@ import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as moment from 'moment';
 import { UserService } from 'src/modules/users/user.service';
-import { ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
+import { AppUserMessage, ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
+import { UserStatus } from 'src/modules/users/enums/status.enum';
 @Injectable()
 export class AccessTokenStrategy extends PassportStrategy(Strategy) {
     constructor(
@@ -23,9 +24,31 @@ export class AccessTokenStrategy extends PassportStrategy(Strategy) {
         if (isExpired) throw new UnauthorizedException();
         const user = await this.userService.findOne(payload.auth._id);
         //
-        if (!user.status)
-            throw new UnauthorizedException(ErrorMessage.ACCOUNT_DISABLED);
-
+        if (!user && user.status !== UserStatus.ACTIVE ) {
+            throw new UnauthorizedException(this.getUserStatus(user.status));
+        }
+            
         return payload;
+    }
+
+    getUserStatus(enumStatus:number) {
+        
+        let status = null;
+
+        switch(enumStatus) {
+            case 2 :
+                status = AppUserMessage.USER_IS_SUSPENDED;
+            break;
+            case 3 :
+                status = AppUserMessage.USER_IS_BANNED;
+            break;
+            case 4 :
+                status = AppUserMessage.USER_IS_CLOSED;
+            break;
+            default: 
+                status = AppUserMessage.USER_IS_DISABLED;
+        }
+
+        return status;
     }
 }

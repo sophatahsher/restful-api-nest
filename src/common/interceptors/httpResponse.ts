@@ -10,8 +10,40 @@ import { map } from 'rxjs/operators';
 import { HttpResponse } from '../http/response';
 
 export interface Response<T> {
-    statusCode: number;
     data: T;
+}
+
+export type ResponseJson ={
+    status: string,
+    code: number,
+    message: string
+    data: object | any,
+    request: {
+        url: string,
+        method: string
+    }
+}
+
+export interface SuccessResponse  {
+    status: string,
+    code: number,
+    message: string
+    data: object | any,
+    request: {
+      url: string,
+      method: string
+    }
+}
+
+export type ErrorResponse = {
+    status: string,
+    code: number,
+    message: string,
+    error: object | any,
+    request: {
+        url: string,
+        method: string
+    }
 }
 
 @Injectable()
@@ -27,26 +59,38 @@ export class HttpResponseInterceptor<T>
         const method = req.method;
         const url = req.url;
         const now = Date.now();
-
         Logger.log(
             `${method} ${url} ${Date.now() - now}ms`,
             context.getClass().name
         );
 
         return next.handle().pipe(
-            map((httpResponse: any) => {
-                console.log('');
-                if (typeof httpResponse.data === 'string')
-                    return { status: 'OK', code: 0 };
+            map((httpResponse) => {
+                console.log('httpResponse=======', httpResponse);
+                if ( typeof httpResponse === 'object' ) {
+                    if ( httpResponse.data === 'OK' || !httpResponse.metadata ) 
+                        return { 
+                            status: 'OK', 
+                            code: 0, 
+                            request: { 
+                                url: url, 
+                                method: method
+                            }
+                        };
+                    else 
+                        return { 
+                            status: 'OK', 
+                            code: 0, 
+                            ...httpResponse,
+                            request: { 
+                                url: url, 
+                                method: method
+                            }
+                        };
+                }
+                    
                 return { status: 'OK', code: 0, ...httpResponse };
             })
         );
-
-        // return next.handle().pipe(
-        //     map((data: HttpResponse) => ({
-        //         //statusCode: context.switchToHttp().getResponse().statusCode,
-        //         ...data
-        //     }))
-        // );
     }
 }

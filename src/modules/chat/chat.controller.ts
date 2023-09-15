@@ -46,7 +46,7 @@ export class ChatController {
         );
         return {
             data: result,
-            meta: { totalRecords, ...pagination } || {}
+            metadata: { totalRecords, ...pagination } || {}
         };
     }
 

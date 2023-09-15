@@ -19,11 +19,13 @@ import { APIAccessKeyType } from 'src/common/enums/apiAccessKeyType';
 import {
     Message,
     ErrorMessage,
-    ErrorCode
+    ErrorCode,
+    AppUserMessage
 } from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
 import { UserService } from '../users/user.service';
 import { IRedisService } from '../redis/redis.service';
+import { UserStatus } from '../users/enums/status.enum';
 //import { DemoRedisService } from '../redis/redis.service';
 
 @Injectable()
@@ -39,7 +41,7 @@ export class AuthService {
 
     async loginUser({ username, password }: any) {
         const user = await this.userService.findByUsername(username);
-        if (!user)
+        if (!user) 
             throw new HttpException(
                 {
                     errorCode: ErrorCode.INVALID_USERNAME,
@@ -47,6 +49,7 @@ export class AuthService {
                 },
                 HttpStatus.NOT_FOUND
             );
+
         if (!bcrypt.compareSync(password, user.password))
             throw new HttpException(
                 {
@@ -55,6 +58,10 @@ export class AuthService {
                 },
                 HttpStatus.UNAUTHORIZED
             );
+        
+        // check UserStatus
+        if ( user.status !== UserStatus.ACTIVE )
+            this.getAppUserStatus(user.status)
 
         const userObj = user.toObject();
         delete userObj.password;
@@ -141,5 +148,24 @@ export class AuthService {
             .populate('merchant');
         if (!record) return { valid: false, user: null };
         return { valid: true, merchant: record.merchant }; //return { valid: true, merchant: record.merchant };
+    }
+
+    private getAppUserStatus(statusNum: number) {
+        switch(statusNum) {
+            case 1 :
+                return AppUserMessage.USER_IS_ACTIVE;
+            break;
+            case 2 :
+                return AppUserMessage.USER_IS_SUSPENDED;
+            break;
+            case 3 :
+                return AppUserMessage.USER_IS_BANNED;
+            break;
+            case 4 :
+                return AppUserMessage.USER_IS_CLOSED;
+            break;
+            default: 
+                return AppUserMessage.USER_IS_DISABLED;
+        }
     }
 }

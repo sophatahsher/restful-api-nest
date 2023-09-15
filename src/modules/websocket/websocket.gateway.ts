@@ -41,7 +41,7 @@ export class WebsocketGateway {
     }
 
     afterInit(server: Server) {
-        console.log(`afterInit : ${server}`);
+        //console.log(`afterInit : ${server}`);
         //Do stuffs
     }
 

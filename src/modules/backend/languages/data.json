@@ -1,0 +1,1498 @@
+[
+    {
+        "id": 1,
+        "name": "Abkhaz",
+        "native_name": "аҧсуа",
+        "slug": "abkhaz",
+        "code": "ab",
+        "flag": null
+    },
+    {
+        "id": 2,
+        "name": "Afar",
+        "native_name": "Afaraf",
+        "slug": "afar",
+        "code": "aa",
+        "flag": null
+    },
+    {
+        "id": 3,
+        "name": "Afrikaans",
+        "native_name": "Afrikaans",
+        "slug": "afrikaans",
+        "code": "af",
+        "flag": null
+    },
+    {
+        "id": 4,
+        "name": "Akan",
+        "native_name": "Akan",
+        "slug": "akan",
+        "code": "ak",
+        "flag": null
+    },
+    {
+        "id": 5,
+        "name": "Albanian",
+        "native_name": "Shqip",
+        "slug": "albanian",
+        "code": "sq",
+        "flag": null
+    },
+    {
+        "id": 6,
+        "name": "Amharic",
+        "native_name": "አማርኛ",
+        "slug": "amharic",
+        "code": "am",
+        "flag": null
+    },
+    {
+        "id": 7,
+        "name": "Arabic",
+        "native_name": "العربية",
+        "slug": "arabic",
+        "code": "ar",
+        "flag": null
+    },
+    {
+        "id": 8,
+        "name": "Aragonese",
+        "native_name": "Aragonés",
+        "slug": "aragonese",
+        "code": "an",
+        "flag": null
+    },
+    {
+        "id": 9,
+        "name": "Armenian",
+        "native_name": "Հայերեն",
+        "slug": "armenian",
+        "code": "hy",
+        "flag": null
+    },
+    {
+        "id": 10,
+        "name": "Assamese",
+        "native_name": "অসমীয়া",
+        "slug": "assamese",
+        "code": "as",
+        "flag": null
+    },
+    {
+        "id": 11,
+        "name": "Avaric",
+        "native_name": "авар мацӀ, магӀарул мацӀ",
+        "slug": "avaric",
+        "code": "av",
+        "flag": null
+    },
+    {
+        "id": 12,
+        "name": "Avestan",
+        "native_name": "avesta",
+        "slug": "avestan",
+        "code": "ae",
+        "flag": null
+    },
+    {
+        "id": 13,
+        "name": "Aymara",
+        "native_name": "aymar aru",
+        "slug": "aymara",
+        "code": "ay",
+        "flag": null
+    },
+    {
+        "id": 14,
+        "name": "Azerbaijani",
+        "native_name": "azərbaycan dili",
+        "slug": "azerbaijani",
+        "code": "az",
+        "flag": null
+    },
+    {
+        "id": 15,
+        "name": "Bambara",
+        "native_name": "bamanankan",
+        "slug": "bambara",
+        "code": "bm",
+        "flag": null
+    },
+    {
+        "id": 16,
+        "name": "Bashkir",
+        "native_name": "башҡорт теле",
+        "slug": "bashkir",
+        "code": "ba",
+        "flag": null
+    },
+    {
+        "id": 17,
+        "name": "Basque",
+        "native_name": "euskara, euskera",
+        "slug": "basque",
+        "code": "eu",
+        "flag": null
+    },
+    {
+        "id": 18,
+        "name": "Belarusian",
+        "native_name": "Беларуская",
+        "slug": "belarusian",
+        "code": "be",
+        "flag": null
+    },
+    {
+        "id": 19,
+        "name": "Bengali",
+        "native_name": "বাংলা",
+        "slug": "bengali",
+        "code": "bn",
+        "flag": null
+    },
+    {
+        "id": 20,
+        "name": "Bihari",
+        "native_name": "भोजपुरी",
+        "slug": "bihari",
+        "code": "bh",
+        "flag": null
+    },
+    {
+        "id": 21,
+        "name": "Bislama",
+        "native_name": "Bislama",
+        "slug": "bislama",
+        "code": "bi",
+        "flag": null
+    },
+    {
+        "id": 22,
+        "name": "Bosnian",
+        "native_name": "bosanski jezik",
+        "slug": "bosnian",
+        "code": "bs",
+        "flag": null
+    },
+    {
+        "id": 23,
+        "name": "Breton",
+        "native_name": "brezhoneg",
+        "slug": "breton",
+        "code": "br",
+        "flag": null
+    },
+    {
+        "id": 24,
+        "name": "Bulgarian",
+        "native_name": "български език",
+        "slug": "bulgarian",
+        "code": "bg",
+        "flag": null
+    },
+    {
+        "id": 25,
+        "name": "Burmese",
+        "native_name": "ဗမာစာ",
+        "slug": "burmese",
+        "code": "my",
+        "flag": null
+    },
+    {
+        "id": 187,
+        "name": "Cantonese",
+        "native_name": "Cantonese",
+        "slug": "cantonese",
+        "code": "yu",
+        "flag": null
+    },
+    {
+        "id": 26,
+        "name": "Catalan; Valencian",
+        "native_name": "Català",
+        "slug": "catalan; valencian",
+        "code": "ca",
+        "flag": null
+    },
+    {
+        "id": 27,
+        "name": "Chamorro",
+        "native_name": "Chamoru",
+        "slug": "chamorro",
+        "code": "ch",
+        "flag": null
+    },
+    {
+        "id": 28,
+        "name": "Chechen",
+        "native_name": "нохчийн мотт",
+        "slug": "chechen",
+        "code": "ce",
+        "flag": null
+    },
+    {
+        "id": 29,
+        "name": "Chichewa; Chewa; Nyanja",
+        "native_name": "chiCheŵa, chinyanja",
+        "slug": "chichewa; chewa; nyanja",
+        "code": "ny",
+        "flag": null
+    },
+    {
+        "id": 30,
+        "name": "Chinese",
+        "native_name": "中文, Zhōngwén, 汉语, 漢語, Mandarin, Cantonese, Zhongwen",
+        "slug": "chinese",
+        "code": "zh",
+        "flag": null
+    },
+    {
+        "id": 31,
+        "name": "Chuvash",
+        "native_name": "чӑваш чӗлхи",
+        "slug": "chuvash",
+        "code": "cv",
+        "flag": null
+    },
+    {
+        "id": 32,
+        "name": "Cornish",
+        "native_name": "Kernewek",
+        "slug": "cornish",
+        "code": "kw",
+        "flag": null
+    },
+    {
+        "id": 33,
+        "name": "Corsican",
+        "native_name": "corsu, lingua corsa",
+        "slug": "corsican",
+        "code": "co",
+        "flag": null
+    },
+    {
+        "id": 34,
+        "name": "Cree",
+        "native_name": "ᓀᐦᐃᔭᐍᐏᐣ",
+        "slug": "cree",
+        "code": "cr",
+        "flag": null
+    },
+    {
+        "id": 35,
+        "name": "Croatian",
+        "native_name": "hrvatski",
+        "slug": "croatian",
+        "code": "hr",
+        "flag": null
+    },
+    {
+        "id": 36,
+        "name": "Czech",
+        "native_name": "česky, čeština",
+        "slug": "czech",
+        "code": "cs",
+        "flag": null
+    },
+    {
+        "id": 37,
+        "name": "Danish",
+        "native_name": "dansk",
+        "slug": "danish",
+        "code": "da",
+        "flag": null
+    },
+    {
+        "id": 38,
+        "name": "Divehi; Dhivehi; Maldivian;",
+        "native_name": "ދިވެހި",
+        "slug": "divehi; dhivehi; maldivian;",
+        "code": "dv",
+        "flag": null
+    },
+    {
+        "id": 39,
+        "name": "Dutch",
+        "native_name": "Nederlands, Vlaams",
+        "slug": "dutch",
+        "code": "nl",
+        "flag": null
+    },
+    {
+        "id": 40,
+        "name": "English",
+        "native_name": "English",
+        "slug": "english",
+        "code": "en",
+        "flag": "https://manatal-backend-public-assets.s3.amazonaws.com/media/language_flag/en_new3.png"
+    },
+    {
+        "id": 41,
+        "name": "Esperanto",
+        "native_name": "Esperanto",
+        "slug": "esperanto",
+        "code": "eo",
+        "flag": null
+    },
+    {
+        "id": 42,
+        "name": "Estonian",
+        "native_name": "eesti, eesti keel",
+        "slug": "estonian",
+        "code": "et",
+        "flag": null
+    },
+    {
+        "id": 43,
+        "name": "Ewe",
+        "native_name": "Eʋegbe",
+        "slug": "ewe",
+        "code": "ee",
+        "flag": null
+    },
+    {
+        "id": 44,
+        "name": "Faroese",
+        "native_name": "føroyskt",
+        "slug": "faroese",
+        "code": "fo",
+        "flag": null
+    },
+    {
+        "id": 45,
+        "name": "Fijian",
+        "native_name": "vosa Vakaviti",
+        "slug": "fijian",
+        "code": "fj",
+        "flag": null
+    },
+    {
+        "id": 46,
+        "name": "Finnish",
+        "native_name": "suomi, suomen kieli",
+        "slug": "finnish",
+        "code": "fi",
+        "flag": null
+    },
+    {
+        "id": 47,
+        "name": "French",
+        "native_name": "français, langue française",
+        "slug": "french",
+        "code": "fr",
+        "flag": null
+    },
+    {
+        "id": 48,
+        "name": "Fula; Fulah; Pulaar; Pular",
+        "native_name": "Fulfulde, Pulaar, Pular",
+        "slug": "fula; fulah; pulaar; pular",
+        "code": "ff",
+        "flag": null
+    },
+    {
+        "id": 49,
+        "name": "Galician",
+        "native_name": "Galego",
+        "slug": "galician",
+        "code": "gl",
+        "flag": null
+    },
+    {
+        "id": 50,
+        "name": "Georgian",
+        "native_name": "ქართული",
+        "slug": "georgian",
+        "code": "ka",
+        "flag": null
+    },
+    {
+        "id": 51,
+        "name": "German",
+        "native_name": "Deutsch",
+        "slug": "german",
+        "code": "de",
+        "flag": null
+    },
+    {
+        "id": 52,
+        "name": "Greek, Modern",
+        "native_name": "Ελληνικά",
+        "slug": "greek, modern",
+        "code": "el",
+        "flag": null
+    },
+    {
+        "id": 53,
+        "name": "Guaraní",
+        "native_name": "Avañeẽ",
+        "slug": "guaraní",
+        "code": "gn",
+        "flag": null
+    },
+    {
+        "id": 54,
+        "name": "Gujarati",
+        "native_name": "ગુજરાતી",
+        "slug": "gujarati",
+        "code": "gu",
+        "flag": null
+    },
+    {
+        "id": 55,
+        "name": "Haitian; Haitian Creole",
+        "native_name": "Kreyòl ayisyen",
+        "slug": "haitian; haitian creole",
+        "code": "ht",
+        "flag": null
+    },
+    {
+        "id": 56,
+        "name": "Hausa",
+        "native_name": "Hausa, هَوُسَ",
+        "slug": "hausa",
+        "code": "ha",
+        "flag": null
+    },
+    {
+        "id": 57,
+        "name": "Hebrew (modern)",
+        "native_name": "עברית",
+        "slug": "hebrew (modern)",
+        "code": "he",
+        "flag": null
+    },
+    {
+        "id": 58,
+        "name": "Herero",
+        "native_name": "Otjiherero",
+        "slug": "herero",
+        "code": "hz",
+        "flag": null
+    },
+    {
+        "id": 59,
+        "name": "Hindi",
+        "native_name": "हिन्दी, हिंदी",
+        "slug": "hindi",
+        "code": "hi",
+        "flag": null
+    },
+    {
+        "id": 60,
+        "name": "Hiri Motu",
+        "native_name": "Hiri Motu",
+        "slug": "hiri motu",
+        "code": "ho",
+        "flag": null
+    },
+    {
+        "id": 61,
+        "name": "Hungarian",
+        "native_name": "Magyar",
+        "slug": "hungarian",
+        "code": "hu",
+        "flag": null
+    },
+    {
+        "id": 69,
+        "name": "Icelandic",
+        "native_name": "Íslenska",
+        "slug": "icelandic",
+        "code": "is",
+        "flag": null
+    },
+    {
+        "id": 68,
+        "name": "Ido",
+        "native_name": "Ido",
+        "slug": "ido",
+        "code": "io",
+        "flag": null
+    },
+    {
+        "id": 66,
+        "name": "Igbo",
+        "native_name": "Asụsụ Igbo",
+        "slug": "igbo",
+        "code": "ig",
+        "flag": null
+    },
+    {
+        "id": 63,
+        "name": "Indonesian",
+        "native_name": "Bahasa Indonesia",
+        "slug": "indonesian",
+        "code": "id",
+        "flag": null
+    },
+    {
+        "id": 62,
+        "name": "Interlingua",
+        "native_name": "Interlingua",
+        "slug": "interlingua",
+        "code": "ia",
+        "flag": null
+    },
+    {
+        "id": 64,
+        "name": "Interlingue",
+        "native_name": "Originally called Occidental; then Interlingue after WWII",
+        "slug": "interlingue",
+        "code": "ie",
+        "flag": null
+    },
+    {
+        "id": 71,
+        "name": "Inuktitut",
+        "native_name": "ᐃᓄᒃᑎᑐᑦ",
+        "slug": "inuktitut",
+        "code": "iu",
+        "flag": null
+    },
+    {
+        "id": 67,
+        "name": "Inupiaq",
+        "native_name": "Iñupiaq, Iñupiatun",
+        "slug": "inupiaq",
+        "code": "ik",
+        "flag": null
+    },
+    {
+        "id": 65,
+        "name": "Irish",
+        "native_name": "Gaeilge",
+        "slug": "irish",
+        "code": "ga",
+        "flag": null
+    },
+    {
+        "id": 70,
+        "name": "Italian",
+        "native_name": "Italiano",
+        "slug": "italian",
+        "code": "it",
+        "flag": null
+    },
+    {
+        "id": 72,
+        "name": "Japanese",
+        "native_name": "日本語 (にほんご／にっぽんご)",
+        "slug": "japanese",
+        "code": "ja",
+        "flag": null
+    },
+    {
+        "id": 73,
+        "name": "Javanese",
+        "native_name": "basa Jawa",
+        "slug": "javanese",
+        "code": "jv",
+        "flag": null
+    },
+    {
+        "id": 74,
+        "name": "Kalaallisut, Greenlandic",
+        "native_name": "kalaallisut, kalaallit oqaasii",
+        "slug": "kalaallisut, greenlandic",
+        "code": "kl",
+        "flag": null
+    },
+    {
+        "id": 75,
+        "name": "Kannada",
+        "native_name": "ಕನ್ನಡ",
+        "slug": "kannada",
+        "code": "kn",
+        "flag": null
+    },
+    {
+        "id": 76,
+        "name": "Kanuri",
+        "native_name": "Kanuri",
+        "slug": "kanuri",
+        "code": "kr",
+        "flag": null
+    },
+    {
+        "id": 77,
+        "name": "Kashmiri",
+        "native_name": "कश्मीरी, كشميري‎",
+        "slug": "kashmiri",
+        "code": "ks",
+        "flag": null
+    },
+    {
+        "id": 78,
+        "name": "Kazakh",
+        "native_name": "Қазақ тілі",
+        "slug": "kazakh",
+        "code": "kk",
+        "flag": null
+    },
+    {
+        "id": 79,
+        "name": "Khmer",
+        "native_name": "ភាសាខ្មែរ",
+        "slug": "khmer",
+        "code": "km",
+        "flag": null
+    },
+    {
+        "id": 80,
+        "name": "Kikuyu, Gikuyu",
+        "native_name": "Gĩkũyũ",
+        "slug": "kikuyu, gikuyu",
+        "code": "ki",
+        "flag": null
+    },
+    {
+        "id": 81,
+        "name": "Kinyarwanda",
+        "native_name": "Ikinyarwanda",
+        "slug": "kinyarwanda",
+        "code": "rw",
+        "flag": null
+    },
+    {
+        "id": 82,
+        "name": "Kirghiz, Kyrgyz",
+        "native_name": "кыргыз тили",
+        "slug": "kirghiz, kyrgyz",
+        "code": "ky",
+        "flag": null
+    },
+    {
+        "id": 131,
+        "name": "Kirundi",
+        "native_name": "kiRundi",
+        "slug": "kirundi",
+        "code": "rn",
+        "flag": null
+    },
+    {
+        "id": 83,
+        "name": "Komi",
+        "native_name": "коми кыв",
+        "slug": "komi",
+        "code": "kv",
+        "flag": null
+    },
+    {
+        "id": 84,
+        "name": "Kongo",
+        "native_name": "KiKongo",
+        "slug": "kongo",
+        "code": "kg",
+        "flag": null
+    },
+    {
+        "id": 85,
+        "name": "Korean",
+        "native_name": "한국어 (韓國語), 조선말 (朝鮮語)",
+        "slug": "korean",
+        "code": "ko",
+        "flag": null
+    },
+    {
+        "id": 86,
+        "name": "Kurdish",
+        "native_name": "Kurdî, كوردی‎",
+        "slug": "kurdish",
+        "code": "ku",
+        "flag": null
+    },
+    {
+        "id": 87,
+        "name": "Kwanyama, Kuanyama",
+        "native_name": "Kuanyama",
+        "slug": "kwanyama, kuanyama",
+        "code": "kj",
+        "flag": null
+    },
+    {
+        "id": 93,
+        "name": "Lao",
+        "native_name": "ພາສາລາວ",
+        "slug": "lao",
+        "code": "lo",
+        "flag": null
+    },
+    {
+        "id": 88,
+        "name": "Latin",
+        "native_name": "latine, lingua latina",
+        "slug": "latin",
+        "code": "la",
+        "flag": null
+    },
+    {
+        "id": 96,
+        "name": "Latvian",
+        "native_name": "latviešu valoda",
+        "slug": "latvian",
+        "code": "lv",
+        "flag": null
+    },
+    {
+        "id": 91,
+        "name": "Limburgish, Limburgan, Limburger",
+        "native_name": "Limburgs",
+        "slug": "limburgish, limburgan, limburger",
+        "code": "li",
+        "flag": null
+    },
+    {
+        "id": 92,
+        "name": "Lingala",
+        "native_name": "Lingála",
+        "slug": "lingala",
+        "code": "ln",
+        "flag": null
+    },
+    {
+        "id": 94,
+        "name": "Lithuanian",
+        "native_name": "lietuvių kalba",
+        "slug": "lithuanian",
+        "code": "lt",
+        "flag": null
+    },
+    {
+        "id": 95,
+        "name": "Luba-Katanga",
+        "native_name": "",
+        "slug": "luba-katanga",
+        "code": "lu",
+        "flag": null
+    },
+    {
+        "id": 90,
+        "name": "Luganda",
+        "native_name": "Luganda",
+        "slug": "luganda",
+        "code": "lg",
+        "flag": null
+    },
+    {
+        "id": 89,
+        "name": "Luxembourgish, Letzeburgesch",
+        "native_name": "Lëtzebuergesch",
+        "slug": "luxembourgish, letzeburgesch",
+        "code": "lb",
+        "flag": null
+    },
+    {
+        "id": 98,
+        "name": "Macedonian",
+        "native_name": "македонски јазик",
+        "slug": "macedonian",
+        "code": "mk",
+        "flag": null
+    },
+    {
+        "id": 99,
+        "name": "Malagasy",
+        "native_name": "Malagasy fiteny",
+        "slug": "malagasy",
+        "code": "mg",
+        "flag": null
+    },
+    {
+        "id": 100,
+        "name": "Malay",
+        "native_name": "bahasa Melayu, بهاس ملايو‎",
+        "slug": "malay",
+        "code": "ms",
+        "flag": null
+    },
+    {
+        "id": 101,
+        "name": "Malayalam",
+        "native_name": "മലയാളം",
+        "slug": "malayalam",
+        "code": "ml",
+        "flag": null
+    },
+    {
+        "id": 102,
+        "name": "Maltese",
+        "native_name": "Malti",
+        "slug": "maltese",
+        "code": "mt",
+        "flag": null
+    },
+    {
+        "id": 186,
+        "name": "Mandarin",
+        "native_name": "Mandarin",
+        "slug": "mandarin",
+        "code": "cm",
+        "flag": null
+    },
+    {
+        "id": 97,
+        "name": "Manx",
+        "native_name": "Gaelg, Gailck",
+        "slug": "manx",
+        "code": "gv",
+        "flag": null
+    },
+    {
+        "id": 103,
+        "name": "Māori",
+        "native_name": "te reo Māori",
+        "slug": "māori",
+        "code": "mi",
+        "flag": null
+    },
+    {
+        "id": 104,
+        "name": "Marathi (Marāṭhī)",
+        "native_name": "मराठी",
+        "slug": "marathi (marāṭhī)",
+        "code": "mr",
+        "flag": null
+    },
+    {
+        "id": 105,
+        "name": "Marshallese",
+        "native_name": "Kajin M̧ajeļ",
+        "slug": "marshallese",
+        "code": "mh",
+        "flag": null
+    },
+    {
+        "id": 106,
+        "name": "Mongolian",
+        "native_name": "монгол",
+        "slug": "mongolian",
+        "code": "mn",
+        "flag": null
+    },
+    {
+        "id": 107,
+        "name": "Nauru",
+        "native_name": "Ekakairũ Naoero",
+        "slug": "nauru",
+        "code": "na",
+        "flag": null
+    },
+    {
+        "id": 108,
+        "name": "Navajo, Navaho",
+        "native_name": "Diné bizaad, Dinékʼehǰí",
+        "slug": "navajo, navaho",
+        "code": "nv",
+        "flag": null
+    },
+    {
+        "id": 112,
+        "name": "Ndonga",
+        "native_name": "Owambo",
+        "slug": "ndonga",
+        "code": "ng",
+        "flag": null
+    },
+    {
+        "id": 111,
+        "name": "Nepali",
+        "native_name": "नेपाली",
+        "slug": "nepali",
+        "code": "ne",
+        "flag": null
+    },
+    {
+        "id": 137,
+        "name": "Northern Sami",
+        "native_name": "Davvisámegiella",
+        "slug": "northern sami",
+        "code": "se",
+        "flag": null
+    },
+    {
+        "id": 184,
+        "name": "Northern Sotho",
+        "native_name": "Sepedi",
+        "slug": "northern_sotho",
+        "code": "ns",
+        "flag": null
+    },
+    {
+        "id": 110,
+        "name": "North Ndebele",
+        "native_name": "isiNdebele",
+        "slug": "north ndebele",
+        "code": "nd",
+        "flag": null
+    },
+    {
+        "id": 114,
+        "name": "Norwegian",
+        "native_name": "Norsk",
+        "slug": "norwegian",
+        "code": "no",
+        "flag": null
+    },
+    {
+        "id": 109,
+        "name": "Norwegian Bokmål",
+        "native_name": "Norsk bokmål",
+        "slug": "norwegian bokmål",
+        "code": "nb",
+        "flag": null
+    },
+    {
+        "id": 113,
+        "name": "Norwegian Nynorsk",
+        "native_name": "Norsk nynorsk",
+        "slug": "norwegian nynorsk",
+        "code": "nn",
+        "flag": null
+    },
+    {
+        "id": 115,
+        "name": "Nuosu",
+        "native_name": "ꆈꌠ꒿ Nuosuhxop",
+        "slug": "nuosu",
+        "code": "ii",
+        "flag": null
+    },
+    {
+        "id": 117,
+        "name": "Occitan",
+        "native_name": "Occitan",
+        "slug": "occitan",
+        "code": "oc",
+        "flag": null
+    },
+    {
+        "id": 118,
+        "name": "Ojibwe, Ojibwa",
+        "native_name": "ᐊᓂᔑᓈᐯᒧᐎᓐ",
+        "slug": "ojibwe, ojibwa",
+        "code": "oj",
+        "flag": null
+    },
+    {
+        "id": 119,
+        "name": "Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic",
+        "native_name": "ѩзыкъ словѣньскъ",
+        "slug": "old church slavonic, church slavic, church slavonic, old bulgarian, old slavonic",
+        "code": "cu",
+        "flag": null
+    },
+    {
+        "id": 121,
+        "name": "Oriya",
+        "native_name": "ଓଡ଼ିଆ",
+        "slug": "oriya",
+        "code": "or",
+        "flag": null
+    },
+    {
+        "id": 120,
+        "name": "Oromo",
+        "native_name": "Afaan Oromoo",
+        "slug": "oromo",
+        "code": "om",
+        "flag": null
+    },
+    {
+        "id": 122,
+        "name": "Ossetian, Ossetic",
+        "native_name": "ирон æвзаг",
+        "slug": "ossetian, ossetic",
+        "code": "os",
+        "flag": null
+    },
+    {
+        "id": 124,
+        "name": "Pāli",
+        "native_name": "पाऴि",
+        "slug": "pāli",
+        "code": "pi",
+        "flag": null
+    },
+    {
+        "id": 123,
+        "name": "Panjabi, Punjabi",
+        "native_name": "ਪੰਜਾਬੀ, پنجابی‎",
+        "slug": "panjabi, punjabi",
+        "code": "pa",
+        "flag": null
+    },
+    {
+        "id": 127,
+        "name": "Pashto, Pushto",
+        "native_name": "پښتو",
+        "slug": "pashto, pushto",
+        "code": "ps",
+        "flag": null
+    },
+    {
+        "id": 125,
+        "name": "Persian",
+        "native_name": "فارسی",
+        "slug": "persian",
+        "code": "fa",
+        "flag": null
+    },
+    {
+        "id": 185,
+        "name": "Phuthi",
+        "native_name": "Síphùthì",
+        "slug": "phuthi",
+        "code": "ph",
+        "flag": null
+    },
+    {
+        "id": 126,
+        "name": "Polish",
+        "native_name": "polski",
+        "slug": "polish",
+        "code": "pl",
+        "flag": null
+    },
+    {
+        "id": 128,
+        "name": "Portuguese",
+        "native_name": "Português",
+        "slug": "portuguese",
+        "code": "pt",
+        "flag": null
+    },
+    {
+        "id": 129,
+        "name": "Quechua",
+        "native_name": "Runa Simi, Kichwa",
+        "slug": "quechua",
+        "code": "qu",
+        "flag": null
+    },
+    {
+        "id": 132,
+        "name": "Romanian, Moldavian, Moldovan",
+        "native_name": "română",
+        "slug": "romanian, moldavian, moldovan",
+        "code": "ro",
+        "flag": null
+    },
+    {
+        "id": 130,
+        "name": "Romansh",
+        "native_name": "rumantsch grischun",
+        "slug": "romansh",
+        "code": "rm",
+        "flag": null
+    },
+    {
+        "id": 133,
+        "name": "Russian",
+        "native_name": "русский язык",
+        "slug": "russian",
+        "code": "ru",
+        "flag": null
+    },
+    {
+        "id": 138,
+        "name": "Samoan",
+        "native_name": "gagana faa Samoa",
+        "slug": "samoan",
+        "code": "sm",
+        "flag": null
+    },
+    {
+        "id": 139,
+        "name": "Sango",
+        "native_name": "yângâ tî sängö",
+        "slug": "sango",
+        "code": "sg",
+        "flag": null
+    },
+    {
+        "id": 134,
+        "name": "Sanskrit (Saṁskṛta)",
+        "native_name": "संस्कृतम्",
+        "slug": "sanskrit (saṁskṛta)",
+        "code": "sa",
+        "flag": null
+    },
+    {
+        "id": 135,
+        "name": "Sardinian",
+        "native_name": "sardu",
+        "slug": "sardinian",
+        "code": "sc",
+        "flag": null
+    },
+    {
+        "id": 141,
+        "name": "Scottish Gaelic; Gaelic",
+        "native_name": "Gàidhlig",
+        "slug": "scottish gaelic; gaelic",
+        "code": "gd",
+        "flag": null
+    },
+    {
+        "id": 140,
+        "name": "Serbian",
+        "native_name": "српски језик",
+        "slug": "serbian",
+        "code": "sr",
+        "flag": null
+    },
+    {
+        "id": 142,
+        "name": "Shona",
+        "native_name": "chiShona",
+        "slug": "shona",
+        "code": "sn",
+        "flag": null
+    },
+    {
+        "id": 136,
+        "name": "Sindhi",
+        "native_name": "सिन्धी, سنڌي، سندھی‎",
+        "slug": "sindhi",
+        "code": "sd",
+        "flag": null
+    },
+    {
+        "id": 143,
+        "name": "Sinhala, Sinhalese",
+        "native_name": "සිංහල",
+        "slug": "sinhala, sinhalese",
+        "code": "si",
+        "flag": null
+    },
+    {
+        "id": 144,
+        "name": "Slovak",
+        "native_name": "slovenčina",
+        "slug": "slovak",
+        "code": "sk",
+        "flag": null
+    },
+    {
+        "id": 145,
+        "name": "Slovene",
+        "native_name": "slovenščina",
+        "slug": "slovene",
+        "code": "sl",
+        "flag": null
+    },
+    {
+        "id": 146,
+        "name": "Somali",
+        "native_name": "Soomaaliga, af Soomaali",
+        "slug": "somali",
+        "code": "so",
+        "flag": null
+    },
+    {
+        "id": 147,
+        "name": "Southern Sotho",
+        "native_name": "Sesotho",
+        "slug": "southern sotho",
+        "code": "st",
+        "flag": null
+    },
+    {
+        "id": 116,
+        "name": "South Ndebele",
+        "native_name": "isiNdebele",
+        "slug": "south ndebele",
+        "code": "nr",
+        "flag": null
+    },
+    {
+        "id": 148,
+        "name": "Spanish",
+        "native_name": "español, castellano",
+        "slug": "spanish; castilian",
+        "code": "es",
+        "flag": "https://manatal-backend-public-assets.s3.amazonaws.com/media/language_flag/es_new3.png"
+    },
+    {
+        "id": 149,
+        "name": "Sundanese",
+        "native_name": "Basa Sunda",
+        "slug": "sundanese",
+        "code": "su",
+        "flag": null
+    },
+    {
+        "id": 150,
+        "name": "Swahili",
+        "native_name": "Kiswahili",
+        "slug": "swahili",
+        "code": "sw",
+        "flag": null
+    },
+    {
+        "id": 151,
+        "name": "Swati",
+        "native_name": "SiSwati",
+        "slug": "swati",
+        "code": "ss",
+        "flag": null
+    },
+    {
+        "id": 152,
+        "name": "Swedish",
+        "native_name": "svenska",
+        "slug": "swedish",
+        "code": "sv",
+        "flag": null
+    },
+    {
+        "id": 160,
+        "name": "Tagalog",
+        "native_name": "Wikang Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔",
+        "slug": "tagalog",
+        "code": "tl",
+        "flag": null
+    },
+    {
+        "id": 167,
+        "name": "Tahitian",
+        "native_name": "Reo Tahiti",
+        "slug": "tahitian",
+        "code": "ty",
+        "flag": null
+    },
+    {
+        "id": 155,
+        "name": "Tajik",
+        "native_name": "тоҷикӣ, toğikī, تاجیکی‎",
+        "slug": "tajik",
+        "code": "tg",
+        "flag": null
+    },
+    {
+        "id": 153,
+        "name": "Tamil",
+        "native_name": "தமிழ்",
+        "slug": "tamil",
+        "code": "ta",
+        "flag": null
+    },
+    {
+        "id": 165,
+        "name": "Tatar",
+        "native_name": "татарча, tatarça, تاتارچا‎",
+        "slug": "tatar",
+        "code": "tt",
+        "flag": null
+    },
+    {
+        "id": 154,
+        "name": "Telugu",
+        "native_name": "తెలుగు",
+        "slug": "telugu",
+        "code": "te",
+        "flag": null
+    },
+    {
+        "id": 156,
+        "name": "Thai",
+        "native_name": "ไทย",
+        "slug": "thai",
+        "code": "th",
+        "flag": null
+    },
+    {
+        "id": 158,
+        "name": "Tibetan Standard, Tibetan, Central",
+        "native_name": "བོད་ཡིག",
+        "slug": "tibetan standard, tibetan, central",
+        "code": "bo",
+        "flag": null
+    },
+    {
+        "id": 157,
+        "name": "Tigrinya",
+        "native_name": "ትግርኛ",
+        "slug": "tigrinya",
+        "code": "ti",
+        "flag": null
+    },
+    {
+        "id": 162,
+        "name": "Tonga (Tonga Islands)",
+        "native_name": "faka Tonga",
+        "slug": "tonga (tonga islands)",
+        "code": "to",
+        "flag": null
+    },
+    {
+        "id": 164,
+        "name": "Tsonga",
+        "native_name": "Xitsonga",
+        "slug": "tsonga",
+        "code": "ts",
+        "flag": null
+    },
+    {
+        "id": 161,
+        "name": "Tswana",
+        "native_name": "Setswana",
+        "slug": "tswana",
+        "code": "tn",
+        "flag": null
+    },
+    {
+        "id": 163,
+        "name": "Turkish",
+        "native_name": "Türkçe",
+        "slug": "turkish",
+        "code": "tr",
+        "flag": null
+    },
+    {
+        "id": 159,
+        "name": "Turkmen",
+        "native_name": "Türkmen, Түркмен",
+        "slug": "turkmen",
+        "code": "tk",
+        "flag": null
+    },
+    {
+        "id": 166,
+        "name": "Twi",
+        "native_name": "Twi",
+        "slug": "twi",
+        "code": "tw",
+        "flag": null
+    },
+    {
+        "id": 168,
+        "name": "Uighur, Uyghur",
+        "native_name": "Uyƣurqə, ئۇيغۇرچە‎",
+        "slug": "uighur, uyghur",
+        "code": "ug",
+        "flag": null
+    },
+    {
+        "id": 169,
+        "name": "Ukrainian",
+        "native_name": "українська",
+        "slug": "ukrainian",
+        "code": "uk",
+        "flag": null
+    },
+    {
+        "id": 170,
+        "name": "Urdu",
+        "native_name": "اردو",
+        "slug": "urdu",
+        "code": "ur",
+        "flag": null
+    },
+    {
+        "id": 171,
+        "name": "Uzbek",
+        "native_name": "zbek, Ўзбек, أۇزبېك‎",
+        "slug": "uzbek",
+        "code": "uz",
+        "flag": null
+    },
+    {
+        "id": 172,
+        "name": "Venda",
+        "native_name": "Tshivenḓa",
+        "slug": "venda",
+        "code": "ve",
+        "flag": null
+    },
+    {
+        "id": 173,
+        "name": "Vietnamese",
+        "native_name": "Tiếng Việt",
+        "slug": "vietnamese",
+        "code": "vi",
+        "flag": null
+    },
+    {
+        "id": 174,
+        "name": "Volapük",
+        "native_name": "Volapük",
+        "slug": "volapük",
+        "code": "vo",
+        "flag": null
+    },
+    {
+        "id": 175,
+        "name": "Walloon",
+        "native_name": "Walon",
+        "slug": "walloon",
+        "code": "wa",
+        "flag": null
+    },
+    {
+        "id": 176,
+        "name": "Welsh",
+        "native_name": "Cymraeg",
+        "slug": "welsh",
+        "code": "cy",
+        "flag": null
+    },
+    {
+        "id": 178,
+        "name": "Western Frisian",
+        "native_name": "Frysk",
+        "slug": "western frisian",
+        "code": "fy",
+        "flag": null
+    },
+    {
+        "id": 177,
+        "name": "Wolof",
+        "native_name": "Wollof",
+        "slug": "wolof",
+        "code": "wo",
+        "flag": null
+    },
+    {
+        "id": 179,
+        "name": "Xhosa",
+        "native_name": "isiXhosa",
+        "slug": "xhosa",
+        "code": "xh",
+        "flag": null
+    },
+    {
+        "id": 180,
+        "name": "Yiddish",
+        "native_name": "ייִדיש",
+        "slug": "yiddish",
+        "code": "yi",
+        "flag": null
+    },
+    {
+        "id": 181,
+        "name": "Yoruba",
+        "native_name": "Yorùbá",
+        "slug": "yoruba",
+        "code": "yo",
+        "flag": null
+    },
+    {
+        "id": 182,
+        "name": "Zhuang, Chuang",
+        "native_name": "Saɯ cueŋƅ, Saw cuengh",
+        "slug": "zhuang, chuang",
+        "code": "za",
+        "flag": null
+    },
+    {
+        "id": 183,
+        "name": "Zulu",
+        "native_name": "isiZulu",
+        "slug": "zulu",
+        "code": "zu",
+        "flag": null
+    }
+]

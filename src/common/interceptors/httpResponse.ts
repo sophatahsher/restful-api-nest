@@ -68,25 +68,28 @@ export class HttpResponseInterceptor<T>
             map((httpResponse) => {
                 console.log('httpResponse=======', httpResponse);
                 if ( typeof httpResponse === 'object' ) {
-                    if ( httpResponse.data === 'OK' || !httpResponse.metadata ) 
+                    if ( httpResponse.data === 'OK' && ( httpResponse.data !== 'OK' || !httpResponse.metadata ) ) 
                         return { 
                             status: 'OK', 
                             code: 0, 
-                            request: { 
-                                url: url, 
-                                method: method
-                            }
+                            /*request: { 
+                                 url: url, 
+                                 method: method
+                            }*/
                         };
                     else 
+                    {
                         return { 
                             status: 'OK', 
                             code: 0, 
                             ...httpResponse,
-                            request: { 
+                            /*request: { 
                                 url: url, 
                                 method: method
-                            }
+                            }*/
                         };
+                    }
+                        
                 }
                     
                 return { status: 'OK', code: 0, ...httpResponse };

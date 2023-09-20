@@ -14,6 +14,7 @@ import { UserModule } from './modules/users/user.module';
 import { LiveChatModule } from './modules/chat/chat.module';
 import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
 import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module';
+import { ResumeModule } from './modules/resumes/resume.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -72,7 +73,7 @@ const configSwagger = (app: INestApplication) => {
         .build();
 
     const document = SwaggerModule.createDocument(app, apiDocs, {
-        include: [AuthModule, UserModule, LiveChatModule]
+        include: [AuthModule, UserModule, LiveChatModule, ResumeModule]
     });
 
     // Enable SWAGGER
@@ -90,7 +91,11 @@ const configSwagger = (app: INestApplication) => {
 };
 
 const configAppUserSwagger = (app: INestApplication) => {
-    app.setGlobalPrefix('api/v1.0');
+    app.setGlobalPrefix('api'); //v1.0
+    app.enableVersioning({
+        defaultVersion: "1.0",
+        type: VersioningType.URI,
+    });
     const apiAppDocs = new DocumentBuilder()
         .setTitle('NestJS App User Api Documents')
         .setVersion('1.0')

@@ -77,9 +77,8 @@ export class AuthService {
         // RedisStore
         //this.redisClient.set('access_token', accessToken, 500);
         //const redisSessionUser = await this.redisClient.get('access_token');
-
         return {
-            accessToken
+            accessToken: accessToken
         };
     }
     /*

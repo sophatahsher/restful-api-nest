@@ -313,3 +313,6 @@ FodyWeavers.xsd
 
 # macOS
 .DS_Store
+
+# upload
+temp

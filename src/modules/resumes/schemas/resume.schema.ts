@@ -8,7 +8,9 @@ import { EducationDegree } from './degree.schema';
 import { SpokenLanguage } from './language.schema';
 import { Type } from 'class-transformer';
 import { number } from 'yargs';
-import { User } from 'src/modules/users/schemas/user.schema';
+import { UserMember } from 'src/modules/users/schemas/user.schema';
+import { ResumeTemplate } from './template.schema';
+import { ObjectId } from 'typeorm';
 
 class Education {
     @Prop()
@@ -263,57 +265,57 @@ export class Resume {
     @Prop({ required: true })
     lastName: string;
 
-    @Prop({ required: true })
+    @Prop({ default: null, required: true })
     personal: string;
 
-    @Prop({ required: true })
+    @Prop({  default: null, required: false })
     @IsArray()
     @Type(() => Skill)
     skills: Skill;
 
-    @Prop({ required: true })
+    @Prop({  default: null, required: false })
     education: Education;
 
-    @Prop({ required: true })
+    @Prop({  default: null, required: false })
     experience: Experience;
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'SpokenLanguage', required: true })
+    @Prop({ default: null, type: mongoose.Schema.Types.ObjectId, ref: 'SpokenLanguage', required: false })
     languages: SpokenLanguage | string;
 
-    @Prop({ required: false })
+    @Prop({ default: null,  required: false })
     achievements: string;
 
-    @Prop({ required: false })
+    @Prop({  default: null, required: false })
     certifications: string;
 
-    @Prop({ required: false })
+    @Prop({ default: null,  required: false })
     qualifications: string;
 
-    @Prop({ required: false })
+    @Prop({ default: null,  required: false })
     @IsArray()
     @Type(() => EmergencyContact)
     emergencyContact: EmergencyContact;
 
-    @Prop({ required: true })
+    @Prop({ default: null, required: false })
     addresses: Addresses;
 
-    @Prop({ required: false })
+    @Prop({ default: null,  required: false })
     dependent: Dependent;
 
-    @Prop({ required: false })
+    @Prop({ default: null, required: false })
     @IsArray()
     @Type(() => Reference)
     references: Reference;
 
-    @Prop({ required: false })
+    @Prop({ default: null, required: false })
     hobbies: string;
 
-    @Prop({ required: false })
+    @Prop({ default: null, required: false })
     @IsArray()
     @Type(() => ProjectScreenshot)
     screenshots: ProjectScreenshot;
 
-    @Prop({ required: false })
+    @Prop({ default: null, required: false })
     additionalInfo: AdditionalInfo; 
 
     @Prop({ default: true, required: false })
@@ -331,11 +333,17 @@ export class Resume {
     @Prop({ default: 1, required: false })
     status: number;
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
-    user: User;
+    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'UserMember' })
+    member: UserMember;
+
+    @Prop({ default: null, required: false})
+    createdBy: string;
 
     @Prop({ default: 'app' })
     createdType: string;
+
+    @Prop({ default: null, type: mongoose.Schema.Types.ObjectId, ref: 'ResumeTemplate' })
+    template: ResumeTemplate | ObjectId;
 }
 
 type ResumeDocument = HydratedDocument<Resume>;

@@ -3,14 +3,14 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as moment from 'moment';
-import { UserService } from 'src/modules/users/user.service';
+import { UserMemberService } from 'src/modules/users/user.service';
 import { AppUserMessage, ErrorCode, ErrorMessage } from 'src/common/enums/responseMessage';
 import { UserStatus } from 'src/modules/users/enums/status.enum';
 @Injectable()
 export class AccessTokenStrategy extends PassportStrategy(Strategy) {
     constructor(
         private config: ConfigService,
-        private userService: UserService
+        private userService: UserMemberService
     ) {
         super({
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),

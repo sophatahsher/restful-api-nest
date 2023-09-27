@@ -41,3 +41,8 @@ export enum LanguageLevelEnum {
     FULL_PROFESSIONAL = 'Professional Working', // 4, 4+
     NATIVE = 'Native or Bilingual' // 5
 }
+
+export enum TemplateEnum {
+    COVERLETTER= 'Cover Letter',
+    RESUME = 'Resume',
+}

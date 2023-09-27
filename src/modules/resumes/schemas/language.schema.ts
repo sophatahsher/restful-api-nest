@@ -3,7 +3,7 @@ import { HydratedDocument } from 'mongoose';
 import { SoftDeleteModel } from 'mongoose-delete';
 import * as mongooseDelete from 'mongoose-delete';
 
-@Schema({ collection: 'app_spoken_languages', timestamps: true })
+@Schema({ collection: 'spoken_languages', timestamps: true })
 export class SpokenLanguage {
     @Prop()
     id: string;
@@ -12,7 +12,7 @@ export class SpokenLanguage {
     name: string;
 
     @Prop()
-    native_name: string;
+    nativeName: string;
 
     @Prop()
     slug: string;

@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
 import { AccessTokenStrategy } from './strategies/jwt.strategy';
 import { RefreshTokenStrategy } from './strategies/jwt-refresh-token.strategy';
 import { MerchantModule } from '../merchant/merchant.module';
-import { UserModule } from './../users/user.module';
+import { UserMemberModule } from './../users/user.module';
 import { ClientApiKeyStrategy } from './strategies/client-api-key.strategy';
 import { IRedisModule } from '../redis/redis.module';
 import { IRedisService } from '../redis/redis.service';
@@ -34,7 +34,7 @@ const DBSchemaModule = MongooseModule.forFeature([
         DBSchemaModule,
         JwtModuleRegistered,
         MerchantModule,
-        UserModule,
+        UserMemberModule,
         IRedisModule
     ],
     exports: [AuthService, DBSchemaModule],

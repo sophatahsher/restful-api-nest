@@ -23,7 +23,7 @@ import {
     AppUserMessage
 } from 'src/common/enums/responseMessage';
 import { ChangePasswordBodyDto } from './dto/change-password';
-import { UserService } from '../users/user.service';
+import { UserMemberService } from '../users/user.service';
 import { IRedisService } from '../redis/redis.service';
 import { UserStatus } from '../users/enums/status.enum';
 //import { DemoRedisService } from '../redis/redis.service';
@@ -32,7 +32,7 @@ import { UserStatus } from '../users/enums/status.enum';
 export class AuthService {
     constructor(
         private merchantService: MerchantService,
-        private userService: UserService,
+        private userService: UserMemberService,
         private jwtService: JwtService,
         //private redisClient: IRedisService,
         @InjectModel(AuthorizationKey.name)

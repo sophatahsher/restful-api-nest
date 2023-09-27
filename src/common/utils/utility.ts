@@ -15,4 +15,11 @@ const generatePages = (query): IPagination => {
     };
 };
 
-export { generatePages };
+const stringContext = (str: string, mapObj: any) => {
+    let newStr = str.replace(/var1|var2|var3/gi, function(matched){
+        return mapObj[matched];
+    });
+    return newStr
+}
+
+export { generatePages, stringContext };

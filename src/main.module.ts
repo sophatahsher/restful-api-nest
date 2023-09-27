@@ -11,7 +11,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { WebsocketModule } from './modules/websocket/websocket.module';
-import { UserModule } from './modules/users/user.module';
+import { UserMemberModule } from './modules/users/user.module';
 import { IRedisModule } from './modules/redis/redis.module';
 
 //import { RedisModule, RedisService } from 'nestjs-redis';
@@ -21,6 +21,8 @@ import { LiveChatModule } from './modules/chat/chat.module';
 import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
 import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module';
 import { ResumeModule } from './modules/resumes/resume.module';
+import { CoverLetterModule } from './modules/coverletters/coverletter.module';
+import { UploadFileModule } from './modules/uploads/upload.module';
 //import { redisConfig } from './modules/redis/redis-client.factory';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
@@ -47,7 +49,7 @@ const RedisDBModule = RedisModule.forRoot({
         RedisDBModule,
         ScheduleModule.forRoot(),
         AuthModule,
-        UserModule,
+        UserMemberModule,
         ClientApiAuthModules,
         WebsocketModule,
         IRedisModule,
@@ -58,7 +60,11 @@ const RedisDBModule = RedisModule.forRoot({
         //
         AnonymousSDKModules,
         //
-        ResumeModule
+        ResumeModule,
+        //
+        CoverLetterModule,
+        //
+        UploadFileModule
     ]
 })
 export class MainModule implements NestModule {

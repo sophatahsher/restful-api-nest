@@ -1,38 +1,45 @@
+import { Auth } from './../../common/decorators/authGuard.decorator';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { CreateAppUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
-import { UserMember, UserMemberModel } from './schemas/user.schema';
-import { hashStringWithSalt } from 'src/common/utils/encryption';
 import { ErrorCode, ErrorMessage, ResponseStatusCode, Status } from 'src/common/enums/responseMessage';
-import { QueryParamsDto } from './dto/list.dto';
-import { generatePages } from 'src/common/utils/utility';
+import { generatePages, stringContext } from 'src/common/utils/utility';
+import { QueryParamsResumeTemplateDto } from './dto/template-list.dt';
+import { CreateResumeTemplateDto } from './dto/create-template.dto';
+import { UpdateResumeTemplateDto } from './dto/update-template.dto';
+import { ResumeTemplate, ResumeTemplateModel } from './schemas/template.schema';
 
 @Injectable()
-export class UserMemberService {
-    constructor(@InjectModel(UserMember.name) private userModel: UserMemberModel) {}
+export class ResumeTemplateService {
+    constructor(@InjectModel(ResumeTemplate.name) private resumeTemplateModel: ResumeTemplateModel) {}
 
     async findOne(id: string) {
-        return this.userModel.findById(id);
+        return this.resumeTemplateModel.findById(id);
     }
 
-    async create( userObject: CreateAppUserDto ) {
+    async create(auth: any, resumeTemplateObj: CreateResumeTemplateDto ) {
         try {
-            // prevent create with duplicated account
-            const countExists = await this.userModel.findOne({ username: userObject.username}).countDocuments();
+            // prevent create with duplicated Template
+            const countExists = await this.resumeTemplateModel.findOne({ name: resumeTemplateObj.name}).countDocuments();
             if ( countExists > 0 )
                 throw new HttpException(
                     {
                         status: Status.FAILED,
                         errorCode: ErrorCode.RECORD_IS_EXISTS,
                         statusCode: ResponseStatusCode.RECORD_EXISTS,
-                        errorMessage: ErrorMessage.RECORD_IS_EXISTS
+                        errorMessage: stringContext(ErrorMessage.RECORD_IS_EXISTS, { var1: resumeTemplateObj.name })
                     },
                     HttpStatus.BAD_REQUEST
                 );
 
-            userObject.password = hashStringWithSalt(userObject.password, 16);
-            await this.userModel.create(userObject);
+            // Params
+            const createParams = {
+                member: auth._id,
+                ...resumeTemplateObj
+            }
+
+            // create DB's record
+            await this.resumeTemplateModel.create(createParams);
+
             return 'OK';
 
         } catch (error) {
@@ -47,17 +54,16 @@ export class UserMemberService {
         }
     }
 
-    async findAll( qry: QueryParamsDto ) {
+    async findAll( qry: QueryParamsResumeTemplateDto ) {
         // 
         const pagination = generatePages(qry);
 
-        const records = await this.userModel.find()
+        const records = await this.resumeTemplateModel.find()
         .skip(pagination.offset)
         .limit(pagination.limit)
         .sort( { createdAt: -1 } )
         .exec();
-
-        const totalRecords = await this.userModel.find().countDocuments();
+        const totalRecords = await this.resumeTemplateModel.find().countDocuments();
         const metadata = {
             total: totalRecords,
             ...pagination
@@ -67,16 +73,17 @@ export class UserMemberService {
     }
 
     async findById(id: string) {
-        return this.userModel.findById(id);
+        return this.resumeTemplateModel.findById(id);
     }
 
-    async findByUsername(username: string) {
-        return this.userModel.findOne({ username }).exec();
+    async findByName(name: string) {
+        return this.resumeTemplateModel.findOne({ name }).exec();
     }
 
-    async update(id: string, userObject: UpdateUserDto) {
+    // UPDATE
+    async update(id: string, resumeTemplateObj: UpdateResumeTemplateDto) {
         try {
-            const countExists = await this.userModel.findOne({username: userObject.username, _id: { $ne: id }}).countDocuments(); 
+            const countExists = await this.resumeTemplateModel.findOne({name: resumeTemplateObj.name, _id: { $ne: id }}).countDocuments(); 
             if ( countExists > 0 ) {
                 throw new HttpException({
                         status: Status.FAILED,
@@ -87,10 +94,7 @@ export class UserMemberService {
                     HttpStatus.BAD_REQUEST
                 );
             }
-
-            userObject.password = hashStringWithSalt(userObject.password, 16);
-
-            await this.userModel.findByIdAndUpdate(id, userObject, { new: true }).exec();
+            await this.resumeTemplateModel.findByIdAndUpdate(id, resumeTemplateObj, { new: true }).exec();
 
             return 'OK';
 
@@ -107,7 +111,15 @@ export class UserMemberService {
         }
     }
 
+    // DELETE
     async remove(id: string) {
-        return await this.userModel.findByIdAndDelete(id).exec();
+        return await this.resumeTemplateModel.findByIdAndDelete(id).exec();
+    }
+
+    // Lockup Section
+    async findDefaultResumeTemplates() {
+        // 
+        const records = await this.resumeTemplateModel.find().exec();
+        return { data: records}
     }
 }

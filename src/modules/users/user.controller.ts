@@ -16,7 +16,7 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from './../../common/http/response';
 import { Auth } from 'src/common/decorators/authGuard.decorator';
 import { TokenAuthGuard } from 'src/common/guards/auth.guard';
-import { UserService } from './user.service';
+import { UserMemberService } from './user.service';
 import { CreateAppUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { QueryParamsDto } from './dto/list.dto';
@@ -25,8 +25,8 @@ import { QueryParamsDto } from './dto/list.dto';
 @ApiBearerAuth()
 @UseGuards(TokenAuthGuard)
 @Controller('users')
-export class UserController {
-    constructor(private userService: UserService) {}
+export class UserMemberController {
+    constructor(private userService: UserMemberService) {}
 
     @Get()
     async findAll(@Query() qry: QueryParamsDto) {

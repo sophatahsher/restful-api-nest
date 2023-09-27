@@ -1,6 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
-import { IsArray, IsBoolean, IsDate, IsEnum, IsIn, IsMongoId, IsNotEmpty, IsNumber, IsObject, IsOctal, IsOptional, IsString, Max, MaxLength, Min, ValidateNested } from 'class-validator';
+import { IsArray, IsBoolean, IsDate, IsEmail, IsEnum, IsIn, IsMongoId, IsNotEmpty, IsNumber, IsObject, IsOctal, IsOptional, IsString, Max, MaxLength, Min, ValidateNested } from 'class-validator';
 import { FrequencyPayment, GenderEnum, LanguageLevelEnum } from '../enums/resume.enum';
 
 class EducationDegree {
@@ -17,6 +17,7 @@ class EducationDegree {
 class Education {
     @ApiProperty()
     @IsMongoId()
+    @IsOptional()
     id: string
 
     @ApiProperty()
@@ -90,6 +91,7 @@ class Skill {
 class SpokenLanguage {
     @ApiProperty()
     @IsMongoId()
+    @IsOptional()
     id: string;
 
     @ApiProperty()
@@ -224,32 +226,36 @@ export class CreateAppUserResumeDto {
 
     @ApiPropertyOptional()
     @IsString()
-    phoneNumber: string;
+    phone: string;
 
     @ApiPropertyOptional()
-    @IsString()
+    @IsEmail()
     email: string;
-
-    // @ApiProperty()
-    // @IsArray()
-    // @ValidateNested({ each: true })
-    // @Type(()=> Education)
-    // education: Education;
-    
-    // @ApiProperty()
-    // @IsArray()
-    // @ValidateNested({ each: true })
-    // @Type(()=> Skill)
-    // skills: Skill;
-
-    // @ApiProperty()
-    // @IsArray()
-    // @ValidateNested({ each: true })
-    // @Type(()=> SpokenLanguage)
-    // languages: SpokenLanguage;
 
     @ApiProperty()
     @IsArray()
+    @IsOptional()
+    @ValidateNested({ each: true })
+    @Type(()=> Education)
+    education: Education;
+    
+    @ApiProperty()
+    @IsArray()
+    @IsOptional()
+    @ValidateNested({ each: true })
+    @Type(()=> Skill)
+    skills: Skill;
+
+    @ApiProperty()
+    @IsArray()
+    @IsOptional()
+    @ValidateNested({ each: true })
+    @Type(()=> SpokenLanguage)
+    languages: SpokenLanguage;
+
+    @ApiProperty()
+    @IsArray()
+    @IsOptional()
     @ValidateNested({ each: true })
     @Type(()=> Experience)
     experience: Experience;
@@ -264,7 +270,12 @@ export class CreateAppUserResumeDto {
     // @IsOptional()
     // additionalInfo: object
 
-    @ApiPropertyOptional({ default: true })
+    @ApiProperty()
+    @IsMongoId()
+    @IsOptional()
+    template: string;
+
+    @ApiProperty({ default: true })
     @IsBoolean()
     isPublish: boolean;
 }

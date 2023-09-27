@@ -1,38 +1,47 @@
+import { Auth } from './../../common/decorators/authGuard.decorator';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { CreateAppUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
-import { UserMember, UserMemberModel } from './schemas/user.schema';
-import { hashStringWithSalt } from 'src/common/utils/encryption';
 import { ErrorCode, ErrorMessage, ResponseStatusCode, Status } from 'src/common/enums/responseMessage';
-import { QueryParamsDto } from './dto/list.dto';
-import { generatePages } from 'src/common/utils/utility';
+import { generatePages, stringContext } from 'src/common/utils/utility';
+import { CoverLetter, CoverLetterModel } from './schemas/coverletter.schema';
+import { QueryParamsCoverLetterDto } from './dto/coverletter-list.dto';
+import { CreateCoverLetterDto } from './dto/create-coverletter.dto';
+import { UpdateCoverLetterDto } from './dto/update-coverletter.dto';
 
 @Injectable()
-export class UserMemberService {
-    constructor(@InjectModel(UserMember.name) private userModel: UserMemberModel) {}
+export class CoverLetterService {
+    constructor(@InjectModel(CoverLetter.name) private coverLetterModel: CoverLetterModel) {}
 
     async findOne(id: string) {
-        return this.userModel.findById(id);
+        return this.coverLetterModel.findById(id);
     }
 
-    async create( userObject: CreateAppUserDto ) {
+    async create(auth: any, coverLetterObj: CreateCoverLetterDto ) {
         try {
-            // prevent create with duplicated account
-            const countExists = await this.userModel.findOne({ username: userObject.username}).countDocuments();
+            // prevent create with duplicated CoverLetter
+            const countExists = await this.coverLetterModel.findOne({ name: coverLetterObj.name}).countDocuments();
+            console.log('countExists => ', countExists);
             if ( countExists > 0 )
                 throw new HttpException(
                     {
                         status: Status.FAILED,
                         errorCode: ErrorCode.RECORD_IS_EXISTS,
                         statusCode: ResponseStatusCode.RECORD_EXISTS,
-                        errorMessage: ErrorMessage.RECORD_IS_EXISTS
+                        errorMessage: stringContext(ErrorMessage.RECORD_IS_EXISTS, { var1: coverLetterObj.name })
                     },
                     HttpStatus.BAD_REQUEST
                 );
+            
+            // Params
+            const createParams = {
+                ...coverLetterObj,
+                createdBy: auth._id,
+                createdType: 'admin'
+            }
 
-            userObject.password = hashStringWithSalt(userObject.password, 16);
-            await this.userModel.create(userObject);
+            // create DB's record
+            await this.coverLetterModel.create(createParams);
+
             return 'OK';
 
         } catch (error) {
@@ -47,17 +56,17 @@ export class UserMemberService {
         }
     }
 
-    async findAll( qry: QueryParamsDto ) {
+    async findAll(auth: any, qry: QueryParamsCoverLetterDto ) {
         // 
         const pagination = generatePages(qry);
 
-        const records = await this.userModel.find()
+        const records = await this.coverLetterModel.find()
         .skip(pagination.offset)
         .limit(pagination.limit)
         .sort( { createdAt: -1 } )
         .exec();
 
-        const totalRecords = await this.userModel.find().countDocuments();
+        const totalRecords = await this.coverLetterModel.find().countDocuments();
         const metadata = {
             total: totalRecords,
             ...pagination
@@ -67,30 +76,28 @@ export class UserMemberService {
     }
 
     async findById(id: string) {
-        return this.userModel.findById(id);
+        return this.coverLetterModel.findById(id);
     }
 
-    async findByUsername(username: string) {
-        return this.userModel.findOne({ username }).exec();
+    async findByName(name: string) {
+        return this.coverLetterModel.findOne({ name }).exec();
     }
 
-    async update(id: string, userObject: UpdateUserDto) {
+    async update(auth: any, id: string, coverLetterObj: UpdateCoverLetterDto) {
         try {
-            const countExists = await this.userModel.findOne({username: userObject.username, _id: { $ne: id }}).countDocuments(); 
+            const countExists = await this.coverLetterModel.findOne({name: coverLetterObj.name, _id: { $ne: id }}).countDocuments(); 
             if ( countExists > 0 ) {
                 throw new HttpException({
                         status: Status.FAILED,
                         errorCode: ErrorCode.RECORD_IS_EXISTS,
                         statusCode: ResponseStatusCode.RECORD_EXISTS,
-                        errorMessage: ErrorMessage.RECORD_IS_EXISTS
+                        errorMessage: stringContext(ErrorMessage.RECORD_IS_EXISTS, { var1: coverLetterObj.name })
                     },
                     HttpStatus.BAD_REQUEST
                 );
             }
 
-            userObject.password = hashStringWithSalt(userObject.password, 16);
-
-            await this.userModel.findByIdAndUpdate(id, userObject, { new: true }).exec();
+            await this.coverLetterModel.findByIdAndUpdate(id, { ...coverLetterObj, createdBy: auth._id, createdType: 'admin'}, { new: true }).exec();
 
             return 'OK';
 
@@ -108,6 +115,6 @@ export class UserMemberService {
     }
 
     async remove(id: string) {
-        return await this.userModel.findByIdAndDelete(id).exec();
+        return await this.coverLetterModel.findByIdAndDelete(id).exec();
     }
 }

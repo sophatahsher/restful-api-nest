@@ -9,10 +9,13 @@ import { generatePages } from 'src/common/utils/utility';
 import { CreateAppUserResumeDto } from './dto/create-resume.dto';
 import { UpdateAppUserResumeDto } from './dto/update-resume.dto';
 import { Resume, ResumeModel } from './schemas/resume.schema';
-
+import { ResumeTemplate, ResumeTemplateModel } from './schemas/template.schema';
 @Injectable()
 export class ResumeService {
-    constructor(@InjectModel(Resume.name) private resumeModel: ResumeModel) {}
+    constructor(
+        @InjectModel(Resume.name) private resumeModel: ResumeModel,
+        @InjectModel(ResumeTemplate.name) private resumeTemplateModel: ResumeTemplateModel,
+    ) {}
 
     async findOne(id: string) {
         return this.resumeModel.findById(id);
@@ -42,15 +45,14 @@ export class ResumeService {
 
             // Params
             const createParams = {
-                user: auth._id,
+                member: auth._id,
                 ...resumeObj,
-                createdBy: auth._id,
                 createdType: 'app'
             }
 
             // create DB's record
             await this.resumeModel.create(createParams);
-
+            
             return 'OK';
 
         } catch (error) {
@@ -127,5 +129,59 @@ export class ResumeService {
 
     async remove(id: string) {
         return await this.resumeModel.findByIdAndDelete(id).exec();
+    }
+
+    // Section
+
+    async updateEducation() {
+
+    }
+
+    async updateExperience() {
+        
+    }
+
+    async updateLanguages() {
+        
+    }
+
+    async updateSkillSet() {
+        
+    }
+
+    async updateHobbies() {
+        
+    }
+
+    async updateAddresses() {
+        
+    }
+
+    async updateReferences() {
+        
+    }
+
+    async updateAdditionalInfo() {
+        
+    }
+
+    async updateScreenshots() {
+        
+    }
+
+    async updateIsDefault() {
+        
+    }
+
+    async updateEmergencyContact() {
+        
+    }
+
+    async updateAchievements() {
+        
+    }
+
+    async updatePortfolios() {
+        
     }
 }

@@ -10,11 +10,13 @@ import { HttpResponseInterceptor } from 'src/common/interceptors/httpResponse';
 import { MQChannel } from 'src/common/enums/mqChannel';
 import { AuthModule } from './modules/auth/auth.module';
 import { ClientApiAuthModules } from './modules/client-auth/client.module';
-import { UserModule } from './modules/users/user.module';
+import { UserMemberModule } from './modules/users/user.module';
 import { LiveChatModule } from './modules/chat/chat.module';
 import { MerchantSDKModules } from './modules/sdk/merchants/merchantSdk.module';
 import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module';
 import { ResumeModule } from './modules/resumes/resume.module';
+import { CoverLetterModule } from './modules/coverletters/coverletter.module';
+import { UploadFileModule } from './modules/uploads/upload.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -47,19 +49,21 @@ async function bootstrap() {
     app.useGlobalInterceptors(new HttpResponseInterceptor());
     app.useGlobalPipes(new ValidationPipe());
 
-    configSwagger(app);
+    await configSwagger(app);
     configAppUserSwagger(app);
-    configClientSwagger(app);
-    configAnonymousSwagger(app)
+    //configClientSwagger(app);
+    //configAnonymousSwagger(app)
 
     await app.startAllMicroservices();
+
+    // All listen to the same port
     await app.listen(port, process.env.HOST);
 
     //Injected
     useContainer(app.select(MainModule), { fallbackOnErrors: true });
 }
 
-const configSwagger = (app: INestApplication) => {
+const configSwagger = async (app: INestApplication) => {
     app.setGlobalPrefix('api');
     app.enableVersioning({
         defaultVersion: "1.0",
@@ -67,13 +71,22 @@ const configSwagger = (app: INestApplication) => {
     });
     
     const apiDocs = new DocumentBuilder()
-        .setTitle('NestJS API Documents')
-        .setVersion('1.0')
+        .setTitle('Nest API Documents')
+        .setDescription('The cats API description')
+        .setVersion('1.0.0')
         .addBearerAuth()
         .build();
 
     const document = SwaggerModule.createDocument(app, apiDocs, {
-        include: [AuthModule, UserModule, LiveChatModule, ResumeModule]
+        include: [
+            AuthModule, 
+            UserMemberModule, 
+            LiveChatModule,
+            ResumeModule,
+            CoverLetterModule,
+            //
+            UploadFileModule
+        ]
     });
 
     // Enable SWAGGER
@@ -81,30 +94,30 @@ const configSwagger = (app: INestApplication) => {
 
         SwaggerModule.setup('/docs', app, document, {
             swaggerOptions: {
-                persistAuthorization: true,
-                urls: [
-
-                ]
+                persistAuthorization: true
             }
         });
     }
 };
 
 const configAppUserSwagger = (app: INestApplication) => {
-    app.setGlobalPrefix('api'); //v1.0
+    app.setGlobalPrefix('api'); 
     app.enableVersioning({
         defaultVersion: "1.0",
         type: VersioningType.URI,
     });
     const apiAppDocs = new DocumentBuilder()
-        .setTitle('NestJS App User Api Documents')
+        .setTitle('Nest Api Documents')
         .setVersion('1.0')
         .addBearerAuth()
         .build();
 
     const swaggerAppDocs = SwaggerModule.createDocument(app, apiAppDocs, {
         include: [
-            //MerchantSDKModules
+           AuthModule, 
+           UserMemberModule, 
+           LiveChatModule, 
+           ResumeModule
         ],
         deepScanRoutes: true
     });

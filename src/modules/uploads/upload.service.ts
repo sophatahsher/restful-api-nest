@@ -41,7 +41,7 @@ export class UploadService {
             const options = { tempDir: 'uploads' }
 
             // 
-            const res = await upSdk.upload(filename, path, options)
+            const res = await upSdk.upload(file, path, options)
             console.log('UploadService > res : ', res);
             if (res) {
 

@@ -141,6 +141,8 @@ export class FS3Sdk {
 
     private encrypt(key, hash)
     {
+        // generate openssl key:
+        // https://kentakodashima.medium.com/generate-pem-keys-with-openssl-on-macos-ecac55791373
         return key.encrypt(
             forge.util.createBuffer(hash).getByte(),
             'RSA-OAEP',

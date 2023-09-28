@@ -1,7 +1,8 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { Type } from 'class-transformer';
+import { Transform, Type } from 'class-transformer';
 import { IsArray, IsBoolean, IsDate, IsEmail, IsEnum, IsIn, IsMongoId, IsNotEmpty, IsNumber, IsObject, IsOctal, IsOptional, IsString, Max, MaxLength, Min, ValidateNested } from 'class-validator';
 import { FrequencyPayment, GenderEnum, LanguageLevelEnum } from '../enums/resume.enum';
+import moment from 'moment';
 
 class EducationDegree {
     @ApiProperty()
@@ -16,9 +17,9 @@ class EducationDegree {
 
 class Education {
     @ApiProperty()
-    @IsMongoId()
+    @IsNumber()
     @IsOptional()
-    id: string
+    id: number;
 
     @ApiProperty()
     @ValidateNested({ each: true })
@@ -56,13 +57,13 @@ class Education {
     @ApiProperty()
     @IsNotEmpty()
     location: string;
-
-    @ApiProperty()
-    @IsDate()
+    
+    @ApiProperty({ type: 'timestamp' })
+    //@IsDate()
     startedAt: Date;
 
     @ApiProperty()
-    @IsDate()
+    //@IsDate()
     endedAt: Date;
 
     @ApiPropertyOptional()
@@ -90,18 +91,18 @@ class Skill {
 
 class SpokenLanguage {
     @ApiProperty()
-    @IsMongoId()
+    @IsNumber()
     @IsOptional()
-    id: string;
+    id: number;
 
     @ApiProperty()
     @IsNotEmpty()
     @MaxLength(64)
     name: string;
 
-    @ApiProperty({ enum: LanguageLevelEnum})
+    @ApiProperty({type: String, enum: LanguageLevelEnum})
     @IsEnum(LanguageLevelEnum)
-    @ValidateNested()
+    //@ValidateNested() //"languages.0.nested property level must be either object or array"
     level: LanguageLevelEnum;
 }
 
@@ -251,7 +252,7 @@ export class CreateAppUserResumeDto {
     @IsOptional()
     @ValidateNested({ each: true })
     @Type(()=> SpokenLanguage)
-    languages: SpokenLanguage;
+    languages: SpokenLanguage[];
 
     @ApiProperty()
     @IsArray()

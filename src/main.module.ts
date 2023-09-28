@@ -23,6 +23,7 @@ import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module
 import { ResumeModule } from './modules/resumes/resume.module';
 import { CoverLetterModule } from './modules/coverletters/coverletter.module';
 import { UploadFileModule } from './modules/uploads/upload.module';
+import { SpokenLanguageModule } from './modules/spokenlangs/spokenlang.module';
 //import { redisConfig } from './modules/redis/redis-client.factory';
 
 const EnvironmentModule = ConfigModule.forRoot({ isGlobal: true });
@@ -64,7 +65,9 @@ const RedisDBModule = RedisModule.forRoot({
         //
         CoverLetterModule,
         //
-        UploadFileModule
+        UploadFileModule,
+        //
+        SpokenLanguageModule
     ]
 })
 export class MainModule implements NestModule {

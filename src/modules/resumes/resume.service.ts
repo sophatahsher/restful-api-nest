@@ -18,12 +18,20 @@ export class ResumeService {
     ) {}
 
     async findOne(id: string) {
-        return this.resumeModel.findById(id);
+        try {
+            console.log('err=========', id);
+           
+            return this.resumeModel.findById(id);
+        } catch ( err )
+        {
+            console.log('err=========', err.message);
+        }
+        
     }
 
     async create(auth: any, resumeObj: CreateAppUserResumeDto ) {
         try {
-            console.log('resumeObj=========', resumeObj);
+            
             /*
             // prevent create with duplicated account
             const countExists = await this.resumeModel.findOne({ username: userObject.username}).countDocuments();
@@ -45,8 +53,8 @@ export class ResumeService {
 
             // Params
             const createParams = {
-                member: auth._id,
                 ...resumeObj,
+                member: auth._id,
                 createdType: 'app'
             }
 
@@ -56,6 +64,7 @@ export class ResumeService {
             return 'OK';
 
         } catch (error) {
+            console.log('=====', error);
             throw new HttpException({
                     status: Status.FAILED,
                     errorCode: error?.response?.errorCode ? error?.response?.errorCode : ErrorCode.ERROR_UNKNOWN,

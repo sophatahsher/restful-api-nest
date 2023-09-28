@@ -17,6 +17,7 @@ import { AnonymousSDKModules } from './modules/sdk/anonymous/AnonymousSdk.module
 import { ResumeModule } from './modules/resumes/resume.module';
 import { CoverLetterModule } from './modules/coverletters/coverletter.module';
 import { UploadFileModule } from './modules/uploads/upload.module';
+import { SpokenLanguageModule } from './modules/spokenlangs/spokenlang.module';
 
 //import * as cors from 'cors';
 //import { WsAdapter } from '@nestjs/platform-ws';
@@ -85,7 +86,9 @@ const configSwagger = async (app: INestApplication) => {
             ResumeModule,
             CoverLetterModule,
             //
-            UploadFileModule
+            UploadFileModule,
+            //
+            SpokenLanguageModule
         ]
     });
 

@@ -37,6 +37,7 @@ export class ResumeController {
 
     @Get(':id')
     async findById(@Param('id') id: string) {
+        console.log('Param=========', id);
         return { data: await this.resumeService.findById(id) };
     }
 

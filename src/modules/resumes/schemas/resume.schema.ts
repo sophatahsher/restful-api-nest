@@ -279,8 +279,9 @@ export class Resume {
     @Prop({  default: null, required: false })
     experience: Experience;
 
-    @Prop({ default: null, type: mongoose.Schema.Types.ObjectId, ref: 'SpokenLanguage', required: false })
-    languages: SpokenLanguage | string;
+    //@Prop({ default: null, type: mongoose.Schema.Types.ObjectId, ref: 'SpokenLanguage', required: false })
+    @Prop({ default: null, type: mongoose.Schema.Types.Mixed })
+    languages: object;
 
     @Prop({ default: null,  required: false })
     achievements: string;
